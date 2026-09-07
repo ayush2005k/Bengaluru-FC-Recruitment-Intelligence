@@ -576,56 +576,102 @@ def build_page_04_transfer_history(styles: Dict[str, ParagraphStyle]) -> List[An
 
 
 def build_page_05_recruitment_patterns(styles: Dict[str, ParagraphStyle]) -> List[Any]:
-    """Page 5: Recruitment Patterns"""
+    """Page 5: Recruitment Patterns, Deal Structures & Positional Allocation"""
     story = [
-        create_header_banner("04. Recruitment Patterns & Deal Structures", "Age Demographic Distributions & Contract Acquisition Mechanisms", styles),
-        Spacer(1, 6),
+        create_header_banner("04. Recruitment Patterns, Deal Structures & Positional Allocation", "Age Demographics, Acquisition Mechanisms & Positional Prioritization (54 External Signings)", styles),
+        Spacer(1, 4),
     ]
 
     age_chart_path = os.path.join(CHARTS_DIR, "signing_age_distribution.png")
     donut_chart_path = os.path.join(CHARTS_DIR, "transfer_types_donut.png")
+    pos_chart_path = os.path.join(CHARTS_DIR, "position_recruitment.png")
 
-    img_age = Image(age_chart_path, width=4.0*inch, height=2.25*inch) if os.path.exists(age_chart_path) else Paragraph("Missing Age Chart", styles["Body"])
-    img_donut = Image(donut_chart_path, width=3.7*inch, height=2.25*inch) if os.path.exists(donut_chart_path) else Paragraph("Missing Donut Chart", styles["Body"])
+    img_age = Image(age_chart_path, width=5.2*inch, height=1.75*inch) if os.path.exists(age_chart_path) else Paragraph("Missing Age Chart", styles["Body"])
+    img_donut = Image(donut_chart_path, width=4.9*inch, height=1.75*inch) if os.path.exists(donut_chart_path) else Paragraph("Missing Donut Chart", styles["Body"])
+    img_pos = Image(pos_chart_path, width=5.2*inch, height=1.75*inch) if os.path.exists(pos_chart_path) else Paragraph("Missing Position Chart", styles["Body"])
 
-    charts_row = Table([[img_age, img_donut]], colWidths=[400, 385])
-    charts_row.setStyle(TableStyle([
-        ("VALIGN", (0, 0), (-1, -1), "MIDDLE"),
-        ("LEFTPADDING", (0, 0), (-1, -1), 0),
-        ("RIGHTPADDING", (0, 0), (-1, -1), 0),
-    ]))
-    story.append(charts_row)
-    story.append(Spacer(1, 10))
-
-    # Analytical Insight Cards
-    c1 = [
-        Paragraph("<b>Bimodal Age Concentration</b>", styles["CardTitle"]),
-        Spacer(1, 3),
-        Paragraph("Recruitment is polarized: 24-26 years represents the primary domestic recruitment sweet-spot (24 signings, 35.3%), while 30+ represents the foreign experience pillar (22 signings, 32.4%). The club intentionally bypasses high-cost intermediate players (27-29).", styles["Body"]),
-    ]
-    c2 = [
-        Paragraph("<b>Transfer Mechanism Realism</b>", styles["CardTitle"]),
-        Spacer(1, 3),
-        Paragraph("Permanent free transfers (48.4%) and free agent arrivals form the foundation of recruitment. Loans (In/Out, 4.9%) are deployed sparingly for emergency cover or fringe-player development, ensuring complete wage-bill control.", styles["Body"]),
-    ]
-    c3 = [
-        Paragraph("<b>Internal Academy Integration</b>", styles["CardTitle"]),
-        Spacer(1, 3),
-        Paragraph("Youth promotions from Bengaluru FC B account for 8 direct senior roster integrations (11.8% of inbound deals), providing low-cost domestic depth while cultivating elite commercial assets (Roshan, Sivasakthi, Vinith).", styles["Body"]),
+    # Top Left: 1. WHO DOES BFC SIGN?
+    box_age = [
+        Paragraph("<b>1. WHO DOES BENGALURU FC SIGN? (Signing Age Demographics)</b>", styles["CardTitle"]),
+        Spacer(1, 2),
+        img_age,
+        Spacer(1, 2),
+        Paragraph("<b>Mean Signing Age:</b> 27.0 years (54 external signings; internal promotions strictly excluded).<br/>"
+                  "<b>Bimodal Polarization:</b> Peak recruitment targets prime domestic talent (24–26y) and proven foreign leaders (30+y), intentionally bypassing peak-fee inflation brackets (27–29y).", styles["TableCellMuted"]),
     ]
 
-    breakdown_grid = Table([[c1, c2, c3]], colWidths=[256, 256, 256])
-    breakdown_grid.setStyle(TableStyle([
+    # Top Right: 2. HOW ARE PLAYERS ACQUIRED?
+    box_donut = [
+        Paragraph("<b>2. HOW ARE PLAYERS ACQUIRED? (Transfer Deal Types)</b>", styles["CardTitle"]),
+        Spacer(1, 2),
+        img_donut,
+        Spacer(1, 2),
+        Paragraph("<b>Free Agent Dominance:</b> 92.6% of external arrivals (50 of 54) acquired on free transfers with €0 net fees.<br/>"
+                  "<b>Loan Cover:</b> Loans (4 events, 7.4%) strictly utilized for short-term injury cover without long-term wage locks or balance-sheet amortization risk.", styles["TableCellMuted"]),
+    ]
+
+    top_row = Table([[box_age, box_donut]], colWidths=[390, 390])
+    top_row.setStyle(TableStyle([
         ("BACKGROUND", (0, 0), (-1, -1), COLOR_CARD_BG),
         ("BOX", (0, 0), (-1, -1), 1, COLOR_BORDER),
-        ("INNERGRID", (0, 0), (-1, -1), 0.5, COLOR_BORDER),
         ("VALIGN", (0, 0), (-1, -1), "TOP"),
-        ("TOPPADDING", (0, 0), (-1, -1), 8),
-        ("BOTTOMPADDING", (0, 0), (-1, -1), 8),
-        ("LEFTPADDING", (0, 0), (-1, -1), 8),
-        ("RIGHTPADDING", (0, 0), (-1, -1), 8),
+        ("TOPPADDING", (0, 0), (-1, -1), 5),
+        ("BOTTOMPADDING", (0, 0), (-1, -1), 5),
+        ("LEFTPADDING", (0, 0), (-1, -1), 6),
+        ("RIGHTPADDING", (0, 0), (-1, -1), 6),
     ]))
-    story.append(breakdown_grid)
+    story.append(top_row)
+    story.append(Spacer(1, 5))
+
+    # Bottom Left: 3. WHICH POSITIONS ARE PRIORITIZED? (Chart)
+    box_pos_chart = [
+        Paragraph("<b>3. WHICH POSITIONS ARE PRIORITIZED? (Positional Breakdown)</b>", styles["CardTitle"]),
+        Spacer(1, 2),
+        img_pos,
+        Spacer(1, 2),
+        Paragraph("<b>54 External Signings:</b> Defenders (20, 37.0%), Forwards (15, 27.8%), Midfielders (13, 24.1%), Goalkeepers (6, 11.1%).", styles["TableCellMuted"]),
+    ]
+
+    # Bottom Right: Positional Synthesis Table & Text
+    pos_table_data = [
+        [Paragraph("Position", styles["TableHeader"]), Paragraph("Signings", styles["TableHeader"]), Paragraph("Share", styles["TableHeader"]), Paragraph("Strategic Recruitment Function", styles["TableHeader"])],
+        [Paragraph("Defender", styles["TableCellBold"]), Paragraph("20", styles["TableCell"]), Paragraph("37.0%", styles["TableCellBold"]), Paragraph("Central defensive spine & full-back stability (Primary Focus)", styles["TableCellMuted"])],
+        [Paragraph("Forward", styles["TableCellBold"]), Paragraph("15", styles["TableCell"]), Paragraph("27.8%", styles["TableCellBold"]), Paragraph("Match-winners, clinical box finishers & pressing threats", styles["TableCellMuted"])],
+        [Paragraph("Midfielder", styles["TableCellBold"]), Paragraph("13", styles["TableCell"]), Paragraph("24.1%", styles["TableCellBold"]), Paragraph("Double-pivot engine room, progressive passers & tempo control", styles["TableCellMuted"])],
+        [Paragraph("Goalkeeper", styles["TableCellBold"]), Paragraph("6", styles["TableCell"]), Paragraph("11.1%", styles["TableCellBold"]), Paragraph("Veteran domestic glovework, shot-stopping & bench depth", styles["TableCellMuted"])],
+    ]
+    t_pos_summary = Table(pos_table_data, colWidths=[65, 45, 45, 215])
+    t_pos_summary.setStyle(TableStyle([
+        ("BACKGROUND", (0, 0), (-1, 0), COLOR_CARD_ALT),
+        ("BACKGROUND", (0, 1), (-1, -1), COLOR_CARD_BG),
+        ("BOX", (0, 0), (-1, -1), 1, COLOR_BORDER),
+        ("INNERGRID", (0, 0), (-1, -1), 0.5, COLOR_BORDER),
+        ("VALIGN", (0, 0), (-1, -1), "MIDDLE"),
+        ("TOPPADDING", (0, 0), (-1, -1), 2.5),
+        ("BOTTOMPADDING", (0, 0), (-1, -1), 2.5),
+        ("LEFTPADDING", (0, 0), (-1, -1), 4),
+        ("RIGHTPADDING", (0, 0), (-1, -1), 4),
+    ]))
+
+    box_pos_analysis = [
+        Paragraph("<b>POSITIONAL RECRUITMENT SYNTHESIS</b>", styles["CardTitle"]),
+        Spacer(1, 3),
+        t_pos_summary,
+        Spacer(1, 3),
+        Paragraph("<b>STRATEGIC VERDICT:</b> Defenders represent the largest recruitment expenditure of squad spots (37.0%), underpinning Bengaluru FC's pragmatic structural approach to ISL campaigns. High free-agent reliance (92.6%) ensures continuous backline replenishment without speculative capital exposure.", styles["TableCell"]),
+    ]
+
+    bottom_row = Table([[box_pos_chart, box_pos_analysis]], colWidths=[390, 390])
+    bottom_row.setStyle(TableStyle([
+        ("BACKGROUND", (0, 0), (-1, -1), COLOR_CARD_BG),
+        ("BOX", (0, 0), (-1, -1), 1, COLOR_BORDER),
+        ("VALIGN", (0, 0), (-1, -1), "TOP"),
+        ("TOPPADDING", (0, 0), (-1, -1), 5),
+        ("BOTTOMPADDING", (0, 0), (-1, -1), 5),
+        ("LEFTPADDING", (0, 0), (-1, -1), 6),
+        ("RIGHTPADDING", (0, 0), (-1, -1), 6),
+    ]))
+    story.append(bottom_row)
     story.append(PageBreak())
     return story
 
@@ -850,7 +896,7 @@ def build_page_09_current_squad(styles: Dict[str, ParagraphStyle]) -> List[Any]:
         [Paragraph("Robin Yadav", styles["TableCellBold"]), Paragraph("CB", styles["TableCell"]), Paragraph("22", styles["TableCell"]), Paragraph("IND", styles["TableCellMuted"]), Paragraph("€75k", styles["TableCell"]), Paragraph("Bengaluru FC II", styles["TableCellMuted"]), Paragraph("2023", styles["TableCell"]), Paragraph("DEVELOPMENT | ROTATIONAL DEPTH", styles["TableCellMuted"])],
     ]
 
-    t_squad = Table(squad_table_data, colWidths=[110, 24, 22, 24, 48, 85, 30, 185])
+    t_squad = Table(squad_table_data, colWidths=[130, 32, 30, 32, 70, 115, 42, 334])
     t_squad.setStyle(TableStyle([
         ("BACKGROUND", (0, 0), (-1, 0), COLOR_CARD_ALT),
         ("BACKGROUND", (0, 1), (-1, -1), COLOR_CARD_BG),
@@ -895,20 +941,21 @@ def build_page_10_squad_age_depth(styles: Dict[str, ParagraphStyle]) -> List[Any
     ]
 
     chart_depth = os.path.join(CHARTS_DIR, "squad_depth_age_matrix.png")
-    img_depth = Image(chart_depth, width=4.8*inch, height=2.4*inch) if os.path.exists(chart_depth) else Paragraph("Missing Depth Chart", styles["Body"])
 
-    c1 = build_kpi_card("Average Squad Age", "27.3y", "Balanced Overall Average", styles, width=115)
-    c2 = build_kpi_card("Oldest Position", "DM (33.0y)", "Pedro Capó (33)", styles, width=115)
-    c3 = build_kpi_card("Youngest Position", "RB (20.0y)", "Shivaldo Singh (20)", styles, width=115)
-    c4 = build_kpi_card("Strongest Depth", "CB (5 Players)", "Deep Domestic & Asian Spine", styles, width=115)
-    c5 = build_kpi_card("Weakest Depth", "RB (1 Player)", "Urgent Specialist Need", styles, width=115)
+    c1 = build_kpi_card("Average Squad Age", "27.3y", "Balanced Overall Average", styles, width=150)
+    c2 = build_kpi_card("Oldest Position", "DM (33.0y)", "Pedro Capó (33)", styles, width=150)
+    c3 = build_kpi_card("Youngest Position", "RB (20.0y)", "Shivaldo Singh (20)", styles, width=150)
+    c4 = build_kpi_card("Strongest Depth", "CB (5 Players)", "Deep Domestic & Asian Spine", styles, width=150)
+    c5 = build_kpi_card("Weakest Depth", "RB (1 Player)", "Urgent Specialist Need", styles, width=150)
 
-    card_row = Table([[c1, c2, c3, c4, c5]], colWidths=[125]*5)
+    card_row = Table([[c1, c2, c3, c4, c5]], colWidths=[157]*5)
     card_row.setStyle(TableStyle([
         ("VALIGN", (0, 0), (-1, -1), "MIDDLE"),
         ("LEFTPADDING", (0, 0), (-1, -1), 0),
         ("RIGHTPADDING", (0, 0), (-1, -1), 0),
     ]))
+    story.append(card_row)
+    story.append(Spacer(1, 8))
 
     depth_obs = [
         Paragraph("<b>POSITIONAL RISK EVALUATION:</b>", styles["CardTitle"]),
@@ -918,9 +965,19 @@ def build_page_10_squad_age_depth(styles: Dict[str, ParagraphStyle]) -> List[Any
                   "<b>3. Heavy Centre-Back Insurance:</b> With 5 senior CBs, defensive central depth is insulated against domestic suspension cycles.", styles["Body"]),
     ]
 
-    right_col = Table([[card_row], [Spacer(1, 8)], [Table([[depth_obs]], colWidths=[380], style=[("BACKGROUND", (0, 0), (-1, -1), COLOR_CARD_BG), ("BOX", (0, 0), (-1, -1), 1, COLOR_BORDER), ("TOPPADDING", (0, 0), (-1, -1), 6), ("BOTTOMPADDING", (0, 0), (-1, -1), 6), ("LEFTPADDING", (0, 0), (-1, -1), 8), ("RIGHTPADDING", (0, 0), (-1, -1), 8)])]])
+    obs_table = Table([[depth_obs]], colWidths=[385])
+    obs_table.setStyle(TableStyle([
+        ("BACKGROUND", (0, 0), (-1, -1), COLOR_CARD_BG),
+        ("BOX", (0, 0), (-1, -1), 1, COLOR_BORDER),
+        ("TOPPADDING", (0, 0), (-1, -1), 8),
+        ("BOTTOMPADDING", (0, 0), (-1, -1), 8),
+        ("LEFTPADDING", (0, 0), (-1, -1), 10),
+        ("RIGHTPADDING", (0, 0), (-1, -1), 10),
+    ]))
 
-    main_layout = Table([[img_depth, right_col]], colWidths=[395, 390])
+    img_depth = Image(chart_depth, width=5.2*inch, height=2.6*inch) if os.path.exists(chart_depth) else Paragraph("Missing Depth Chart", styles["Body"])
+
+    main_layout = Table([[img_depth, obs_table]], colWidths=[395, 390])
     main_layout.setStyle(TableStyle([
         ("VALIGN", (0, 0), (-1, -1), "TOP"),
         ("LEFTPADDING", (0, 0), (-1, -1), 0),
@@ -1038,7 +1095,7 @@ def build_page_12_squad_gaps(styles: Dict[str, ParagraphStyle]) -> List[Any]:
         ],
     ]
 
-    t_gaps = Table(gaps_data, colWidths=[40, 75, 75, 290, 275])
+    t_gaps = Table(gaps_data, colWidths=[55, 85, 85, 280, 280])
     t_gaps.setStyle(TableStyle([
         ("BACKGROUND", (0, 0), (-1, 0), COLOR_CARD_ALT),
         ("BACKGROUND", (0, 1), (-1, -1), COLOR_CARD_BG),
