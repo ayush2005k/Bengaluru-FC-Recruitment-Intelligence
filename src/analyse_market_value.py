@@ -127,13 +127,31 @@ def run_market_value_analysis() -> Dict[str, Any]:
     print("\n--- SAMPLE PLAYER PATHWAYS ---")
     for _, r in df_pathways.head(5).iterrows():
         print(f"  {r['player_name']}: {r['career_pathway']} [Tenure: {r['years_at_bengaluru']} yrs]")
-    print("------------------------------------------------\n")
+    summary = {
+        "dataset_version": "data/final/player_market_values.csv & data/final/player_pathways.csv",
+        "tracked_players_count": len(df_growth),
+        "top_value_growth_players": top_gainers[[
+            "player_id", "player_name", "initial_formatted", "current_formatted", "peak_formatted", "growth_percentage", "absolute_growth_eur"
+        ]].to_dict(orient="records"),
+        "top_value_decline_players": top_declines[[
+            "player_id", "player_name", "initial_formatted", "current_formatted", "peak_formatted", "growth_percentage", "absolute_growth_eur"
+        ]].to_dict(orient="records"),
+        "pathways_tracked_count": len(df_pathways),
+    }
+
+    os.makedirs("reports", exist_ok=True)
+    import json
+    with open(os.path.join("reports", "market_value_summary.json"), "w", encoding="utf-8") as f:
+        json.dump(summary, f, indent=2, ensure_ascii=False)
+    with open(os.path.join("data", "processed", "market_value_summary.json"), "w", encoding="utf-8") as f:
+        json.dump(summary, f, indent=2, ensure_ascii=False)
 
     return {
         "growth": df_growth,
         "pathways": df_pathways,
         "top_gainers": top_gainers,
         "top_declines": top_declines,
+        "summary": summary,
     }
 
 

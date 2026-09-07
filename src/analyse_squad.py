@@ -253,11 +253,41 @@ def run_squad_analysis() -> Dict[str, Any]:
         print(f"[{g['priority'].upper()}] {g['risk_type']} - {g['position']}: {g['reason']}")
     print("----------------------------------------\n")
 
+    summary = {
+        "dataset_version": "data/final/squads.csv (2024/25)",
+        "squad_size": len(df_classified),
+        "average_squad_age": age_stats["average_squad_age"],
+        "oldest_position": {"position": age_stats["oldest_position"][0], "age": age_stats["oldest_position"][1]},
+        "youngest_position": {"position": age_stats["youngest_position"][0], "age": age_stats["youngest_position"][1]},
+        "strongest_depth": {"position": depth_stats["strongest_depth"][0], "count": depth_stats["strongest_depth"][1]},
+        "weakest_depth": {"position": depth_stats["weakest_depth"][0], "count": depth_stats["weakest_depth"][1]},
+        "age_groups": age_stats["age_groups"].to_dict(),
+        "depth_counts": depth_stats["depth_counts"].to_dict(),
+        "player_classifications": {
+            "key_players": df_classified[df_classified["classifications"].str.contains("KEY PLAYER")]["name"].tolist(),
+            "core_players": df_classified[df_classified["classifications"].str.contains("CORE PLAYER")]["name"].tolist(),
+            "high_upside": df_classified[df_classified["classifications"].str.contains("HIGH UPSIDE")]["name"].tolist(),
+            "veterans": df_classified[df_classified["classifications"].str.contains("VETERAN")]["name"].tolist(),
+            "replacement_risks": df_classified[df_classified["classifications"].str.contains("REPLACEMENT RISK")]["name"].tolist(),
+            "development": df_classified[df_classified["classifications"].str.contains("DEVELOPMENT")]["name"].tolist(),
+            "depth": df_classified[df_classified["classifications"].str.contains("DEPTH")]["name"].tolist(),
+        },
+        "gaps": gaps,
+    }
+
+    os.makedirs("reports", exist_ok=True)
+    import json
+    with open(os.path.join("reports", "squad_analytics_summary.json"), "w", encoding="utf-8") as f:
+        json.dump(summary, f, indent=2, ensure_ascii=False)
+    with open(os.path.join("data", "processed", "squad_analytics_summary.json"), "w", encoding="utf-8") as f:
+        json.dump(summary, f, indent=2, ensure_ascii=False)
+
     return {
         "squad": df_classified,
         "age_stats": age_stats,
         "depth_stats": depth_stats,
         "gaps": gaps,
+        "summary": summary,
     }
 
 

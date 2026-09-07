@@ -1,0 +1,63 @@
+{
+  "dataset_version": "data/final/transfers.csv",
+  "total_transfers": 106,
+  "external_transfers": 101,
+  "internal_promotions": 5,
+  "total_arrivals": 53,
+  "total_departures": 42,
+  "total_loans_in": 1,
+  "total_loans_out": 5,
+  "total_external_arrivals": 54,
+  "external_average_signing_age": 27.0,
+  "internal_promotions_average_age": 20.0,
+  "overall_inbound_average_age": 26.4,
+  "signing_age_distribution": {
+    "Under 21": 6,
+    "21-23": 5,
+    "24-26": 23,
+    "27-29": 3,
+    "30+": 17
+  },
+  "domestic_percentage": 57.4,
+  "foreign_percentage": 42.6,
+  "free_transfers_external_count": 50,
+  "free_transfers_external_pct": 92.6,
+  "undisclosed_external_count": 4,
+  "transfer_mechanisms": {
+    "Free": 84,
+    "Undisclosed": 12,
+    "Free (Youth Promotion)": 5,
+    "Released": 3,
+    "Unknown": 1,
+    "₹30 lakh (US$31,000)": 1
+  },
+  "transfers_per_season": {
+    "2020/21": 26,
+    "2021/22": 20,
+    "2022/23": 22,
+    "2023/24": 18,
+    "2024/25": 20
+  },
+  "position_distribution": {
+    "broad": {
+      "Defender": 20,
+      "Forward": 15,
+      "Midfielder": 13,
+      "Goalkeeper": 6
+    },
+    "detailed": {
+      "Defender": 20,
+      "Forward": 15,
+      "Midfielder": 13,
+      "Goalkeeper": 6
+    }
+  },
+  "identity": {
+    "average_signing_age": 27.0,
+    "primary_position": "Defender",
+    "free_agent_percentage": 92.6,
+    "domestic_percentage": 57.4,
+    "foreign_percentage": 42.6,
+    "narrative": "Bengaluru FC's recruitment identity across the 2020/21–2024/25 cycle is characterized by an overwhelming reliance on free agent transfers (92.6% of external arrivals) with an average signing age of 27.0 years. The primary focus of recruitment has been the Defender department (20 signings). The squad recruitment balance leans domestic (57.4% domestic vs 42.6% foreign), utilizing overseas slots almost exclusively for experienced, central spine veterans (Spain, Australia, Brazil) while acquiring domestic talent through I-League pathways and rival ISL clubs."
+  }
+}

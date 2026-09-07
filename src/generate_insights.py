@@ -27,49 +27,55 @@ logger = logging.getLogger(__name__)
 
 
 def get_six_key_conclusions() -> List[Dict[str, Any]]:
-    """Generates the 6 executive conclusions backed by quantitative data."""
+    """Generates the 6 executive conclusions backed by quantitative data from the final 106-transfer dataset."""
     return [
         {
             "id": "01",
             "title": "Recruitment Identity: Opportunistic & Free-Agent Centric",
-            "insight": "Bengaluru FC operates predominantly as an opportunistic free-agent acquirer, utilizing domestic talent swaps and free transfers to sustain roster turnover rather than fee expenditure.",
-            "supporting_data": "89.7% of all inbound recruits arrived as free transfers or youth promotions; 55.0% domestic market share; 45.0% overseas central spine.",
-            "confidence_level": "Very High (Verified across 122 transfer events)",
+            "finding": "Bengaluru FC operates predominantly as an opportunistic free-agent acquirer, utilizing zero-fee acquisitions, contract expirations, and targeted domestic transitions rather than transfer fee expenditures.",
+            "supporting_metric": "92.6% of external arrivals (50 of 54) were acquired on free transfers with €0 net fees; 57.4% domestic recruitment share vs 42.6% foreign recruitment across 101 external transfer events (106 total events).",
+            "strategic_implication": "Maximizes wage flexibility and minimizes capital risk, but necessitates rigorous medical, positional, and motivational vetting given the lack of resale value recoupment on aging recruits.",
+            "confidence_level": "Very High (Verified across 106 master transfer events, 2020/21–2024/25)",
         },
         {
             "id": "02",
-            "title": "Primary Recruitment Age: Bimodal Senior & Prime Focus",
-            "insight": "Recruitment focuses heavily on two distinct windows: prime domestic recruits (ages 24-26, 35.3%) and seasoned foreign leaders (ages 30+, 32.4%), with limited intermediate 27-29 signings.",
-            "supporting_data": "Average signing age of 26.8 years; 24 signings in the 24-26 band; 22 signings in the 30+ bracket.",
-            "confidence_level": "High (Verified DOB records)",
+            "title": "Primary Recruitment Age Profile: Bimodal Distribution",
+            "finding": "Inbound external recruitment is heavily bifurcated between prime domestic foundation recruits (ages 24–26) and seasoned foreign leaders (ages 30+), with minimal signings in the intermediate 27–29 band.",
+            "supporting_metric": "Average external signing age of 27.0 years; 23 external signings (42.6%) in the 24–26 band; 17 external signings (31.5%) in the 30+ bracket; only 3 signings (5.6%) in the 27–29 window.",
+            "strategic_implication": "Creates an age barbell where immediate leadership relies on players near or past physical prime, while prime domestic players carry high performance burdens without intermediate-age mentors.",
+            "confidence_level": "High (Verified DOB records across 54 external arrivals)",
         },
         {
             "id": "03",
-            "title": "Strongest Squad Area: Central Defensive Foundation & GK",
-            "insight": "The central spine remains the club's sturdiest defensive platform, offering significant tactical experience and aerial dominance.",
-            "supporting_data": "Centre Back depth of 5 players (Jovanović, Bheke, Sana Singh, Robin Yadav, Clarence); Gurpreet Singh Sandhu (130+ appearances) anchoring goal.",
-            "confidence_level": "High (Positional depth metrics)",
+            "title": "Strongest Squad Area: Central Defensive Foundation & Goalkeeping",
+            "finding": "Central defense and goalkeeping represent the squad's most resilient tactical platform, anchored by veteran experience, aerial dominance, and international pedigree.",
+            "supporting_metric": "5 Centre Backs in active squad (Aleksandar Jovanović, Rahul Bheke, Chinglensana Singh, Robin Yadav, Clarence Fernandes) backed by Gurpreet Singh Sandhu (130+ ISL caps, 8 seasons tenure).",
+            "strategic_implication": "Provides defensive solidity to sustain competitive matches, but requires athletic protection against rapid counter-attacks due to an average central defensive age of 30.2 years.",
+            "confidence_level": "High (Positional depth & squad metrics)",
         },
         {
             "id": "04",
-            "title": "Young Core: Academy Progression Anchor",
-            "insight": "Bengaluru FC possesses an elite domestic spine under age 25 capable of leading the club for the next 5-7 seasons if supported by appropriate retention contracts.",
-            "supporting_data": "Suresh Singh (24, 100+ caps), Naorem Roshan Singh (25, national team starter), Sivasakthi Narayanan (23), and Vinith Venkatesh (19, breakthrough creator).",
-            "confidence_level": "High (Squad tracking & age analysis)",
+            "title": "Young Core: Academy Pathway Progression",
+            "finding": "Bengaluru FC has cultivated an exceptional domestic development spine that has successfully progressed from academy/youth ranks to senior national team prominence, delivering a sustainable internal pipeline.",
+            "supporting_metric": "5 recent internal first-team promotions (Robin Yadav, Ankith Padmanabhan, Harsh Patre, Chingambam Shivaldo Singh, Monirul Molla) alongside established starters Naorem Roshan Singh (promoted 2020), Sivasakthi Narayanan (promoted 2021), and Suresh Singh Wangjam (100+ club appearances).",
+            "strategic_implication": "Validates internal academy investment and reduces dependency on expensive domestic free-agent bidding wars; long-term contract extensions must be prioritized for these high-ceiling assets.",
+            "confidence_level": "High (Squad tracking & academy pathways analysis)",
         },
         {
             "id": "05",
-            "title": "Highest Upside Asset: Domestic Midfield & Full-Back Assets",
-            "insight": "Strategic development within Bengaluru FC's environment delivers exceptional economic appreciation, particularly in domestic midfield and full-back sectors.",
-            "supporting_data": "Naorem Roshan Singh market value grew +900.0% (€25k to €250k); Suresh Singh Wangjam grew +500.0% (€50k to €300k); Sivasakthi grew +700.0% (€25k to €200k).",
-            "confidence_level": "Very High (Transfermarkt longitudinal valuation)",
+            "title": "Highest Upside Asset Appreciation: Domestic Development",
+            "finding": "Player development within Bengaluru FC's structure generates exponential economic appreciation, particularly among domestic midfielders and full-backs entering the club under age 22.",
+            "supporting_metric": "Naorem Roshan Singh market value grew +900.0% (€25k to €250k, peak €275k); Suresh Singh Wangjam grew +500.0% (€50k to €300k); Sivasakthi Narayanan grew +700.0% (€25k to €200k); Udanta Singh grew +800.0% (€25k to €225k, peak €325k).",
+            "strategic_implication": "Confirms that value creation is concentrated in domestic U23 talent rather than foreign signings (which exhibit steep age-curve depreciation of -20% to -71%); reinforces the economic rationale for early recruitment of domestic talents.",
+            "confidence_level": "Very High (Transfermarkt longitudinal valuation analysis)",
         },
         {
             "id": "06",
             "title": "Recommended Recruitment Strategy: Offensive Spine Succession",
-            "insight": "Bengaluru FC must prioritize an immediate, aggressive succession plan for its aging forward line and creative midfielder to prevent severe goalscoring and chance-creation voids.",
-            "supporting_data": "Key starting attackers are aged 34-40 (Chhetri 40, Díaz 34, Noguera 35, Méndez 34); accounted for over 65% of attacking output.",
-            "confidence_level": "Critical Priority (Immediate action needed before 2026/27)",
+            "finding": "The club faces an impending, acute succession cliff in its offensive core, where primary goalscorers and creators are in the late twilight of their careers.",
+            "supporting_metric": "Starting attackers and playmakers average 35.8 years of age (Sunil Chhetri 40, Jorge Pereyra Díaz 34, Alberto Noguera 35, Édgar Méndez 34), accounting for over 65% of offensive production.",
+            "strategic_implication": "The club must execute a proactive, multi-window succession campaign targeting a high-pressing U25 dynamic striker and a prime-age creative midfielder (No. 8/10 hybrid) to prevent severe goalscoring and chance-creation voids upon veteran departures.",
+            "confidence_level": "Critical Priority (Immediate action needed before 2025/26 - 2026/27)",
         },
     ]
 
@@ -335,8 +341,9 @@ def run_insights_generation() -> Dict[str, Any]:
     print("\n--- SIX KEY EXECUTIVE CONCLUSIONS ---")
     for c in conclusions:
         print(f"[{c['id']}] {c['title']} ({c['confidence_level']})")
-        print(f"    Insight: {c['insight']}")
-        print(f"    Data:    {c['supporting_data']}\n")
+        print(f"    Finding:        {c['finding']}")
+        print(f"    Supporting:     {c['supporting_metric']}")
+        print(f"    Strategic Imp.: {c['strategic_implication']}\n")
 
     print("--- TOP SHORTLISTED TARGETS (100-PT FIT SCORE) ---")
     for p in shortlist:
@@ -349,11 +356,27 @@ def run_insights_generation() -> Dict[str, Any]:
             print(f"  - {it}")
     print("---------------------------------------\n")
 
+    summary = {
+        "dataset_version": "data/final/transfers.csv (106 records, 2020/21–2024/25)",
+        "conclusions": conclusions,
+        "profiles": profiles,
+        "shortlist": shortlist,
+        "strategy": strategy,
+    }
+
+    os.makedirs("reports", exist_ok=True)
+    import json
+    with open(os.path.join("reports", "executive_insights.json"), "w", encoding="utf-8") as f:
+        json.dump(summary, f, indent=2, ensure_ascii=False)
+    with open(os.path.join("data", "processed", "executive_insights.json"), "w", encoding="utf-8") as f:
+        json.dump(summary, f, indent=2, ensure_ascii=False)
+
     return {
         "conclusions": conclusions,
         "profiles": profiles,
         "shortlist": shortlist,
         "strategy": strategy,
+        "summary": summary,
     }
 
 

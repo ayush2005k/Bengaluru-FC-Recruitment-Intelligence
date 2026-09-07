@@ -1,0 +1,99 @@
+{
+  "dataset_version": "data/final/player_market_values.csv & data/final/player_pathways.csv",
+  "tracked_players_count": 13,
+  "top_value_growth_players": [
+    {
+      "player_id": "p03",
+      "player_name": "Suresh Singh Wangjam",
+      "initial_formatted": "€50k",
+      "current_formatted": "€300k",
+      "peak_formatted": "€300k",
+      "growth_percentage": 500.0,
+      "absolute_growth_eur": 250000.0
+    },
+    {
+      "player_id": "p04",
+      "player_name": "Naorem Roshan Singh",
+      "initial_formatted": "€25k",
+      "current_formatted": "€250k",
+      "peak_formatted": "€275k",
+      "growth_percentage": 900.0,
+      "absolute_growth_eur": 225000.0
+    },
+    {
+      "player_id": "p26",
+      "player_name": "Ashique Kuruniyan",
+      "initial_formatted": "€100k",
+      "current_formatted": "€300k",
+      "peak_formatted": "€300k",
+      "growth_percentage": 200.0,
+      "absolute_growth_eur": 200000.0
+    },
+    {
+      "player_id": "p27",
+      "player_name": "Udanta Singh",
+      "initial_formatted": "€25k",
+      "current_formatted": "€225k",
+      "peak_formatted": "€325k",
+      "growth_percentage": 800.0,
+      "absolute_growth_eur": 200000.0
+    },
+    {
+      "player_id": "p05",
+      "player_name": "Sivasakthi Narayanan",
+      "initial_formatted": "€25k",
+      "current_formatted": "€200k",
+      "peak_formatted": "€200k",
+      "growth_percentage": 700.0,
+      "absolute_growth_eur": 175000.0
+    }
+  ],
+  "top_value_decline_players": [
+    {
+      "player_id": "p16",
+      "player_name": "Cleiton Silva",
+      "initial_formatted": "€350k",
+      "current_formatted": "€100k",
+      "peak_formatted": "€350k",
+      "growth_percentage": -71.4,
+      "absolute_growth_eur": -250000.0
+    },
+    {
+      "player_id": "p02",
+      "player_name": "Sunil Chhetri",
+      "initial_formatted": "€175k",
+      "current_formatted": "€50k",
+      "peak_formatted": "€175k",
+      "growth_percentage": -71.4,
+      "absolute_growth_eur": -125000.0
+    },
+    {
+      "player_id": "p15",
+      "player_name": "Javi Hernández",
+      "initial_formatted": "€350k",
+      "current_formatted": "€250k",
+      "peak_formatted": "€350k",
+      "growth_percentage": -28.6,
+      "absolute_growth_eur": -100000.0
+    },
+    {
+      "player_id": "p17",
+      "player_name": "Roy Krishna",
+      "initial_formatted": "€500k",
+      "current_formatted": "€400k",
+      "peak_formatted": "€500k",
+      "growth_percentage": -20.0,
+      "absolute_growth_eur": -100000.0
+    },
+    {
+      "player_id": "p08",
+      "player_name": "Édgar Méndez",
+      "initial_formatted": "€500k",
+      "current_formatted": "€400k",
+      "peak_formatted": "€500k",
+      "growth_percentage": -20.0,
+      "absolute_growth_eur": -100000.0
+    }
+  ],
+  "pathways_tracked_count": 14
+}

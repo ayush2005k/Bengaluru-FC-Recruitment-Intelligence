@@ -1,0 +1,348 @@
+{
+  "dataset_version": "data/final/transfers.csv (106 records, 2020/21–2024/25)",
+  "conclusions": [
+    {
+      "id": "01",
+      "title": "Recruitment Identity: Opportunistic & Free-Agent Centric",
+      "finding": "Bengaluru FC operates predominantly as an opportunistic free-agent acquirer, utilizing zero-fee acquisitions, contract expirations, and targeted domestic transitions rather than transfer fee expenditures.",
+      "supporting_metric": "92.6% of external arrivals (50 of 54) were acquired on free transfers with €0 net fees; 57.4% domestic recruitment share vs 42.6% foreign recruitment across 101 external transfer events (106 total events).",
+      "strategic_implication": "Maximizes wage flexibility and minimizes capital risk, but necessitates rigorous medical, positional, and motivational vetting given the lack of resale value recoupment on aging recruits.",
+      "confidence_level": "Very High (Verified across 106 master transfer events, 2020/21–2024/25)"
+    },
+    {
+      "id": "02",
+      "title": "Primary Recruitment Age Profile: Bimodal Distribution",
+      "finding": "Inbound external recruitment is heavily bifurcated between prime domestic foundation recruits (ages 24–26) and seasoned foreign leaders (ages 30+), with minimal signings in the intermediate 27–29 band.",
+      "supporting_metric": "Average external signing age of 27.0 years; 23 external signings (42.6%) in the 24–26 band; 17 external signings (31.5%) in the 30+ bracket; only 3 signings (5.6%) in the 27–29 window.",
+      "strategic_implication": "Creates an age barbell where immediate leadership relies on players near or past physical prime, while prime domestic players carry high performance burdens without intermediate-age mentors.",
+      "confidence_level": "High (Verified DOB records across 54 external arrivals)"
+    },
+    {
+      "id": "03",
+      "title": "Strongest Squad Area: Central Defensive Foundation & Goalkeeping",
+      "finding": "Central defense and goalkeeping represent the squad's most resilient tactical platform, anchored by veteran experience, aerial dominance, and international pedigree.",
+      "supporting_metric": "5 Centre Backs in active squad (Aleksandar Jovanović, Rahul Bheke, Chinglensana Singh, Robin Yadav, Clarence Fernandes) backed by Gurpreet Singh Sandhu (130+ ISL caps, 8 seasons tenure).",
+      "strategic_implication": "Provides defensive solidity to sustain competitive matches, but requires athletic protection against rapid counter-attacks due to an average central defensive age of 30.2 years.",
+      "confidence_level": "High (Positional depth & squad metrics)"
+    },
+    {
+      "id": "04",
+      "title": "Young Core: Academy Pathway Progression",
+      "finding": "Bengaluru FC has cultivated an exceptional domestic development spine that has successfully progressed from academy/youth ranks to senior national team prominence, delivering a sustainable internal pipeline.",
+      "supporting_metric": "5 recent internal first-team promotions (Robin Yadav, Ankith Padmanabhan, Harsh Patre, Chingambam Shivaldo Singh, Monirul Molla) alongside established starters Naorem Roshan Singh (promoted 2020), Sivasakthi Narayanan (promoted 2021), and Suresh Singh Wangjam (100+ club appearances).",
+      "strategic_implication": "Validates internal academy investment and reduces dependency on expensive domestic free-agent bidding wars; long-term contract extensions must be prioritized for these high-ceiling assets.",
+      "confidence_level": "High (Squad tracking & academy pathways analysis)"
+    },
+    {
+      "id": "05",
+      "title": "Highest Upside Asset Appreciation: Domestic Development",
+      "finding": "Player development within Bengaluru FC's structure generates exponential economic appreciation, particularly among domestic midfielders and full-backs entering the club under age 22.",
+      "supporting_metric": "Naorem Roshan Singh market value grew +900.0% (€25k to €250k, peak €275k); Suresh Singh Wangjam grew +500.0% (€50k to €300k); Sivasakthi Narayanan grew +700.0% (€25k to €200k); Udanta Singh grew +800.0% (€25k to €225k, peak €325k).",
+      "strategic_implication": "Confirms that value creation is concentrated in domestic U23 talent rather than foreign signings (which exhibit steep age-curve depreciation of -20% to -71%); reinforces the economic rationale for early recruitment of domestic talents.",
+      "confidence_level": "Very High (Transfermarkt longitudinal valuation analysis)"
+    },
+    {
+      "id": "06",
+      "title": "Recommended Recruitment Strategy: Offensive Spine Succession",
+      "finding": "The club faces an impending, acute succession cliff in its offensive core, where primary goalscorers and creators are in the late twilight of their careers.",
+      "supporting_metric": "Starting attackers and playmakers average 35.8 years of age (Sunil Chhetri 40, Jorge Pereyra Díaz 34, Alberto Noguera 35, Édgar Méndez 34), accounting for over 65% of offensive production.",
+      "strategic_implication": "The club must execute a proactive, multi-window succession campaign targeting a high-pressing U25 dynamic striker and a prime-age creative midfielder (No. 8/10 hybrid) to prevent severe goalscoring and chance-creation voids upon veteran departures.",
+      "confidence_level": "Critical Priority (Immediate action needed before 2025/26 - 2026/27)"
+    }
+  ],
+  "profiles": [
+    {
+      "profile_name": "Dynamic Striker / Centre-Forward",
+      "priority": "High",
+      "gap_addressed": "Succession Risk (Sunil Chhetri 40, Jorge Pereyra Díaz 34)",
+      "age_range": "20 - 25 years",
+      "preferred_foot": "Either",
+      "market_value_range": "€150k - €350k",
+      "experience_level": "2+ years professional senior football (ISL / I-League)",
+      "development_potential": "High (National Team starter ceiling)",
+      "required_attributes": [
+        "High Pressing Volume & Defensive Workrate",
+        "Clinical Box Finishing & Anticipation",
+        "Transitional Burst & Acceleration",
+        "Aerial Target Ability in Box",
+        "Intelligent Channel-Running"
+      ]
+    },
+    {
+      "profile_name": "Creative Midfielder / No. 8 & 10 Hybrid",
+      "priority": "High",
+      "gap_addressed": "Age & Creative Succession Risk (Alberto Noguera 35)",
+      "age_range": "22 - 27 years",
+      "preferred_foot": "Right / Left",
+      "market_value_range": "€200k - €450k",
+      "experience_level": "Established top-tier creator or emerging foreign playmaker",
+      "development_potential": "High (3-5 season prime runway)",
+      "required_attributes": [
+        "Key Passing & Progressive Through-Balls",
+        "Ball Retention & Half-Turn Under Pressure",
+        "Set-Piece Delivery & Long Shooting",
+        "Spatial Awareness Between Lines",
+        "Tempo Control & Passing Accuracy (>82%)"
+      ]
+    },
+    {
+      "profile_name": "Ball-Playing Centre Back",
+      "priority": "Medium",
+      "gap_addressed": "Depth & Recovery Pace Risk (Jovanović 35, Bheke 33)",
+      "age_range": "21 - 26 years",
+      "preferred_foot": "Left Preferred (or strong Two-Footed)",
+      "market_value_range": "€150k - €300k",
+      "experience_level": "Regular starter in competitive domestic or overseas league",
+      "development_potential": "Moderate to High",
+      "required_attributes": [
+        "Progressive Ground Passes into Midfield",
+        "High Recovery Speed & 1v1 Channel Defending",
+        "Aerial Duel Success Rate (>65%)",
+        "Calmness in High-Press Build-up",
+        "Tactical Box Defending"
+      ]
+    },
+    {
+      "profile_name": "Attacking Full-Back (Right/Left Dynamic)",
+      "priority": "Medium",
+      "gap_addressed": "Position Depth Risk (Over-reliance on Roshan Singh)",
+      "age_range": "21 - 26 years",
+      "preferred_foot": "Right or Left",
+      "market_value_range": "€100k - €250k",
+      "experience_level": "ISL / I-League proven starter",
+      "development_potential": "High",
+      "required_attributes": [
+        "Sustained High-Intensity Sprinting Overlaps",
+        "Accurate Low & Driven Crossing",
+        "1v1 Defensive Containment",
+        "Inverted Build-up Passing Capability"
+      ]
+    },
+    {
+      "profile_name": "U23 Sweeper Goalkeeper",
+      "priority": "Low",
+      "gap_addressed": "Long-Term Succession Planning (Gurpreet Singh Sandhu 32)",
+      "age_range": "19 - 23 years",
+      "preferred_foot": "Right",
+      "market_value_range": "€50k - €150k",
+      "experience_level": "Elite academy / National youth caps",
+      "development_potential": "Very High (Future India No. 1 candidate)",
+      "required_attributes": [
+        "Reflex Shot Stopping & Close-Range Parries",
+        "Box Command & Aerial Claiming",
+        "Comfortable Sweeping Outside Penalty Area",
+        "Accurate Long-Range Foot Distribution"
+      ]
+    }
+  ],
+  "shortlist": [
+    {
+      "name": "David Lalhlansanga",
+      "age": 23,
+      "club": "East Bengal FC",
+      "nationality": "India",
+      "position": "Striker",
+      "height": "1.76m",
+      "preferred_foot": "Right",
+      "market_value": "€175k",
+      "target_profile": "Dynamic Striker / Centre-Forward",
+      "scores": {
+        "age_fit": 98,
+        "position_fit": 95,
+        "market_value_fit": 90,
+        "performance_fit": 88,
+        "style_fit": 90,
+        "potential_fit": 92
+      },
+      "playing_style": "Explosive, high-pressing forward with quick trigger finishing inside the box and relentless energy off the ball.",
+      "strengths": [
+        "Instinctive first-touch finishing",
+        "High pressing turnover volume",
+        "Channel running",
+        "Pace in behind defensive lines"
+      ],
+      "weaknesses": [
+        "Aerial duels against physically towering CBs",
+        "Link-up play with back to goal under physical pressure"
+      ],
+      "why_fits": "Direct succession solution for Sunil Chhetri's pressing and domestic goal contribution; young enough to form a decade-long partnership with Sivasakthi.",
+      "risks": "Contract negotiation friction with rival Kolkata club; adapting to sustained possession phases.",
+      "alternatives": [
+        "Irfan Yadwad (Chennaiyin FC)",
+        "Parthib Gogoi (NorthEast United)"
+      ],
+      "fit_score": 92.4
+    },
+    {
+      "name": "Vibin Mohanan",
+      "age": 21,
+      "club": "Kerala Blasters FC",
+      "nationality": "India",
+      "position": "Central / Attacking Midfielder",
+      "height": "1.74m",
+      "preferred_foot": "Right",
+      "market_value": "€225k",
+      "target_profile": "Creative Midfielder / No. 8 & 10 Hybrid",
+      "scores": {
+        "age_fit": 96,
+        "position_fit": 92,
+        "market_value_fit": 88,
+        "performance_fit": 89,
+        "style_fit": 92,
+        "potential_fit": 96
+      },
+      "playing_style": "Deep-lying playmaker and progressive carrier with exceptional tactical vision, line-breaking passes, and poise under pressure.",
+      "strengths": [
+        "Progressive line-breaking passing",
+        "Scanning and spatial awareness",
+        "First-touch orientation",
+        "Ball retention"
+      ],
+      "weaknesses": [
+        "Defensive tackling robustness",
+        "Upper body strength in shoulder-to-shoulder duels"
+      ],
+      "why_fits": "Solves Bengaluru's upcoming creative succession once Noguera leaves; pairs seamlessly alongside defensive anchor Suresh Singh Wangjam.",
+      "risks": "Rivalry buyout premium; physical conditioning over 90 minutes in high-tempo fixtures.",
+      "alternatives": [
+        "Brison Fernandes (FC Goa)",
+        "Ayush Adhikari (Chennaiyin FC)"
+      ],
+      "fit_score": 92.0
+    },
+    {
+      "name": "Muhammed Sanan",
+      "age": 20,
+      "club": "Jamshedpur FC",
+      "nationality": "India",
+      "position": "Winger / Second Striker",
+      "height": "1.73m",
+      "preferred_foot": "Right",
+      "market_value": "€150k",
+      "target_profile": "High Upside Attacking Winger",
+      "scores": {
+        "age_fit": 98,
+        "position_fit": 88,
+        "market_value_fit": 92,
+        "performance_fit": 84,
+        "style_fit": 86,
+        "potential_fit": 95
+      },
+      "playing_style": "Direct, electric 1v1 dribbler with rapid acceleration, fearless take-on ability, and instinctive box arrival.",
+      "strengths": [
+        "1v1 dribbling agility",
+        "Change of pace",
+        "Off-the-cuff creativity"
+      ],
+      "weaknesses": [
+        "Defensive tracking consistency",
+        "Physical strength in duels"
+      ],
+      "why_fits": "Injects youth dynamism and vertical unpredictability out wide behind Édgar Méndez (34) and Ryan Williams (30).",
+      "risks": "Inconsistent decision-making in final third.",
+      "alternatives": [
+        "Mohammed Aimen (Kerala Blasters)",
+        "Ninthoinganba Meetei (Chennaiyin FC)"
+      ],
+      "fit_score": 90.2
+    },
+    {
+      "name": "Irfan Yadwad",
+      "age": 23,
+      "club": "Chennaiyin FC",
+      "nationality": "India",
+      "position": "Striker",
+      "height": "1.82m",
+      "preferred_foot": "Right",
+      "market_value": "€150k",
+      "target_profile": "Dynamic Striker / Centre-Forward",
+      "scores": {
+        "age_fit": 94,
+        "position_fit": 92,
+        "market_value_fit": 92,
+        "performance_fit": 84,
+        "style_fit": 86,
+        "potential_fit": 88
+      },
+      "playing_style": "Physical target striker capable of holding up play, contesting aerial knockdowns, and finishing crosses.",
+      "strengths": [
+        "Physical hold-up strength",
+        "Aerial contest presence",
+        "Direct running at defenders"
+      ],
+      "weaknesses": [
+        "Consistency in finishing conversion rate",
+        "First-phase combination passing"
+      ],
+      "why_fits": "Adds physical stature and direct aerial profile to diversify BFC's attacking combinations.",
+      "risks": "Transition from rotational forward to primary focal point.",
+      "alternatives": [
+        "David Lalhlansanga",
+        "Manvir Singh (NorthEast United)"
+      ],
+      "fit_score": 89.5
+    },
+    {
+      "name": "Aakash Sangwan",
+      "age": 28,
+      "club": "FC Goa",
+      "nationality": "India",
+      "position": "Left Back / Centre Back",
+      "height": "1.78m",
+      "preferred_foot": "Left",
+      "market_value": "€200k",
+      "target_profile": "Attacking Full-Back & Ball-Playing Cover",
+      "scores": {
+        "age_fit": 82,
+        "position_fit": 94,
+        "market_value_fit": 86,
+        "performance_fit": 88,
+        "style_fit": 88,
+        "potential_fit": 76
+      },
+      "playing_style": "Inverted left-back and progressive passer with top-tier set-piece delivery and defensive positioning.",
+      "strengths": [
+        "Whip and curl on deliveries",
+        "Positional discipline",
+        "Progressive passes into final third"
+      ],
+      "weaknesses": [
+        "Recovery sprint speed against elite wingers",
+        "1v1 isolation out wide"
+      ],
+      "why_fits": "Provides proven ISL left-side insurance and allows Roshan Singh tactical flexibility to invert into midfield or play right back.",
+      "risks": "Contract term demands; peak age bracket without long-term resale potential.",
+      "alternatives": [
+        "Jay Gupta (FC Goa)",
+        "Bikash Yumnam (Kerala Blasters)"
+      ],
+      "fit_score": 86.5
+    }
+  ],
+  "strategy": {
+    "RETAIN": [
+      "Suresh Singh Wangjam (Central Midfield Anchor - Prime Foundation)",
+      "Naorem Roshan Singh (Left/Right Dynamic Fullback - National Starter)",
+      "Gurpreet Singh Sandhu (Goalkeeping Leadership & Box Command)",
+      "Chinglensana Singh (Domestic Central Defensive Core - Prime Age 27)"
+    ],
+    "DEVELOP": [
+      "Vinith Venkatesh (19, Breakthrough Attacking Midfielder - Target 15+ ISL Starts)",
+      "Sivasakthi Narayanan (23, Striker - Elevate to First-Choice Starting Forward)",
+      "Robin Yadav (22, Centre Back - Systematic Cup & Rotational Minutes)",
+      "Lalremtluanga Fanai & Monirul Molla (Youth Integration Pipeline)"
+    ],
+    "REPLACE": [
+      "Sunil Chhetri (40, Striker - Phased transition to advisory/super-sub role)",
+      "Alberto Noguera (35, Attacking Midfielder - Successor acquisition required)",
+      "Aleksandar Jovanović (35, Centre Back - Transition to younger athletic CB)",
+      "Jorge Pereyra Díaz (34, Striker - Transition foreign striker slot to prime-age 26-29 asset)"
+    ],
+    "RECRUIT": [
+      "Target 1: Dynamic High-Pressing U24 Striker (David Lalhlansanga / Irfan Yadwad)",
+      "Target 2: Prime Creative Midfielder / No. 8 & 10 (Vibin Mohanan)",
+      "Target 3: Athletic Ball-Playing Centre Back (Left-Footed domestic / Asian slot)",
+      "Target 4: High-Intensity Attacking Full-Back Cover"
+    ]
+  }
+}

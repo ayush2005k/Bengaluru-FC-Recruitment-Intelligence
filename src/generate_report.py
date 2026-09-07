@@ -335,13 +335,13 @@ def build_page_01_cover(styles: Dict[str, ParagraphStyle]) -> List[Any]:
     story.append(Spacer(1, 8))
     story.append(Paragraph("SCOUTING & RECRUITMENT REPORT", styles["CoverSubtitle"]))
     story.append(Spacer(1, 6))
-    story.append(Paragraph("HISTORICAL RECRUITMENT ANALYSIS & STRATEGIC SQUAD PLANNING (2020/21 – 2026/27)", styles["CoverMeta"]))
+    story.append(Paragraph("HISTORICAL RECRUITMENT ANALYSIS & STRATEGIC SQUAD PLANNING (2020/21 – 2024/25)", styles["CoverMeta"]))
     story.append(Spacer(1, 50))
 
     # Details Box
     details_data = [
         [Paragraph("<b>Prepared by:</b> Ayush Singh", styles["Body"]), Paragraph("<b>Focus Club:</b> Bengaluru FC (ISL)", styles["Body"])],
-        [Paragraph("<b>Primary Analytical Period:</b> 2020/21 – 2026/27", styles["Body"]), Paragraph("<b>Framework:</b> Gap-Driven Recruitment Engine", styles["Body"])],
+        [Paragraph("<b>Primary Analytical Period:</b> 2020/21 – 2024/25", styles["Body"]), Paragraph("<b>Framework:</b> Gap-Driven Recruitment Engine", styles["Body"])],
         [Paragraph("<b>Data Sources:</b> Wikipedia Historicals & Transfermarkt", styles["Body"]), Paragraph("<b>Data Integrity:</b> 100% Verified Non-Synthetic Data", styles["Body"])],
     ]
     t_det = Table(details_data, colWidths=[240, 240])
@@ -370,12 +370,12 @@ def build_page_02_executive_summary(styles: Dict[str, ParagraphStyle]) -> List[A
     ]
 
     # Row 1: KPI Cards
-    card1 = build_kpi_card("Seasons Analysed", "7", "2020/21 to 2026/27", styles, width=122)
-    card2 = build_kpi_card("Total Transfers", "122", "Inbound & Outbound", styles, width=122)
-    card3 = build_kpi_card("Total Arrivals", "68", "Signings & Promotions", styles, width=122)
-    card4 = build_kpi_card("Avg Signing Age", "26.8y", "Prime / Mature Median", styles, width=122)
-    card5 = build_kpi_card("Free Agent %", "89.7%", "Opportunistic Model", styles, width=122)
-    card6 = build_kpi_card("Domestic Ratio", "55.0%", "Indian Super League", styles, width=122)
+    card1 = build_kpi_card("Seasons Analysed", "5", "2020/21 to 2024/25", styles, width=122)
+    card2 = build_kpi_card("Total Transfers", "106", "101 Ext + 5 Academy", styles, width=122)
+    card3 = build_kpi_card("Total Inbound", "59", "54 Ext + 5 Academy", styles, width=122)
+    card4 = build_kpi_card("Avg Signing Age", "27.0y", "Bimodal (24-26 & 30+)", styles, width=122)
+    card5 = build_kpi_card("Free Agent %", "92.6%", "50/54 External Free", styles, width=122)
+    card6 = build_kpi_card("Domestic Ratio", "57.4%", "31 Domestic Signings", styles, width=122)
 
     kpi_table = Table([[card1, card2, card3, card4, card5, card6]], colWidths=[130]*6)
     kpi_table.setStyle(TableStyle([
@@ -412,7 +412,7 @@ def build_page_02_executive_summary(styles: Dict[str, ParagraphStyle]) -> List[A
     col1 = [
         Paragraph("<b>1. Recruitment Architecture</b>", styles["CardTitle"]),
         Spacer(1, 4),
-        Paragraph("Bengaluru FC's transfer strategy is fundamentally shaped by opportunistic free-agent contract captures and domestic swaps. With 89.7% of all signings acquired on free transfers or youth promotions, financial exposure is tightly regulated, requiring high precision in medical, tactical, and motivational vetting.", styles["Body"]),
+        Paragraph("Bengaluru FC's transfer strategy is fundamentally shaped by opportunistic free-agent contract captures and domestic swaps. With 92.6% of external arrivals acquired on free transfers (93.2% including academy promotions), financial exposure is tightly regulated, requiring high precision in medical, tactical, and motivational vetting.", styles["Body"]),
     ]
     col2 = [
         Paragraph("<b>2. Current Squad Dynamics</b>", styles["CardTitle"]),
@@ -449,11 +449,11 @@ def build_page_03_recruitment_identity(styles: Dict[str, ParagraphStyle]) -> Lis
     ]
 
     # Metrics Row
-    m1 = build_kpi_card("Average Signing Age", "26.8 Years", "Bimodal (24-26 & 30+)", styles, width=150)
-    m2 = build_kpi_card("Top Recruited Area", "Defenders (25)", "Center Backs Priority", styles, width=150)
-    m3 = build_kpi_card("Transfer Mechanism", "Free Agent (89.7%)", "Zero Net Transfer Deficits", styles, width=150)
-    m4 = build_kpi_card("Primary Market", "Domestic (55%)", "ISL Rivals & I-League", styles, width=150)
-    m5 = build_kpi_card("Foreign Ratio", "45% (Overseas)", "Spain, Australia, Brazil", styles, width=150)
+    m1 = build_kpi_card("Average Signing Age", "27.0 Years", "Bimodal (24-26 & 30+)", styles, width=150)
+    m2 = build_kpi_card("Top Recruited Area", "Defenders (20)", "Center Backs Priority", styles, width=150)
+    m3 = build_kpi_card("Transfer Mechanism", "Free Agent (92.6%)", "Zero Net Transfer Deficits", styles, width=150)
+    m4 = build_kpi_card("Primary Market", "Domestic (57.4%)", "ISL Rivals & I-League", styles, width=150)
+    m5 = build_kpi_card("Foreign Ratio", "42.6% (Overseas)", "Spain, Australia, Brazil", styles, width=150)
 
     m_table = Table([[m1, m2, m3, m4, m5]], colWidths=[155]*5)
     m_table.setStyle(TableStyle([
@@ -469,27 +469,26 @@ def build_page_03_recruitment_identity(styles: Dict[str, ParagraphStyle]) -> Lis
         Paragraph("<b>DATA-BACKED RECRUITMENT IDENTITY VERDICT:</b>", styles["CardTitle"]),
         Spacer(1, 6),
         Paragraph(
-            "Bengaluru FC's recruitment identity across 2020/21–2026/27 is characterized by an <b>opportunistic, contract-efficient philosophy</b>. "
+            "Bengaluru FC's recruitment identity across 2020/21–2024/25 is characterized by an <b>opportunistic, contract-efficient philosophy</b>. "
             "Rather than competing on transfer fee inflation, the club capitalizes on expiring ISL contracts and proven overseas veterans with European/A-League pedigree.<br/><br/>"
             "<b>Key Identity Pillars:</b><br/>"
-            "&bull; <b>Zero Fee Dependency:</b> 89.7% of all arrivals are free agents or internal youth promotions.<br/>"
-            "&bull; <b>Age Bifurcation:</b> Recruits fall into either prime domestic acquisitions (24-26y, 35.3%) or foreign spine leaders (30+y, 32.4%).<br/>"
-            "&bull; <b>Central Spine Priority:</b> Defensive positions represent the single largest recruitment expenditure of squad spots (25 signings).<br/>"
+            "&bull; <b>Zero Fee Dependency:</b> 92.6% of external arrivals are free agents (93.2% including internal promotions).<br/>"
+            "&bull; <b>Age Bifurcation:</b> External recruits fall into either prime domestic acquisitions (24-26y, 42.6%) or foreign spine leaders (30+y, 31.5%).<br/>"
+            "&bull; <b>Central Spine Priority:</b> Defensive positions represent the single largest recruitment expenditure of squad spots (20 signings).<br/>"
             "&bull; <b>Domestic Stability:</b> Core Indian players (Suresh, Roshan, Chhetri, Gurpreet) provide high-tenure continuity, minimizing foreign turnover disruption.",
             styles["Body"]
         ),
     ]
 
     season_table_data = [
-        [Paragraph("Season", styles["TableHeader"]), Paragraph("Arr", styles["TableHeader"]), Paragraph("Dep", styles["TableHeader"]), Paragraph("Avg Age", styles["TableHeader"]), Paragraph("Primary Source", styles["TableHeader"]), Paragraph("Key Strategic Shift", styles["TableHeader"])],
-        [Paragraph("2020/21", styles["TableCellBold"]), Paragraph("13", styles["TableCell"]), Paragraph("14", styles["TableCell"]), Paragraph("27.4y", styles["TableCell"]), Paragraph("ISL / Free", styles["TableCellMuted"]), Paragraph("Transition post-Roca era; defensive restructuring", styles["TableCell"])],
-        [Paragraph("2021/22", styles["TableCellBold"]), Paragraph("10", styles["TableCell"]), Paragraph("11", styles["TableCell"]), Paragraph("26.2y", styles["TableCell"]), Paragraph("Domestic Rivals", styles["TableCellMuted"]), Paragraph("Injection of youth (Roshan, Sivasakthi emerged)", styles["TableCell"])],
+        [Paragraph("Season", styles["TableHeader"]), Paragraph("Inbound", styles["TableHeader"]), Paragraph("Outbound", styles["TableHeader"]), Paragraph("Avg Age", styles["TableHeader"]), Paragraph("Primary Source", styles["TableHeader"]), Paragraph("Key Strategic Shift", styles["TableHeader"])],
+        [Paragraph("2020/21", styles["TableCellBold"]), Paragraph("12", styles["TableCell"]), Paragraph("14", styles["TableCell"]), Paragraph("27.4y", styles["TableCell"]), Paragraph("ISL / Free", styles["TableCellMuted"]), Paragraph("Transition post-Roca era; defensive restructuring", styles["TableCell"])],
+        [Paragraph("2021/22", styles["TableCellBold"]), Paragraph("10", styles["TableCell"]), Paragraph("10", styles["TableCell"]), Paragraph("26.2y", styles["TableCell"]), Paragraph("Domestic Rivals", styles["TableCellMuted"]), Paragraph("Injection of youth (Roshan, Sivasakthi emerged)", styles["TableCell"])],
         [Paragraph("2022/23", styles["TableCellBold"]), Paragraph("12", styles["TableCell"]), Paragraph("10", styles["TableCell"]), Paragraph("28.1y", styles["TableCell"]), Paragraph("Overseas / ATKMB", styles["TableCellMuted"]), Paragraph("Title push with proven veterans (Krishna, Javi)", styles["TableCell"])],
-        [Paragraph("2023/24", styles["TableCellBold"]), Paragraph("18", styles["TableCell"]), Paragraph("0", styles["TableCell"]), Paragraph("23.6y", styles["TableCell"]), Paragraph("Academy Promotion", styles["TableCellMuted"]), Paragraph("Heavy youth promotion wave (BFC B system)", styles["TableCell"])],
-        [Paragraph("2024/25", styles["TableCellBold"]), Paragraph("12", styles["TableCell"]), Paragraph("15", styles["TableCell"]), Paragraph("28.8y", styles["TableCell"]), Paragraph("Mumbai City FC / Spain", styles["TableCellMuted"]), Paragraph("Zaragoza influence; experienced Spanish spine", styles["TableCell"])],
-        [Paragraph("2025-27", styles["TableCellBold"]), Paragraph("3", styles["TableCell"]), Paragraph("4", styles["TableCell"]), Paragraph("22.5y", styles["TableCell"]), Paragraph("Internal Academy", styles["TableCellMuted"]), Paragraph("Generational succession planning for frontline", styles["TableCell"])],
+        [Paragraph("2023/24", styles["TableCellBold"]), Paragraph("18", styles["TableCell"]), Paragraph("0", styles["TableCell"]), Paragraph("23.6y", styles["TableCell"]), Paragraph("Academy Promotion", styles["TableCellMuted"]), Paragraph("Heavy youth promotion wave (5 BFC B promotions)", styles["TableCell"])],
+        [Paragraph("2024/25", styles["TableCellBold"]), Paragraph("7", styles["TableCell"]), Paragraph("13", styles["TableCell"]), Paragraph("28.8y", styles["TableCell"]), Paragraph("Mumbai City FC / Spain", styles["TableCellMuted"]), Paragraph("Zaragoza influence; experienced Spanish spine", styles["TableCell"])],
     ]
-    t_seasons = Table(season_table_data, colWidths=[45, 25, 25, 45, 105, 145])
+    t_seasons = Table(season_table_data, colWidths=[45, 30, 30, 45, 105, 140])
     t_seasons.setStyle(TableStyle([
         ("BACKGROUND", (0, 0), (-1, 0), COLOR_CARD_ALT),
         ("BACKGROUND", (0, 1), (-1, -1), COLOR_CARD_BG),
@@ -525,14 +524,12 @@ def build_page_04_transfer_history(styles: Dict[str, ParagraphStyle]) -> List[An
 
     history_table_data = [
         [Paragraph("Season", styles["TableHeader"]), Paragraph("Arr", styles["TableHeader"]), Paragraph("Dep", styles["TableHeader"]), Paragraph("Total", styles["TableHeader"]), Paragraph("Primary Inbound Additions", styles["TableHeader"])],
-        [Paragraph("2020/21", styles["TableCellBold"]), Paragraph("13", styles["TableCell"]), Paragraph("14", styles["TableCell"]), Paragraph("27", styles["TableCell"]), Paragraph("Cleiton Silva, Pratik Chaudhari, Fran González, Opseth", styles["TableCellMuted"])],
-        [Paragraph("2021/22", styles["TableCellBold"]), Paragraph("10", styles["TableCell"]), Paragraph("11", styles["TableCell"]), Paragraph("21", styles["TableCell"]), Paragraph("Alan Costa, Bruno Ramires, Rohit Kumar, Prince Ibara", styles["TableCellMuted"])],
-        [Paragraph("2022/23", styles["TableCellBold"]), Paragraph("12", styles["TableCell"]), Paragraph("10", styles["TableCell"]), Paragraph("25", styles["TableCell"]), Paragraph("Roy Krishna, Javi Hernández, Aleksandar Jovanović, Sandesh", styles["TableCellMuted"])],
+        [Paragraph("2020/21", styles["TableCellBold"]), Paragraph("12", styles["TableCell"]), Paragraph("14", styles["TableCell"]), Paragraph("26", styles["TableCell"]), Paragraph("Cleiton Silva, Pratik Chaudhari, Fran González, Opseth", styles["TableCellMuted"])],
+        [Paragraph("2021/22", styles["TableCellBold"]), Paragraph("10", styles["TableCell"]), Paragraph("10", styles["TableCell"]), Paragraph("20", styles["TableCell"]), Paragraph("Alan Costa, Bruno Ramires, Rohit Kumar, Prince Ibara", styles["TableCellMuted"])],
+        [Paragraph("2022/23", styles["TableCellBold"]), Paragraph("12", styles["TableCell"]), Paragraph("10", styles["TableCell"]), Paragraph("22", styles["TableCell"]), Paragraph("Roy Krishna, Javi Hernández, Aleksandar Jovanović, Sandesh", styles["TableCellMuted"])],
         [Paragraph("2023/24", styles["TableCellBold"]), Paragraph("18", styles["TableCell"]), Paragraph("0", styles["TableCell"]), Paragraph("18", styles["TableCell"]), Paragraph("Ryan Williams, Keziah Veendorp, Halicharan Narzary, Robin Yadav", styles["TableCellMuted"])],
-        [Paragraph("2024/25", styles["TableCellBold"]), Paragraph("12", styles["TableCell"]), Paragraph("15", styles["TableCell"]), Paragraph("27", styles["TableCell"]), Paragraph("Jorge Pereyra Díaz, Alberto Noguera, Édgar Méndez, Rahul Bheke", styles["TableCellMuted"])],
-        [Paragraph("2025/26", styles["TableCellBold"]), Paragraph("2", styles["TableCell"]), Paragraph("1", styles["TableCell"]), Paragraph("3", styles["TableCell"]), Paragraph("Lalremtluanga Fanai, Clarence Fernandes (Youth Promotions)", styles["TableCellMuted"])],
-        [Paragraph("2026/27", styles["TableCellBold"]), Paragraph("1", styles["TableCell"]), Paragraph("0", styles["TableCell"]), Paragraph("1", styles["TableCell"]), Paragraph("Monirul Molla (Youth Integration Pipeline)", styles["TableCellMuted"])],
-        [Paragraph("Total", styles["TableHeader"]), Paragraph("68", styles["TableHeader"]), Paragraph("54", styles["TableHeader"]), Paragraph("122", styles["TableHeader"]), Paragraph("<b>Cumulative Inbound Volume: 68 | Outbound Volume: 54</b>", styles["TableCell"])],
+        [Paragraph("2024/25", styles["TableCellBold"]), Paragraph("7", styles["TableCell"]), Paragraph("13", styles["TableCell"]), Paragraph("20", styles["TableCell"]), Paragraph("Jorge Pereyra Díaz, Alberto Noguera, Édgar Méndez, Rahul Bheke", styles["TableCellMuted"])],
+        [Paragraph("Total", styles["TableHeader"]), Paragraph("59", styles["TableHeader"]), Paragraph("47", styles["TableHeader"]), Paragraph("106", styles["TableHeader"]), Paragraph("<b>Cumulative Inbound Volume: 59 | Outbound Volume: 47</b>", styles["TableCell"])],
     ]
 
     t_hist = Table(history_table_data, colWidths=[50, 24, 24, 30, 240])
@@ -772,7 +769,7 @@ def build_page_08_market_value(styles: Dict[str, ParagraphStyle]) -> List[Any]:
     # Rule Explanation Banner
     rule_text = (
         "<b>DATA INTEGRITY PRINCIPLE: MARKET VALUE &ne; TRANSFER FEE.</b> "
-        "Transfer Fee is the actual transaction price paid between clubs (Bengaluru FC has paid €0 in net fees across 89.7% of transfers). "
+        "Transfer Fee is the actual transaction price paid between clubs (Bengaluru FC has paid €0 in net fees across 92.6% of external arrivals). "
         "Market Value represents an objective economic asset valuation based on player age, contract length, form, league tier, and international status. "
         "Growth Formula: <b>((Current Value - Initial Value) / Initial Value) &times; 100</b>."
     )

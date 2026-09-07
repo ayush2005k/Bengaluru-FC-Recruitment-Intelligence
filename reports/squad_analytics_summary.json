@@ -1,0 +1,141 @@
+{
+  "dataset_version": "data/final/squads.csv (2024/25)",
+  "squad_size": 24,
+  "average_squad_age": 27.3,
+  "oldest_position": {
+    "position": "Defensive Midfielder",
+    "age": 33.0
+  },
+  "youngest_position": {
+    "position": "Right Back",
+    "age": 20.0
+  },
+  "strongest_depth": {
+    "position": "Centre Back",
+    "count": 5
+  },
+  "weakest_depth": {
+    "position": "Right Back",
+    "count": 1
+  },
+  "age_groups": {
+    "U21": 6,
+    "U23": 3,
+    "24-26": 2,
+    "27-29": 2,
+    "30+": 11
+  },
+  "depth_counts": {
+    "Goalkeeper": 3,
+    "Centre Back": 5,
+    "Left Back": 2,
+    "Right Back": 1,
+    "Defensive Midfielder": 1,
+    "Central Midfielder": 2,
+    "Attacking Midfielder": 2,
+    "Winger": 4,
+    "Striker": 4
+  },
+  "player_classifications": {
+    "key_players": [
+      "Gurpreet Singh Sandhu",
+      "Sunil Chhetri",
+      "Jorge Pereyra Díaz",
+      "Alberto Noguera"
+    ],
+    "core_players": [
+      "Naorem Roshan Singh",
+      "Édgar Méndez",
+      "Rahul Bheke",
+      "Aleksandar Jovanović",
+      "Chinglensana Singh",
+      "Pedro Capó",
+      "Ryan Williams"
+    ],
+    "high_upside": [
+      "Suresh Singh Wangjam",
+      "Sivasakthi Narayanan"
+    ],
+    "veterans": [
+      "Gurpreet Singh Sandhu",
+      "Sunil Chhetri",
+      "Jorge Pereyra Díaz",
+      "Alberto Noguera",
+      "Édgar Méndez",
+      "Rahul Bheke",
+      "Aleksandar Jovanović",
+      "Pedro Capó"
+    ],
+    "replacement_risks": [
+      "Sunil Chhetri",
+      "Alberto Noguera",
+      "Rahul Bheke",
+      "Aleksandar Jovanović"
+    ],
+    "development": [
+      "Robin Yadav",
+      "Lalremtluanga Fanai",
+      "Clarence Fernandes",
+      "Monirul Molla",
+      "Sahil Poonia",
+      "Vinith Venkatesh",
+      "Shivaldo Singh",
+      "Salam Johnson Singh"
+    ],
+    "depth": [
+      "Mohamed Salah",
+      "Halicharan Narzary",
+      "Lalthuammawia Ralte"
+    ]
+  },
+  "gaps": [
+    {
+      "risk_type": "SUCCESSION RISK",
+      "priority": "High",
+      "position": "Striker / Centre-Forward",
+      "reason": "Club icon Sunil Chhetri (40) and Jorge Pereyra Díaz (34) represent an immediate succession void with heavy goalscoring burden.",
+      "supporting_data": "2 primary starting strikers are aged 34+ (Chhetri 40, Díaz 34). Sivasakthi (23) needs an elite prime-age partner.",
+      "recommendation": "Recruit a dynamic, physical U24/U25 striker with high pressing volume and transitional finishing to build the next-generation frontline."
+    },
+    {
+      "risk_type": "AGE RISK",
+      "priority": "High",
+      "position": "Attacking Midfielder (No. 10 / No. 8)",
+      "reason": "Primary foreign creator Alberto Noguera is 35 years old. The squad lacks a prime-age creative playmaker between the lines.",
+      "supporting_data": "Primary creative maestro Alberto Noguera (35) accounts for chief chance-creation; academy prospect Vinith (19) is still developing.",
+      "recommendation": "Target a high-chance-creation central playmaker (Age 23-27) with progressive passing metrics and set-piece mastery."
+    },
+    {
+      "risk_type": "DEPTH RISK",
+      "priority": "Medium",
+      "position": "Ball-Playing Centre Back",
+      "reason": "Aleksandar Jovanović (35) and Rahul Bheke (33) offer high defensive pedigree but carry physical decline and recovery-pace risks.",
+      "supporting_data": "2 of 5 Centre Backs are 33+ years old. Young backups lack extensive top-tier ISL starts.",
+      "recommendation": "Sign a modern, ball-playing CB (Age 22-26) proficient in building out from the back and defending in large spaces."
+    },
+    {
+      "risk_type": "POSITION RISK",
+      "priority": "Medium",
+      "position": "Attacking Full Back (Right/Left)",
+      "reason": "Over-reliance on Naorem Roshan Singh for vertical progression. Limited specialized right-back cover behind converted centre-backs.",
+      "supporting_data": "Right Back depth stands at 1, Left Back depth at 2.",
+      "recommendation": "Scout modern athletic full-backs with high overlap volume, crossing accuracy, and 1v1 defensive resilience."
+    },
+    {
+      "risk_type": "SUCCESSION RISK",
+      "priority": "Low",
+      "position": "U23 Goalkeeper",
+      "reason": "Gurpreet Singh Sandhu (32) remains elite, but succession preparation must begin before steep athletic decline.",
+      "supporting_data": "Gurpreet has made over 130 appearances; backup Lalthuammawia Ralte is 31; Sahil Poonia is developing.",
+      "recommendation": "Maintain structured cup/reserve minutes for Sahil Poonia or monitor top domestic U23 goalkeeping talents."
+    },
+    {
+      "risk_type": "DEVELOPMENT BLOCK RISK",
+      "priority": "Low",
+      "position": "Central Midfield",
+      "reason": "Presence of established senior domestic and foreign central midfielders can restrict match minutes for academy graduates.",
+      "supporting_data": "Promoted prospects (Fanai, Vinith) compete against Suresh Singh, Capó, and Noguera.",
+      "recommendation": "Implement targeted loan pathways or guaranteed rotational ISL match quotas for top academy talents."
+    }
+  ]
+}
