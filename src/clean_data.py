@@ -75,6 +75,52 @@ def parse_market_value_to_numeric(mv_str: Any) -> Optional[float]:
         return None
 
 
+def is_invalid_player_record(name: Any) -> bool:
+    """
+    Identifies non-player rows such as table summaries, footer notes,
+    financial spending/offloading estimates, or section metadata.
+    """
+    if name is None or pd.isna(name):
+        return True
+    s = str(name).strip()
+    if not s or s in ["N/A", "Unknown", "—", "-"]:
+        return True
+    s_lower = s.lower()
+
+    invalid_keywords = [
+        "estimated spending",
+        "estimated offloading",
+        "market value",
+        "market values",
+        "spending based",
+        "offloading based",
+        "transfer fee total",
+        "total spending",
+        "total income",
+        "subtotal",
+        "summary",
+    ]
+    if any(k in s_lower for k in invalid_keywords):
+        return True
+
+    if re.search(r"\b(estimated|spending|offloading|expenditure|revenue)\b", s_lower):
+        return True
+
+    if any(sym in s for sym in ["₹", "$", "€", "£"]) and re.search(r"\b(crore|lakh|million|billion|us\$)\b", s_lower):
+        return True
+
+    if ":" in s and any(k in s_lower for k in ["spending", "offloading", "market", "fee", "total", "notes"]):
+        return True
+
+    if len(s) > 55 and any(sym in s for sym in [":", "₹", "$", "(", ")"]):
+        return True
+
+    if any(term in s_lower for term in ["total", "team", "source"]):
+        return True
+
+    return False
+
+
 def clean_and_harmonize():
     logger.info("Starting data cleaning and harmonization pipeline...")
 
@@ -117,6 +163,10 @@ def clean_and_harmonize():
     standardized_fees = []
     standardized_dates = []
     validation_statuses = []
+    # Filter out non-player rows (table summaries, footers, etc.)
+    df_transfers = df_transfers[~df_transfers["player_name"].apply(is_invalid_player_record)].copy()
+    df_transfers.reset_index(drop=True, inplace=True)
+    df_transfers["id"] = range(1, len(df_transfers) + 1)
 
     for _, row in df_transfers.iterrows():
         p_name = str(row["player_name"]).strip()

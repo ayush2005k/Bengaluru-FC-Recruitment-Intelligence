@@ -97,27 +97,25 @@ id,season,player_name,position,transfer_type,from_club,to_club,transfer_fee,tran
 96,2024/25,Edgar Mendez,Forward,Arrival,Club Necaxa,Bengaluru FC,Free,Joined,7 July 2024,Wikipedia,https://en.wikipedia.org/wiki/2024%E2%80%9325_Bengaluru_FC_season,Verified
 97,2024/25,Jorge Pereyra Díaz,Forward,Arrival,Mumbai City FC,Bengaluru FC,Free,Joined,7 July 2024,Wikipedia,https://en.wikipedia.org/wiki/2024%E2%80%9325_Bengaluru_FC_season,Verified
 98,2024/25,Pedro Capo,Midfielder,Arrival,CD Eldense,Bengaluru FC,Free,Joined,16 July 2024,Wikipedia,https://en.wikipedia.org/wiki/2024%E2%80%9325_Bengaluru_FC_season,Verified
-99,2024/25,"Estimated spending based on the market values: ₹9.4 crore (US$980,000)","ESTIMATED SPENDING BASED ON THE MARKET VALUES: ₹9.4 CRORE (US$980,000)",Arrival,"Estimated spending based on the market values: ₹9.4 crore (US$980,000)",Bengaluru FC,"Estimated spending based on the market values: ₹9.4 crore (US$980,000)",Joined,"Estimated spending based on the market values: ₹9.4 crore (US$980,000)",Wikipedia,https://en.wikipedia.org/wiki/2024%E2%80%9325_Bengaluru_FC_season,Verified
-100,2024/25,Lara Sharma,Goalkeeper,Departure,Bengaluru FC,FC Goa,"₹30 lakh (US$31,000)",Departed,18 June 2024,Wikipedia,https://en.wikipedia.org/wiki/2024%E2%80%9325_Bengaluru_FC_season,Verified
-101,2024/25,Javi Hernández,Midfielder,Departure,Bengaluru FC,Jamshedpur FC,Free,Departed,25 July 2024,Wikipedia,https://en.wikipedia.org/wiki/2024%E2%80%9325_Bengaluru_FC_season,Verified
-102,2024/25,Oliver Drost,Forward,Departure,Bengaluru FC,FC Helsingør,Free,Departed,"₹2 crore (US$210,000)",Wikipedia,https://en.wikipedia.org/wiki/2024%E2%80%9325_Bengaluru_FC_season,Verified
-103,2024/25,Slavko Damjanovic,Defender,Departure,Bengaluru FC,Persebaya Surabaya,Free,Departed,6 July 2024,Wikipedia,https://en.wikipedia.org/wiki/2024%E2%80%9325_Bengaluru_FC_season,Verified
-104,2024/25,Rohit Kumar,Midfielder,Departure,Bengaluru FC,Odisha FC,Free,Departed,12 June 2024,Wikipedia,https://en.wikipedia.org/wiki/2024%E2%80%9325_Bengaluru_FC_season,Verified
-105,2024/25,Jayesh Rane,Midfielder,Departure,Bengaluru FC,Mumbai City FC,Free,Departed,21 June 2024,Wikipedia,https://en.wikipedia.org/wiki/2024%E2%80%9325_Bengaluru_FC_season,Verified
-106,2024/25,Amrit Gope,Goalkeeper,Departure,Bengaluru FC,Jamshedpur FC,Free,Departed,27 June 2024,Wikipedia,https://en.wikipedia.org/wiki/2024%E2%80%9325_Bengaluru_FC_season,Verified
-107,2024/25,Robin Yadav,Defender,Departure,Bengaluru FC,NorthEast United FC,Free,Departed,13 July 2024,Wikipedia,https://en.wikipedia.org/wiki/2024%E2%80%9325_Bengaluru_FC_season,Verified
-108,2024/25,Keziah Veendorp,Midfielder,Departure,Bengaluru FC,Without a club,Free,Departed,12 July 2024,Wikipedia,https://en.wikipedia.org/wiki/2024%E2%80%9325_Bengaluru_FC_season,Verified
-109,2024/25,Shankar Sampingiraj,Defender,Departure,Bengaluru FC,SC Bengaluru,Free,Departed,1 June 2024,Wikipedia,https://en.wikipedia.org/wiki/2024%E2%80%9325_Bengaluru_FC_season,Verified
-110,2024/25,Parag Shrivas,Defender,Departure,Bengaluru FC,Hyderabad FC,Free,Departed,1 June 2024,Wikipedia,https://en.wikipedia.org/wiki/2024%E2%80%9325_Bengaluru_FC_season,Verified
-111,2024/25,Ajay Chhetri,Midfielder,Departure,Bengaluru FC,Sreenidi Deccan FC,Free,Departed,1 June 2024,Wikipedia,https://en.wikipedia.org/wiki/2024%E2%80%9325_Bengaluru_FC_season,Verified
-112,2024/25,Estimated offloading based on the market values: ₹14.7 crore (US$1.5 million),ESTIMATED OFFLOADING BASED ON THE MARKET VALUES: ₹14.7 CRORE (US$1.5 MILLION),Departure,Bengaluru FC,Estimated offloading based on the market values: ₹14.7 crore (US$1.5 million),Estimated offloading based on the market values: ₹14.7 crore (US$1.5 million),Departed,Estimated offloading based on the market values: ₹14.7 crore (US$1.5 million),Wikipedia,https://en.wikipedia.org/wiki/2024%E2%80%9325_Bengaluru_FC_season,Verified
-113,2024/25,Salam Johnson Singh,Forward,Departure,Bengaluru FC,SC Bengaluru,Undisclosed,Departed,11 September 2024,Wikipedia,https://en.wikipedia.org/wiki/2024%E2%80%9325_Bengaluru_FC_season,Verified
-114,2024/25,Salam Johnson Singh,Forward,Loan Out,Bengaluru FC,SC Bengaluru,Undisclosed,Loaned Out,11 September 2024,Wikipedia,https://en.wikipedia.org/wiki/2024%E2%80%9325_Bengaluru_FC_season,Verified
-115,2024/25,Édgar Méndez,Winger,Arrival,Club Necaxa,Bengaluru FC,Free,Joined,2024-07-09,Wikipedia,https://en.wikipedia.org/wiki/2024%E2%80%9325_Bengaluru_FC_season,Verified
-116,2024/25,Mohamed Salah,Left Back,Arrival,Punjab FC,Bengaluru FC,Free,Joined,2024-07-05,Wikipedia,https://en.wikipedia.org/wiki/2024%E2%80%9325_Bengaluru_FC_season,Verified
-117,2024/25,Pedro Capó,Defensive Midfielder,Arrival,CD Eldense,Bengaluru FC,Free,Joined,2024-07-15,Wikipedia,https://en.wikipedia.org/wiki/2024%E2%80%9325_Bengaluru_FC_season,Verified
-118,2024/25,Slavko Damjanović,Centre Back,Departure,Bengaluru FC,FK Sutjeska Nikšić,Free,Departed,2024-06-30,Wikipedia,https://en.wikipedia.org/wiki/2024%E2%80%9325_Bengaluru_FC_season,Verified
-119,2025/26,Lalremtluanga Fanai,Central Midfielder,Internal Promotion,Bengaluru FC B,Bengaluru FC,Free (Youth Promotion),Promoted,2025-06-01,Wikipedia,https://en.wikipedia.org/wiki/Bengaluru_FC,Verified
-120,2025/26,Clarence Fernandes,Centre Back,Internal Promotion,Bengaluru FC B,Bengaluru FC,Free (Youth Promotion),Promoted,2025-06-01,Wikipedia,https://en.wikipedia.org/wiki/Bengaluru_FC,Verified
-121,2025/26,Sunil Chhetri,Striker,Arrival,Bengaluru FC,Bengaluru FC,Contract Extension,Retained,2025-05-15,Wikipedia,https://en.wikipedia.org/wiki/Sunil_Chhetri,Verified
-122,2026/27,Monirul Molla,Striker,Internal Promotion,Bengaluru FC B,Bengaluru FC,Free (Youth Promotion),Promoted,2026-06-01,Wikipedia,https://en.wikipedia.org/wiki/Bengaluru_FC,Verified
+99,2024/25,Lara Sharma,Goalkeeper,Departure,Bengaluru FC,FC Goa,"₹30 lakh (US$31,000)",Departed,18 June 2024,Wikipedia,https://en.wikipedia.org/wiki/2024%E2%80%9325_Bengaluru_FC_season,Verified
+100,2024/25,Javi Hernández,Midfielder,Departure,Bengaluru FC,Jamshedpur FC,Free,Departed,25 July 2024,Wikipedia,https://en.wikipedia.org/wiki/2024%E2%80%9325_Bengaluru_FC_season,Verified
+101,2024/25,Oliver Drost,Forward,Departure,Bengaluru FC,FC Helsingør,Free,Departed,"₹2 crore (US$210,000)",Wikipedia,https://en.wikipedia.org/wiki/2024%E2%80%9325_Bengaluru_FC_season,Verified
+102,2024/25,Slavko Damjanovic,Defender,Departure,Bengaluru FC,Persebaya Surabaya,Free,Departed,6 July 2024,Wikipedia,https://en.wikipedia.org/wiki/2024%E2%80%9325_Bengaluru_FC_season,Verified
+103,2024/25,Rohit Kumar,Midfielder,Departure,Bengaluru FC,Odisha FC,Free,Departed,12 June 2024,Wikipedia,https://en.wikipedia.org/wiki/2024%E2%80%9325_Bengaluru_FC_season,Verified
+104,2024/25,Jayesh Rane,Midfielder,Departure,Bengaluru FC,Mumbai City FC,Free,Departed,21 June 2024,Wikipedia,https://en.wikipedia.org/wiki/2024%E2%80%9325_Bengaluru_FC_season,Verified
+105,2024/25,Amrit Gope,Goalkeeper,Departure,Bengaluru FC,Jamshedpur FC,Free,Departed,27 June 2024,Wikipedia,https://en.wikipedia.org/wiki/2024%E2%80%9325_Bengaluru_FC_season,Verified
+106,2024/25,Robin Yadav,Defender,Departure,Bengaluru FC,NorthEast United FC,Free,Departed,13 July 2024,Wikipedia,https://en.wikipedia.org/wiki/2024%E2%80%9325_Bengaluru_FC_season,Verified
+107,2024/25,Keziah Veendorp,Midfielder,Departure,Bengaluru FC,Without a club,Free,Departed,12 July 2024,Wikipedia,https://en.wikipedia.org/wiki/2024%E2%80%9325_Bengaluru_FC_season,Verified
+108,2024/25,Shankar Sampingiraj,Defender,Departure,Bengaluru FC,SC Bengaluru,Free,Departed,1 June 2024,Wikipedia,https://en.wikipedia.org/wiki/2024%E2%80%9325_Bengaluru_FC_season,Verified
+109,2024/25,Parag Shrivas,Defender,Departure,Bengaluru FC,Hyderabad FC,Free,Departed,1 June 2024,Wikipedia,https://en.wikipedia.org/wiki/2024%E2%80%9325_Bengaluru_FC_season,Verified
+110,2024/25,Ajay Chhetri,Midfielder,Departure,Bengaluru FC,Sreenidi Deccan FC,Free,Departed,1 June 2024,Wikipedia,https://en.wikipedia.org/wiki/2024%E2%80%9325_Bengaluru_FC_season,Verified
+111,2024/25,Salam Johnson Singh,Forward,Departure,Bengaluru FC,SC Bengaluru,Undisclosed,Departed,11 September 2024,Wikipedia,https://en.wikipedia.org/wiki/2024%E2%80%9325_Bengaluru_FC_season,Verified
+112,2024/25,Salam Johnson Singh,Forward,Loan Out,Bengaluru FC,SC Bengaluru,Undisclosed,Loaned Out,11 September 2024,Wikipedia,https://en.wikipedia.org/wiki/2024%E2%80%9325_Bengaluru_FC_season,Verified
+113,2024/25,Édgar Méndez,Winger,Arrival,Club Necaxa,Bengaluru FC,Free,Joined,2024-07-09,Wikipedia,https://en.wikipedia.org/wiki/2024%E2%80%9325_Bengaluru_FC_season,Verified
+114,2024/25,Mohamed Salah,Left Back,Arrival,Punjab FC,Bengaluru FC,Free,Joined,2024-07-05,Wikipedia,https://en.wikipedia.org/wiki/2024%E2%80%9325_Bengaluru_FC_season,Verified
+115,2024/25,Pedro Capó,Defensive Midfielder,Arrival,CD Eldense,Bengaluru FC,Free,Joined,2024-07-15,Wikipedia,https://en.wikipedia.org/wiki/2024%E2%80%9325_Bengaluru_FC_season,Verified
+116,2024/25,Slavko Damjanović,Centre Back,Departure,Bengaluru FC,FK Sutjeska Nikšić,Free,Departed,2024-06-30,Wikipedia,https://en.wikipedia.org/wiki/2024%E2%80%9325_Bengaluru_FC_season,Verified
+117,2025/26,Lalremtluanga Fanai,Central Midfielder,Internal Promotion,Bengaluru FC B,Bengaluru FC,Free (Youth Promotion),Promoted,2025-06-01,Wikipedia,https://en.wikipedia.org/wiki/Bengaluru_FC,Verified
+118,2025/26,Clarence Fernandes,Centre Back,Internal Promotion,Bengaluru FC B,Bengaluru FC,Free (Youth Promotion),Promoted,2025-06-01,Wikipedia,https://en.wikipedia.org/wiki/Bengaluru_FC,Verified
+119,2025/26,Sunil Chhetri,Striker,Arrival,Bengaluru FC,Bengaluru FC,Contract Extension,Retained,2025-05-15,Wikipedia,https://en.wikipedia.org/wiki/Sunil_Chhetri,Verified
+120,2026/27,Monirul Molla,Striker,Internal Promotion,Bengaluru FC B,Bengaluru FC,Free (Youth Promotion),Promoted,2026-06-01,Wikipedia,https://en.wikipedia.org/wiki/Bengaluru_FC,Verified

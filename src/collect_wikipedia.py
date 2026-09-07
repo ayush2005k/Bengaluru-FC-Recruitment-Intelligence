@@ -61,6 +61,58 @@ def clean_text(val: Any) -> str:
     return text
 
 
+def is_invalid_player_record(name: Any) -> bool:
+    """
+    Identifies non-player rows such as table summaries, footer notes,
+    financial spending/offloading estimates, or section metadata.
+    """
+    if name is None or pd.isna(name):
+        return True
+    s = str(name).strip()
+    if not s or s in ["N/A", "Unknown", "—", "-"]:
+        return True
+    s_lower = s.lower()
+
+    # Exact or substring keywords indicating summary/financial text
+    invalid_keywords = [
+        "estimated spending",
+        "estimated offloading",
+        "market value",
+        "market values",
+        "spending based",
+        "offloading based",
+        "transfer fee total",
+        "total spending",
+        "total income",
+        "subtotal",
+        "summary",
+    ]
+    if any(k in s_lower for k in invalid_keywords):
+        return True
+
+    # Standalone financial or administrative terms with word boundaries
+    if re.search(r"\b(estimated|spending|offloading|expenditure|revenue)\b", s_lower):
+        return True
+
+    # Financial sentences with currency notations and large units
+    if any(sym in s for sym in ["₹", "$", "€", "£"]) and re.search(r"\b(crore|lakh|million|billion|us\$)\b", s_lower):
+        return True
+
+    # Summary labels with colons
+    if ":" in s and any(k in s_lower for k in ["spending", "offloading", "market", "fee", "total", "notes"]):
+        return True
+
+    # Non-name length check with structural formatting
+    if len(s) > 55 and any(sym in s for sym in [":", "₹", "$", "(", ")"]):
+        return True
+
+    # General metadata keywords
+    if any(term in s_lower for term in ["total", "team", "source"]):
+        return True
+
+    return False
+
+
 def clean_fee(fee: Any) -> str:
     """Standardizes fee representations without inventing numbers."""
     cleaned = clean_text(fee)
@@ -218,7 +270,7 @@ def parse_wikipedia_season(season: str, url: str) -> List[Dict[str, Any]]:
 
             for _, row in df.iterrows():
                 p_name = clean_text(row.get(player_col))
-                if p_name in ["N/A", ""] or "total" in p_name.lower() or "team" in p_name.lower() or "source" in p_name.lower():
+                if is_invalid_player_record(p_name):
                     continue
 
                 pos = normalize_position(row.get(pos_col)) if pos_col else "Unknown"
