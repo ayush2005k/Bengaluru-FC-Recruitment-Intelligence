@@ -165,6 +165,11 @@ def clean_and_harmonize():
     validation_statuses = []
     # Filter out non-player rows (table summaries, footers, etc.)
     df_transfers = df_transfers[~df_transfers["player_name"].apply(is_invalid_player_record)].copy()
+
+    # Restrict historical transfers strictly to the official completed period: 2020/21 - 2024/25
+    valid_seasons = ["2020/21", "2021/22", "2022/23", "2023/24", "2024/25"]
+    df_transfers = df_transfers[df_transfers["season"].isin(valid_seasons)].copy()
+
     df_transfers.reset_index(drop=True, inplace=True)
     df_transfers["id"] = range(1, len(df_transfers) + 1)
 

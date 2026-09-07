@@ -314,9 +314,8 @@ def parse_wikipedia_season(season: str, url: str) -> List[Dict[str, Any]]:
 
 def get_additional_historical_records() -> List[Dict[str, Any]]:
     """
-    Supplies confirmed Wikipedia-verified transfer records for 2024/25, 2025/26, 
-    and 2026/27 seasons that reflect official club announcements and confirmed deals.
-    Ensures complete longitudinal continuity up to the current campaign.
+    Supplies confirmed Wikipedia-verified transfer records for the 2024/25
+    season that reflect official club announcements and confirmed completed deals.
     """
     return [
         # 2024/25 Arrivals
@@ -489,68 +488,11 @@ def get_additional_historical_records() -> List[Dict[str, Any]]:
             "source_url": "https://en.wikipedia.org/wiki/2024%E2%80%9325_Bengaluru_FC_season",
             "validation_status": "Verified",
         },
-        # 2025/26 & 2026/27 Pipeline Contracts
-        {
-            "season": "2025/26",
-            "player_name": "Lalremtluanga Fanai",
-            "position": "Central Midfielder",
-            "transfer_type": "Internal Promotion",
-            "from_club": "Bengaluru FC B",
-            "to_club": "Bengaluru FC",
-            "transfer_fee": "Free (Youth Promotion)",
-            "transfer_status": "Promoted",
-            "transfer_date": "2025-06-01",
-            "source": "Wikipedia",
-            "source_url": "https://en.wikipedia.org/wiki/Bengaluru_FC",
-            "validation_status": "Verified",
-        },
-        {
-            "season": "2025/26",
-            "player_name": "Clarence Fernandes",
-            "position": "Centre Back",
-            "transfer_type": "Internal Promotion",
-            "from_club": "Bengaluru FC B",
-            "to_club": "Bengaluru FC",
-            "transfer_fee": "Free (Youth Promotion)",
-            "transfer_status": "Promoted",
-            "transfer_date": "2025-06-01",
-            "source": "Wikipedia",
-            "source_url": "https://en.wikipedia.org/wiki/Bengaluru_FC",
-            "validation_status": "Verified",
-        },
-        {
-            "season": "2025/26",
-            "player_name": "Sunil Chhetri",
-            "position": "Striker",
-            "transfer_type": "Arrival",
-            "from_club": "Bengaluru FC",
-            "to_club": "Bengaluru FC",
-            "transfer_fee": "Contract Extension",
-            "transfer_status": "Retained",
-            "transfer_date": "2025-05-15",
-            "source": "Wikipedia",
-            "source_url": "https://en.wikipedia.org/wiki/Sunil_Chhetri",
-            "validation_status": "Verified",
-        },
-        {
-            "season": "2026/27",
-            "player_name": "Monirul Molla",
-            "position": "Striker",
-            "transfer_type": "Internal Promotion",
-            "from_club": "Bengaluru FC B",
-            "to_club": "Bengaluru FC",
-            "transfer_fee": "Free (Youth Promotion)",
-            "transfer_status": "Promoted",
-            "transfer_date": "2026-06-01",
-            "source": "Wikipedia",
-            "source_url": "https://en.wikipedia.org/wiki/Bengaluru_FC",
-            "validation_status": "Verified",
-        },
     ]
 
 
 def run_wikipedia_collection() -> pd.DataFrame:
-    """Executes the full Wikipedia historical extraction pipeline."""
+    """Executes the full Wikipedia historical extraction pipeline for 2020/21 - 2024/25."""
     output_dir = os.path.join("data", "raw", "wikipedia")
     os.makedirs(output_dir, exist_ok=True)
 
@@ -566,7 +508,7 @@ def run_wikipedia_collection() -> pd.DataFrame:
             logger.info(f"Saved {len(season_records)} rows to {out_file}")
             all_transfers.extend(season_records)
 
-    # Incorporate supplemental confirmed records
+    # Incorporate supplemental confirmed records (2024/25 completed deals)
     extra_records = get_additional_historical_records()
     all_transfers.extend(extra_records)
 
@@ -578,6 +520,9 @@ def run_wikipedia_collection() -> pd.DataFrame:
         keep="first",
         inplace=True,
     )
+
+    # Filter out non-player rows (summaries, footers, etc.)
+    df_combined = df_combined[~df_combined["player_name"].apply(is_invalid_player_record)].copy()
 
     # Assign sequential transfer id
     df_combined.reset_index(drop=True, inplace=True)
