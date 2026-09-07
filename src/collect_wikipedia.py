@@ -12,8 +12,9 @@ Data Rules:
 import os
 import re
 import io
+import unicodedata
 import logging
-from typing import List, Dict, Any
+from typing import List, Dict, Any, Tuple
 import requests
 import pandas as pd
 from bs4 import BeautifulSoup
@@ -59,6 +60,80 @@ def clean_text(val: Any) -> str:
     if not text or text.lower() in ["nan", "none", "-", "—"]:
         return "N/A"
     return text
+
+
+def normalize_player_name(name: Any) -> str:
+    """
+    Normalizes player names for robust deduplication matching:
+    - Converts to lowercase
+    - Strips accents/diacritics
+    - Collapses whitespace and punctuation
+    - Safely maps phonetic variants (e.g. Mohammeed -> Mohamed)
+    """
+    if name is None or pd.isna(name):
+        return ""
+    s = unicodedata.normalize("NFKD", str(name))
+    s = "".join(c for c in s if not unicodedata.combining(c)).strip().lower()
+    s = re.sub(r"[^a-z0-9\s]", "", s)
+    s = re.sub(r"\s+", " ", s).strip()
+    s = s.replace("mohammeed", "mohamed")
+    return s
+
+
+CANONICAL_NAMES = {
+    "mohamed salah": "Mohamed Salah",
+    "edgar mendez": "Édgar Méndez",
+    "pedro capo": "Pedro Capó",
+    "slavko damjanovic": "Slavko Damjanović",
+    "jorge pereyra diaz": "Jorge Pereyra Díaz",
+    "aleksander jovanovic": "Aleksandar Jovanović",
+    "yrondu musavu-king": "Yrondu Musavu-King",
+}
+
+
+def get_canonical_display_name(name: str) -> str:
+    """Returns preferred canonical display name preserving verified accents."""
+    norm = normalize_player_name(name)
+    return CANONICAL_NAMES.get(norm, name)
+
+
+def deduplicate_loan_events(df: pd.DataFrame) -> pd.DataFrame:
+    """
+    Identifies cases where a loan event is double-counted as both a general
+    Arrival/Departure and a specific Loan In/Loan Out for the same player,
+    season, and club pairing. Retains the Loan In/Loan Out record and drops the
+    redundant Arrival/Departure.
+    """
+    if "norm_name" not in df.columns:
+        df["norm_name"] = df["player_name"].apply(normalize_player_name)
+
+    loan_mask = df["transfer_type"].isin(["Loan In", "Loan Out"])
+    loan_df = df[loan_mask]
+    to_drop = []
+
+    for l_idx, l_row in loan_df.iterrows():
+        p_norm = l_row["norm_name"]
+        season = l_row["season"]
+        target_type = "Departure" if l_row["transfer_type"] == "Loan Out" else "Arrival"
+
+        matches = df[
+            (~df.index.isin(loan_df.index)) &
+            (df["season"] == season) &
+            (df["transfer_type"] == target_type) &
+            (df["norm_name"] == p_norm)
+        ]
+
+        for m_idx in matches.index:
+            to_drop.append(m_idx)
+            logger.info(
+                f"Deduplicating redundant {target_type} for loan event: "
+                f"{df.loc[m_idx, 'player_name']} ({season}) in favor of {l_row['transfer_type']}"
+            )
+
+    df_cleaned = df.drop(index=to_drop).copy()
+    if "norm_name" in df_cleaned.columns:
+        df_cleaned.drop(columns=["norm_name"], inplace=True)
+    return df_cleaned
 
 
 def is_invalid_player_record(name: Any) -> bool:
@@ -269,14 +344,25 @@ def parse_wikipedia_season(season: str, url: str) -> List[Dict[str, Any]]:
                 continue
 
             for _, row in df.iterrows():
-                p_name = clean_text(row.get(player_col))
-                if is_invalid_player_record(p_name):
+                raw_name = clean_text(row.get(player_col))
+                if is_invalid_player_record(raw_name):
                     continue
 
+                p_name = get_canonical_display_name(raw_name)
                 pos = normalize_position(row.get(pos_col)) if pos_col else "Unknown"
                 club_val = clean_text(row.get(club_col)) if club_col else "Unknown"
                 fee_val = clean_fee(row.get(fee_col)) if fee_col else "Undisclosed"
                 date_val = clean_text(row.get(date_col)) if date_col else "Unknown"
+
+                # Check if date was swapped with a financial market value column (e.g. Oliver Drost)
+                if any(kw in date_val.lower() for kw in ["₹", "$", "€", "crore", "lakh", "million"]):
+                    real_date = None
+                    for val in row.values:
+                        val_str = clean_text(val)
+                        if re.search(r"\b\d{1,2}\s+[A-Za-z]+\s+\d{4}\b", val_str) or re.search(r"^\d{4}-\d{2}-\d{2}$", val_str):
+                            real_date = val_str
+                            break
+                    date_val = real_date if real_date else "Unknown"
 
                 if transfer_type in ["Arrival", "Loan In", "Internal Promotion"]:
                     from_c = club_val if club_val != "N/A" else ("Bengaluru FC B" if transfer_type == "Internal Promotion" else "Unknown")
@@ -314,181 +400,11 @@ def parse_wikipedia_season(season: str, url: str) -> List[Dict[str, Any]]:
 
 def get_additional_historical_records() -> List[Dict[str, Any]]:
     """
-    Supplies confirmed Wikipedia-verified transfer records for the 2024/25
-    season that reflect official club announcements and confirmed completed deals.
+    Supplies confirmed Wikipedia-verified supplemental transfer records that
+    are missing from standard Wikipedia tables. Returns empty list if all
+    seasons are fully captured via structured table extraction.
     """
-    return [
-        # 2024/25 Arrivals
-        {
-            "season": "2024/25",
-            "player_name": "Jorge Pereyra Díaz",
-            "position": "Striker",
-            "transfer_type": "Arrival",
-            "from_club": "Mumbai City FC",
-            "to_club": "Bengaluru FC",
-            "transfer_fee": "Free",
-            "transfer_status": "Joined",
-            "transfer_date": "2024-06-25",
-            "source": "Wikipedia",
-            "source_url": "https://en.wikipedia.org/wiki/2024%E2%80%9325_Bengaluru_FC_season",
-            "validation_status": "Verified",
-        },
-        {
-            "season": "2024/25",
-            "player_name": "Alberto Noguera",
-            "position": "Attacking Midfielder",
-            "transfer_type": "Arrival",
-            "from_club": "Mumbai City FC",
-            "to_club": "Bengaluru FC",
-            "transfer_fee": "Free",
-            "transfer_status": "Joined",
-            "transfer_date": "2024-06-20",
-            "source": "Wikipedia",
-            "source_url": "https://en.wikipedia.org/wiki/2024%E2%80%9325_Bengaluru_FC_season",
-            "validation_status": "Verified",
-        },
-        {
-            "season": "2024/25",
-            "player_name": "Édgar Méndez",
-            "position": "Winger",
-            "transfer_type": "Arrival",
-            "from_club": "Club Necaxa",
-            "to_club": "Bengaluru FC",
-            "transfer_fee": "Free",
-            "transfer_status": "Joined",
-            "transfer_date": "2024-07-09",
-            "source": "Wikipedia",
-            "source_url": "https://en.wikipedia.org/wiki/2024%E2%80%9325_Bengaluru_FC_season",
-            "validation_status": "Verified",
-        },
-        {
-            "season": "2024/25",
-            "player_name": "Rahul Bheke",
-            "position": "Centre Back",
-            "transfer_type": "Arrival",
-            "from_club": "Mumbai City FC",
-            "to_club": "Bengaluru FC",
-            "transfer_fee": "Free",
-            "transfer_status": "Joined",
-            "transfer_date": "2024-07-01",
-            "source": "Wikipedia",
-            "source_url": "https://en.wikipedia.org/wiki/2024%E2%80%9325_Bengaluru_FC_season",
-            "validation_status": "Verified",
-        },
-        {
-            "season": "2024/25",
-            "player_name": "Mohamed Salah",
-            "position": "Left Back",
-            "transfer_type": "Arrival",
-            "from_club": "Punjab FC",
-            "to_club": "Bengaluru FC",
-            "transfer_fee": "Free",
-            "transfer_status": "Joined",
-            "transfer_date": "2024-07-05",
-            "source": "Wikipedia",
-            "source_url": "https://en.wikipedia.org/wiki/2024%E2%80%9325_Bengaluru_FC_season",
-            "validation_status": "Verified",
-        },
-        {
-            "season": "2024/25",
-            "player_name": "Pedro Capó",
-            "position": "Defensive Midfielder",
-            "transfer_type": "Arrival",
-            "from_club": "CD Eldense",
-            "to_club": "Bengaluru FC",
-            "transfer_fee": "Free",
-            "transfer_status": "Joined",
-            "transfer_date": "2024-07-15",
-            "source": "Wikipedia",
-            "source_url": "https://en.wikipedia.org/wiki/2024%E2%80%9325_Bengaluru_FC_season",
-            "validation_status": "Verified",
-        },
-        {
-            "season": "2024/25",
-            "player_name": "Lalthuammawia Ralte",
-            "position": "Goalkeeper",
-            "transfer_type": "Arrival",
-            "from_club": "Odisha FC",
-            "to_club": "Bengaluru FC",
-            "transfer_fee": "Free",
-            "transfer_status": "Joined",
-            "transfer_date": "2024-06-28",
-            "source": "Wikipedia",
-            "source_url": "https://en.wikipedia.org/wiki/2024%E2%80%9325_Bengaluru_FC_season",
-            "validation_status": "Verified",
-        },
-        # 2024/25 Departures
-        {
-            "season": "2024/25",
-            "player_name": "Javi Hernández",
-            "position": "Attacking Midfielder",
-            "transfer_type": "Departure",
-            "from_club": "Bengaluru FC",
-            "to_club": "Jamshedpur FC",
-            "transfer_fee": "Free",
-            "transfer_status": "Departed",
-            "transfer_date": "2024-07-01",
-            "source": "Wikipedia",
-            "source_url": "https://en.wikipedia.org/wiki/2024%E2%80%9325_Bengaluru_FC_season",
-            "validation_status": "Verified",
-        },
-        {
-            "season": "2024/25",
-            "player_name": "Oliver Drost",
-            "position": "Striker",
-            "transfer_type": "Departure",
-            "from_club": "Bengaluru FC",
-            "to_club": "FC Helsingør",
-            "transfer_fee": "Free",
-            "transfer_status": "Departed",
-            "transfer_date": "2024-06-30",
-            "source": "Wikipedia",
-            "source_url": "https://en.wikipedia.org/wiki/2024%E2%80%9325_Bengaluru_FC_season",
-            "validation_status": "Verified",
-        },
-        {
-            "season": "2024/25",
-            "player_name": "Keziah Veendorp",
-            "position": "Defensive Midfielder",
-            "transfer_type": "Departure",
-            "from_club": "Bengaluru FC",
-            "to_club": "Free Agent",
-            "transfer_fee": "Free",
-            "transfer_status": "Departed",
-            "transfer_date": "2024-06-30",
-            "source": "Wikipedia",
-            "source_url": "https://en.wikipedia.org/wiki/2024%E2%80%9325_Bengaluru_FC_season",
-            "validation_status": "Verified",
-        },
-        {
-            "season": "2024/25",
-            "player_name": "Slavko Damjanović",
-            "position": "Centre Back",
-            "transfer_type": "Departure",
-            "from_club": "Bengaluru FC",
-            "to_club": "FK Sutjeska Nikšić",
-            "transfer_fee": "Free",
-            "transfer_status": "Departed",
-            "transfer_date": "2024-06-30",
-            "source": "Wikipedia",
-            "source_url": "https://en.wikipedia.org/wiki/2024%E2%80%9325_Bengaluru_FC_season",
-            "validation_status": "Verified",
-        },
-        {
-            "season": "2024/25",
-            "player_name": "Rohit Kumar",
-            "position": "Central Midfielder",
-            "transfer_type": "Departure",
-            "from_club": "Bengaluru FC",
-            "to_club": "Odisha FC",
-            "transfer_fee": "Free",
-            "transfer_status": "Departed",
-            "transfer_date": "2024-06-18",
-            "source": "Wikipedia",
-            "source_url": "https://en.wikipedia.org/wiki/2024%E2%80%9325_Bengaluru_FC_season",
-            "validation_status": "Verified",
-        },
-    ]
+    return []
 
 
 def run_wikipedia_collection() -> pd.DataFrame:
@@ -508,21 +424,28 @@ def run_wikipedia_collection() -> pd.DataFrame:
             logger.info(f"Saved {len(season_records)} rows to {out_file}")
             all_transfers.extend(season_records)
 
-    # Incorporate supplemental confirmed records (2024/25 completed deals)
+    # Incorporate supplemental confirmed records (if any)
     extra_records = get_additional_historical_records()
     all_transfers.extend(extra_records)
 
     df_combined = pd.DataFrame(all_transfers)
 
-    # Deduplicate by player_name, season, transfer_type, and from_club
+    # Standardize player names to canonical display format
+    df_combined["player_name"] = df_combined["player_name"].apply(get_canonical_display_name)
+    df_combined["norm_name"] = df_combined["player_name"].apply(normalize_player_name)
+
+    # Deduplicate by normalized player name, season, transfer_type, and from_club
     df_combined.drop_duplicates(
-        subset=["season", "player_name", "transfer_type", "from_club"],
+        subset=["season", "norm_name", "transfer_type", "from_club"],
         keep="first",
         inplace=True,
     )
 
     # Filter out non-player rows (summaries, footers, etc.)
     df_combined = df_combined[~df_combined["player_name"].apply(is_invalid_player_record)].copy()
+
+    # Deduplicate double-counted loan events (keep Loan In/Out, drop redundant Arrival/Departure)
+    df_combined = deduplicate_loan_events(df_combined)
 
     # Assign sequential transfer id
     df_combined.reset_index(drop=True, inplace=True)

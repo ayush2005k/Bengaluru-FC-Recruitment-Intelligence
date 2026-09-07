@@ -1,0 +1,6 @@
+id,season,player_id,player_name,transfer_type,position,from_club,to_club,transfer_fee,transfer_status,transfer_date,source,source_url,validation_status
+82,2023/24,p29,Robin Yadav,Internal Promotion,Defender,Bengaluru B,Bengaluru FC,Free (Youth Promotion),Promoted,2023-06-01,Wikipedia,https://en.wikipedia.org/wiki/2023%E2%80%9324_Bengaluru_FC_season,Verified
+83,2023/24,p71,Ankith Padmanabhan,Internal Promotion,Forward,Bengaluru B,Bengaluru FC,Free (Youth Promotion),Promoted,2023-08-01,Wikipedia,https://en.wikipedia.org/wiki/2023%E2%80%9324_Bengaluru_FC_season,Verified
+84,2023/24,p78,Harsh Patre,Internal Promotion,Midfielder,Bengaluru B,Bengaluru FC,Free (Youth Promotion),Promoted,2023-08-31,Wikipedia,https://en.wikipedia.org/wiki/2023%E2%80%9324_Bengaluru_FC_season,Verified
+85,2023/24,p37,Chingambam Shivaldo Singh,Internal Promotion,Defender,Bengaluru B,Bengaluru FC,Free (Youth Promotion),Promoted,2023-12-01,Wikipedia,https://en.wikipedia.org/wiki/2023%E2%80%9324_Bengaluru_FC_season,Verified
+86,2023/24,p32,Monirul Molla,Internal Promotion,Forward,Bengaluru B,Bengaluru FC,Free (Youth Promotion),Promoted,2023-06-01,Wikipedia,https://en.wikipedia.org/wiki/2023%E2%80%9324_Bengaluru_FC_season,Verified

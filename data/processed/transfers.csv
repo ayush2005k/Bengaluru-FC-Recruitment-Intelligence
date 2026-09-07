@@ -24,94 +24,84 @@ id,season,player_id,player_name,transfer_type,position,from_club,to_club,transfe
 23,2020/21,p54,Kean Lewis,Departure,Midfielder,Bengaluru FC,Sudeva,Free,Departed,2020-10-09,Wikipedia,https://en.wikipedia.org/wiki/2020%E2%80%9321_Bengaluru_FC_season,Verified
 24,2020/21,p55,Raphael Augusto,Departure,Midfielder,Bengaluru FC,Abahani Limited Dhaka,Free,Departed,2020-10-17,Wikipedia,https://en.wikipedia.org/wiki/2020%E2%80%9321_Bengaluru_FC_season,Verified
 25,2020/21,p56,Deshorn Brown,Departure,Forward,Bengaluru FC,NorthEast United,Released,Departed,2021-01-15,Wikipedia,https://en.wikipedia.org/wiki/2020%E2%80%9321_Bengaluru_FC_season,Verified
-26,2020/21,p02,Ajay Chhetri,Departure,Midfielder,Bengaluru FC,East Bengal,Unknown,Departed,2021-01-15,Wikipedia,https://en.wikipedia.org/wiki/2020%E2%80%9321_Bengaluru_FC_season,Verified
-27,2020/21,p02,Ajay Chhetri,Loan Out,Midfielder,Bengaluru FC,East Bengal,Unknown,Loaned Out,2021-01-15,Wikipedia,https://en.wikipedia.org/wiki/2020%E2%80%9321_Bengaluru_FC_season,Verified
-28,2021/22,p20,Rohit Kumar,Arrival,Midfielder,Kerala Blasters,Bengaluru FC,Free,Joined,2021-06-29,Wikipedia,https://en.wikipedia.org/wiki/2021%E2%80%9322_Bengaluru_FC_season,Verified
-29,2021/22,p57,Sarthak Golui,Arrival,Defender,East Bengal,Bengaluru FC,Free,Joined,2021-07-12,Wikipedia,https://en.wikipedia.org/wiki/2021%E2%80%9322_Bengaluru_FC_season,Verified
-30,2021/22,p58,Prince Ibara,Arrival,Forward,Châteauroux,Bengaluru FC,Free,Joined,2021-07-16,Wikipedia,https://en.wikipedia.org/wiki/2021%E2%80%9322_Bengaluru_FC_season,Verified
-31,2021/22,p37,Harmanpreet Singh,Arrival,Forward,East Bengal,Bengaluru FC,Free,Joined,2021-07-19,Wikipedia,https://en.wikipedia.org/wiki/2021%E2%80%9322_Bengaluru_FC_season,Verified
-32,2021/22,p59,Jayesh Rane,Arrival,Midfielder,ATK Mohun Bagan,Bengaluru FC,Free,Joined,2021-07-22,Wikipedia,https://en.wikipedia.org/wiki/2021%E2%80%9322_Bengaluru_FC_season,Verified
-33,2021/22,p60,Danish Farooq Bhat,Arrival,Midfielder,Real Kashmir,Bengaluru FC,Free,Joined,2021-07-25,Wikipedia,https://en.wikipedia.org/wiki/2021%E2%80%9322_Bengaluru_FC_season,Verified
-34,2021/22,p37,Bidyashagar Singh,Arrival,Forward,TRAU,Bengaluru FC,Undisclosed,Joined,2021-07-28,Wikipedia,https://en.wikipedia.org/wiki/2021%E2%80%9322_Bengaluru_FC_season,Verified
-35,2021/22,p18,Bruno Ramires,Arrival,Midfielder,Belenenses,Bengaluru FC,Free,Joined,2021-08-28,Wikipedia,https://en.wikipedia.org/wiki/2021%E2%80%9322_Bengaluru_FC_season,Verified
-36,2021/22,p61,Iman Basafa,Arrival,Midfielder,Machine Sazi,Bengaluru FC,Free,Joined,2021-09-14,Wikipedia,https://en.wikipedia.org/wiki/2021%E2%80%9322_Bengaluru_FC_season,Verified
-37,2021/22,p19,Alan Costa,Arrival,Defender,Avaí,Bengaluru FC,Undisclosed,Joined,2021-07-06,Wikipedia,https://en.wikipedia.org/wiki/2021%E2%80%9322_Bengaluru_FC_season,Verified
-38,2021/22,p19,Alan Costa,Loan In,Defender,Avaí,Bengaluru FC,Undisclosed,Loaned In,2021-07-06,Wikipedia,https://en.wikipedia.org/wiki/2021%E2%80%9322_Bengaluru_FC_season,Verified
-39,2021/22,p62,Harmanjot Khabra,Departure,Midfielder,Bengaluru FC,Kerala Blasters,Free,Departed,2021-05-30,Wikipedia,https://en.wikipedia.org/wiki/2021%E2%80%9322_Bengaluru_FC_season,Verified
-40,2021/22,p63,Dimas Delgado,Departure,Midfielder,Bengaluru FC,–,Free,Departed,2021-05-30,Wikipedia,https://en.wikipedia.org/wiki/2021%E2%80%9322_Bengaluru_FC_season,Verified
-41,2021/22,p09,Rahul Bheke,Departure,Defender,Bengaluru FC,Mumbai City,Free,Departed,2021-05-31,Wikipedia,https://en.wikipedia.org/wiki/2021%E2%80%9322_Bengaluru_FC_season,Verified
-42,2021/22,p64,Thongkhosiem Haokip,Departure,Forward,Bengaluru FC,East Bengal,Free,Departed,2021-05-31,Wikipedia,https://en.wikipedia.org/wiki/2021%E2%80%9322_Bengaluru_FC_season,Verified
-43,2021/22,p44,Fran González,Departure,Defender,Bengaluru FC,Unknown,Free,Departed,2021-05-31,Wikipedia,https://en.wikipedia.org/wiki/2021%E2%80%9322_Bengaluru_FC_season,Partial
-44,2021/22,p15,Xisco Hernández,Departure,Midfielder,Bengaluru FC,Unknown,Free,Departed,2021-05-31,Wikipedia,https://en.wikipedia.org/wiki/2021%E2%80%9322_Bengaluru_FC_season,Partial
-45,2021/22,p65,Juanan,Departure,Defender,Bengaluru FC,Hyderabad,Released,Departed,2021-06-28,Wikipedia,https://en.wikipedia.org/wiki/2021%E2%80%9322_Bengaluru_FC_season,Verified
-46,2021/22,p41,Joe Zoherliana,Departure,Defender,Bengaluru FC,NorthEast United,Released,Departed,2021-07-26,Wikipedia,https://en.wikipedia.org/wiki/2021%E2%80%9322_Bengaluru_FC_season,Verified
-47,2021/22,p34,Lalthuammawia Ralte,Departure,Goalkeeper,Bengaluru FC,RoundGlass Punjab,Undisclosed,Departed,2021-08-28,Wikipedia,https://en.wikipedia.org/wiki/2021%E2%80%9322_Bengaluru_FC_season,Verified
-48,2021/22,p66,Emanuel Lalchhanchhuaha,Departure,Midfielder,Bengaluru FC,NorthEast United,Undisclosed,Departed,2021-09-08,Wikipedia,https://en.wikipedia.org/wiki/2021%E2%80%9322_Bengaluru_FC_season,Verified
-49,2022/23,p67,Prabir Das,Arrival,Defender,ATK Mohun Bagan,Bengaluru FC,Undisclosed,Joined,2022-06-20,Wikipedia,https://en.wikipedia.org/wiki/2022%E2%80%9323_Bengaluru_FC_season,Verified
-50,2022/23,p15,Javi Hernández,Arrival,Midfielder,Odisha,Bengaluru FC,Free,Joined,2022-06-22,Wikipedia,https://en.wikipedia.org/wiki/2022%E2%80%9323_Bengaluru_FC_season,Verified
-51,2022/23,p68,Faisal Ali,Arrival,Forward,Mohammedan,Bengaluru FC,Free,Joined,2022-07-01,Wikipedia,https://en.wikipedia.org/wiki/2022%E2%80%9323_Bengaluru_FC_season,Verified
-52,2022/23,p38,Amrit Gope,Arrival,Goalkeeper,TRAU,Bengaluru FC,Free,Joined,2022-07-01,Wikipedia,https://en.wikipedia.org/wiki/2022%E2%80%9323_Bengaluru_FC_season,Verified
-53,2022/23,p69,Hira Mondal,Arrival,Defender,East Bengal,Bengaluru FC,Free,Joined,2022-07-05,Wikipedia,https://en.wikipedia.org/wiki/2022%E2%80%9323_Bengaluru_FC_season,Verified
-54,2022/23,p17,Roy Krishna,Arrival,Forward,ATK Mohun Bagan,Bengaluru FC,Free,Joined,2022-07-18,Wikipedia,https://en.wikipedia.org/wiki/2022%E2%80%9323_Bengaluru_FC_season,Verified
-55,2022/23,p10,Aleksander Jovanovic,Arrival,Defender,Macarthur FC,Bengaluru FC,Free,Joined,2022-07-22,Wikipedia,https://en.wikipedia.org/wiki/2022%E2%80%9323_Bengaluru_FC_season,Verified
-56,2022/23,p70,Sudheer Kotikala,Arrival,Forward,Kickstart FC,Bengaluru FC,Free,Joined,2022-07-23,Wikipedia,https://en.wikipedia.org/wiki/2022%E2%80%9323_Bengaluru_FC_season,Verified
-57,2022/23,p71,Ankith Padmanabhan,Arrival,Forward,Kickstart FC,Bengaluru FC,Free,Joined,2022-07-23,Wikipedia,https://en.wikipedia.org/wiki/2022%E2%80%9323_Bengaluru_FC_season,Verified
-58,2022/23,p31,Clarence Fernandes,Arrival,Defender,Dempo U-18,Bengaluru FC,Free,Joined,2022-07-23,Wikipedia,https://en.wikipedia.org/wiki/2022%E2%80%9323_Bengaluru_FC_season,Verified
-59,2022/23,p31,Felixson Fernandes,Arrival,Defender,RF Young Champs,Bengaluru FC,Free,Joined,2022-07-23,Wikipedia,https://en.wikipedia.org/wiki/2022%E2%80%9323_Bengaluru_FC_season,Verified
-60,2022/23,p72,Sandesh Jhingan,Arrival,Defender,ATK Mohun Bagan,Bengaluru FC,Free,Joined,2022-08-14,Wikipedia,https://en.wikipedia.org/wiki/2022%E2%80%9323_Bengaluru_FC_season,Verified
-61,2022/23,p39,Pratik Chaudhari,Departure,Defender,Bengaluru FC,Jamshedpur,Free,Departed,2022-06-05,Wikipedia,https://en.wikipedia.org/wiki/2022%E2%80%9323_Bengaluru_FC_season,Verified
-62,2022/23,p57,Sarthak Golui,Departure,Defender,Bengaluru FC,East Bengal,Free,Departed,2022-06-05,Wikipedia,https://en.wikipedia.org/wiki/2022%E2%80%9323_Bengaluru_FC_season,Verified
-63,2022/23,p61,Iman Basafa,Departure,Midfielder,Bengaluru FC,Kheybar Khorramabad,Free,Departed,2022-06-06,Wikipedia,https://en.wikipedia.org/wiki/2022%E2%80%9323_Bengaluru_FC_season,Verified
-64,2022/23,p16,Cleiton Silva,Departure,Forward,Bengaluru FC,East Bengal,Free,Departed,2022-06-06,Wikipedia,https://en.wikipedia.org/wiki/2022%E2%80%9323_Bengaluru_FC_season,Verified
-65,2022/23,p26,Ashique Kuruniyan,Departure,Forward,Bengaluru FC,ATK Mohun Bagan,Undisclosed,Departed,2022-06-20,Wikipedia,https://en.wikipedia.org/wiki/2022%E2%80%9323_Bengaluru_FC_season,Verified
-66,2022/23,p46,Yrondu Musavu-King,Departure,Defender,Bengaluru FC,Without a club,Free,Departed,2022-07-15,Wikipedia,https://en.wikipedia.org/wiki/2022%E2%80%9323_Bengaluru_FC_season,Verified
-67,2022/23,p40,Ajith Kumar,Departure,Defender,Bengaluru FC,Chennaiyin,Undisclosed,Departed,2022-07-28,Wikipedia,https://en.wikipedia.org/wiki/2022%E2%80%9323_Bengaluru_FC_season,Verified
-68,2022/23,p37,Bidyashagar Singh,Departure,Forward,Bengaluru FC,Kerala Blasters,Undisclosed,Departed,2022-08-17,Wikipedia,https://en.wikipedia.org/wiki/2022%E2%80%9323_Bengaluru_FC_season,Verified
-69,2022/23,p02,Ajay Chhetri,Departure,Midfielder,Bengaluru FC,Punjab FC,Undisclosed,Departed,2022-09-01,Wikipedia,https://en.wikipedia.org/wiki/2022%E2%80%9323_Bengaluru_FC_season,Verified
-70,2022/23,p73,Rahul Raju,Departure,Forward,Bengaluru FC,Gokulam Kerala,Undisclosed,Departed,2022-08-31,Wikipedia,https://en.wikipedia.org/wiki/2022%E2%80%9323_Bengaluru_FC_season,Verified
-71,2022/23,p37,Bidyashagar Singh,Loan Out,Forward,Bengaluru FC,Kerala Blasters,Undisclosed,Loaned Out,2022-08-17,Wikipedia,https://en.wikipedia.org/wiki/2022%E2%80%9323_Bengaluru_FC_season,Verified
-72,2022/23,p02,Ajay Chhetri,Loan Out,Midfielder,Bengaluru FC,Punjab FC,Undisclosed,Loaned Out,2022-09-01,Wikipedia,https://en.wikipedia.org/wiki/2022%E2%80%9323_Bengaluru_FC_season,Verified
-73,2022/23,p73,Rahul Raju,Loan Out,Forward,Bengaluru FC,Gokulam Kerala,Undisclosed,Loaned Out,2022-08-31,Wikipedia,https://en.wikipedia.org/wiki/2022%E2%80%9323_Bengaluru_FC_season,Verified
-74,2023/24,p33,Sahil Poonia,Arrival,Goalkeeper,Zinc FA,Bengaluru FC,Free,Joined,2023-06-01,Wikipedia,https://en.wikipedia.org/wiki/2023%E2%80%9324_Bengaluru_FC_season,Verified
-75,2023/24,p21,Halicharan Narzary,Arrival,Forward,Hyderabad,Bengaluru FC,Free,Joined,2023-06-14,Wikipedia,https://en.wikipedia.org/wiki/2023%E2%80%9324_Bengaluru_FC_season,Verified
-76,2023/24,p37,Vikram Lakhbir Singh,Arrival,Goalkeeper,Aizawl,Bengaluru FC,Free,Joined,2023-06-21,Wikipedia,https://en.wikipedia.org/wiki/2023%E2%80%9324_Bengaluru_FC_season,Verified
-77,2023/24,p22,Slavko Damjanović,Arrival,Defender,Mohun Bagan,Bengaluru FC,Free,Joined,2023-06-28,Wikipedia,https://en.wikipedia.org/wiki/2023%E2%80%9324_Bengaluru_FC_season,Verified
-78,2023/24,p74,Rohit Danu,Arrival,Forward,Hyderabad,Bengaluru FC,Free,Joined,2023-07-07,Wikipedia,https://en.wikipedia.org/wiki/2023%E2%80%9324_Bengaluru_FC_season,Verified
-79,2023/24,p37,Salam Johnson Singh,Arrival,Forward,TRAU,Bengaluru FC,Free,Joined,2023-07-10,Wikipedia,https://en.wikipedia.org/wiki/2023%E2%80%9324_Bengaluru_FC_season,Verified
-80,2023/24,p25,Curtis Main,Arrival,Forward,St Mirren,Bengaluru FC,Free,Joined,2023-07-18,Wikipedia,https://en.wikipedia.org/wiki/2023%E2%80%9324_Bengaluru_FC_season,Verified
-81,2023/24,p75,Jessel Carneiro,Arrival,Defender,Kerala Blasters,Bengaluru FC,Free,Joined,2023-07-25,Wikipedia,https://en.wikipedia.org/wiki/2023%E2%80%9324_Bengaluru_FC_season,Verified
-82,2023/24,p76,Shankar Sampingiraj,Arrival,Midfielder,Punjab,Bengaluru FC,Free,Joined,2023-07-25,Wikipedia,https://en.wikipedia.org/wiki/2023%E2%80%9324_Bengaluru_FC_season,Verified
-83,2023/24,p14,Ryan Williams,Arrival,Midfielder,Perth Glory,Bengaluru FC,Free,Joined,2023-07-28,Wikipedia,https://en.wikipedia.org/wiki/2023%E2%80%9324_Bengaluru_FC_season,Verified
-84,2023/24,p24,Keziah Veendorp,Arrival,Midfielder,Emmen,Bengaluru FC,Free,Joined,2023-08-05,Wikipedia,https://en.wikipedia.org/wiki/2023%E2%80%9324_Bengaluru_FC_season,Verified
-85,2023/24,p37,Chinglensana Singh Konsham,Arrival,Defender,Hyderabad FC,Bengaluru FC,Free,Joined,2024-01-30,Wikipedia,https://en.wikipedia.org/wiki/2023%E2%80%9324_Bengaluru_FC_season,Verified
-86,2023/24,p77,Nikhil Poojary,Arrival,Defender,Hyderabad FC,Bengaluru FC,Free,Joined,2024-02-01,Wikipedia,https://en.wikipedia.org/wiki/2023%E2%80%9324_Bengaluru_FC_season,Verified
-87,2023/24,p29,Robin Yadav,Internal Promotion,Defender,Bengaluru B,Bengaluru FC,Free (Youth Promotion),Promoted,2023-06-01,Wikipedia,https://en.wikipedia.org/wiki/2023%E2%80%9324_Bengaluru_FC_season,Verified
-88,2023/24,p71,Ankith Padmanabhan,Internal Promotion,Forward,Bengaluru B,Bengaluru FC,Free (Youth Promotion),Promoted,2023-08-01,Wikipedia,https://en.wikipedia.org/wiki/2023%E2%80%9324_Bengaluru_FC_season,Verified
-89,2023/24,p78,Harsh Patre,Internal Promotion,Midfielder,Bengaluru B,Bengaluru FC,Free (Youth Promotion),Promoted,2023-08-31,Wikipedia,https://en.wikipedia.org/wiki/2023%E2%80%9324_Bengaluru_FC_season,Verified
-90,2023/24,p37,Chingambam Shivaldo Singh,Internal Promotion,Defender,Bengaluru B,Bengaluru FC,Free (Youth Promotion),Promoted,2023-12-01,Wikipedia,https://en.wikipedia.org/wiki/2023%E2%80%9324_Bengaluru_FC_season,Verified
-91,2023/24,p32,Monirul Molla,Internal Promotion,Forward,Bengaluru B,Bengaluru FC,Free (Youth Promotion),Promoted,2023-06-01,Wikipedia,https://en.wikipedia.org/wiki/2023%E2%80%9324_Bengaluru_FC_season,Verified
-92,2024/25,p13,Mohammeed Salah,Arrival,Defender,Punjab FC,Bengaluru FC,Free,Joined,2024-07-07,Wikipedia,https://en.wikipedia.org/wiki/2024%E2%80%9325_Bengaluru_FC_season,Verified
-93,2024/25,p34,Lalthuammawia Ralte,Arrival,Goalkeeper,Odisha FC,Bengaluru FC,Free,Joined,2024-07-07,Wikipedia,https://en.wikipedia.org/wiki/2024%E2%80%9325_Bengaluru_FC_season,Verified
-94,2024/25,p09,Rahul Bheke,Arrival,Defender,Mumbai City FC,Bengaluru FC,Free,Joined,2024-07-07,Wikipedia,https://en.wikipedia.org/wiki/2024%E2%80%9325_Bengaluru_FC_season,Verified
-95,2024/25,p07,Alberto Noguera,Arrival,Midfielder,Mumbai City FC,Bengaluru FC,Free,Joined,2024-07-07,Wikipedia,https://en.wikipedia.org/wiki/2024%E2%80%9325_Bengaluru_FC_season,Verified
-96,2024/25,p08,Edgar Mendez,Arrival,Forward,Club Necaxa,Bengaluru FC,Free,Joined,2024-07-07,Wikipedia,https://en.wikipedia.org/wiki/2024%E2%80%9325_Bengaluru_FC_season,Verified
-97,2024/25,p06,Jorge Pereyra Díaz,Arrival,Forward,Mumbai City FC,Bengaluru FC,Free,Joined,2024-07-07,Wikipedia,https://en.wikipedia.org/wiki/2024%E2%80%9325_Bengaluru_FC_season,Verified
-98,2024/25,p12,Pedro Capo,Arrival,Midfielder,CD Eldense,Bengaluru FC,Free,Joined,2024-07-16,Wikipedia,https://en.wikipedia.org/wiki/2024%E2%80%9325_Bengaluru_FC_season,Verified
-99,2024/25,p43,Lara Sharma,Departure,Goalkeeper,Bengaluru FC,FC Goa,"₹30 lakh (US$31,000)",Departed,2024-06-18,Wikipedia,https://en.wikipedia.org/wiki/2024%E2%80%9325_Bengaluru_FC_season,Verified
-100,2024/25,p15,Javi Hernández,Departure,Midfielder,Bengaluru FC,Jamshedpur FC,Free,Departed,2024-07-25,Wikipedia,https://en.wikipedia.org/wiki/2024%E2%80%9325_Bengaluru_FC_season,Verified
-101,2024/25,p23,Oliver Drost,Departure,Forward,Bengaluru FC,FC Helsingør,Free,Departed,"₹2 crore (US$210,000)",Wikipedia,https://en.wikipedia.org/wiki/2024%E2%80%9325_Bengaluru_FC_season,Verified
-102,2024/25,p22,Slavko Damjanovic,Departure,Defender,Bengaluru FC,Persebaya Surabaya,Free,Departed,2024-07-06,Wikipedia,https://en.wikipedia.org/wiki/2024%E2%80%9325_Bengaluru_FC_season,Verified
-103,2024/25,p20,Rohit Kumar,Departure,Midfielder,Bengaluru FC,Odisha FC,Free,Departed,2024-06-12,Wikipedia,https://en.wikipedia.org/wiki/2024%E2%80%9325_Bengaluru_FC_season,Verified
-104,2024/25,p59,Jayesh Rane,Departure,Midfielder,Bengaluru FC,Mumbai City FC,Free,Departed,2024-06-21,Wikipedia,https://en.wikipedia.org/wiki/2024%E2%80%9325_Bengaluru_FC_season,Verified
-105,2024/25,p38,Amrit Gope,Departure,Goalkeeper,Bengaluru FC,Jamshedpur FC,Free,Departed,2024-06-27,Wikipedia,https://en.wikipedia.org/wiki/2024%E2%80%9325_Bengaluru_FC_season,Verified
-106,2024/25,p29,Robin Yadav,Departure,Defender,Bengaluru FC,NorthEast United FC,Free,Departed,2024-07-13,Wikipedia,https://en.wikipedia.org/wiki/2024%E2%80%9325_Bengaluru_FC_season,Verified
-107,2024/25,p24,Keziah Veendorp,Departure,Midfielder,Bengaluru FC,Without a club,Free,Departed,2024-07-12,Wikipedia,https://en.wikipedia.org/wiki/2024%E2%80%9325_Bengaluru_FC_season,Verified
-108,2024/25,p76,Shankar Sampingiraj,Departure,Defender,Bengaluru FC,SC Bengaluru,Free,Departed,2024-06-01,Wikipedia,https://en.wikipedia.org/wiki/2024%E2%80%9325_Bengaluru_FC_season,Verified
-109,2024/25,p28,Parag Shrivas,Departure,Defender,Bengaluru FC,Hyderabad FC,Free,Departed,2024-06-01,Wikipedia,https://en.wikipedia.org/wiki/2024%E2%80%9325_Bengaluru_FC_season,Verified
-110,2024/25,p02,Ajay Chhetri,Departure,Midfielder,Bengaluru FC,Sreenidi Deccan FC,Free,Departed,2024-06-01,Wikipedia,https://en.wikipedia.org/wiki/2024%E2%80%9325_Bengaluru_FC_season,Verified
-111,2024/25,p37,Salam Johnson Singh,Departure,Forward,Bengaluru FC,SC Bengaluru,Undisclosed,Departed,2024-09-11,Wikipedia,https://en.wikipedia.org/wiki/2024%E2%80%9325_Bengaluru_FC_season,Verified
-112,2024/25,p37,Salam Johnson Singh,Loan Out,Forward,Bengaluru FC,SC Bengaluru,Undisclosed,Loaned Out,2024-09-11,Wikipedia,https://en.wikipedia.org/wiki/2024%E2%80%9325_Bengaluru_FC_season,Verified
-113,2024/25,p08,Édgar Méndez,Arrival,Winger,Club Necaxa,Bengaluru FC,Free,Joined,2024-07-09,Wikipedia,https://en.wikipedia.org/wiki/2024%E2%80%9325_Bengaluru_FC_season,Verified
-114,2024/25,p13,Mohamed Salah,Arrival,Left Back,Punjab FC,Bengaluru FC,Free,Joined,2024-07-05,Wikipedia,https://en.wikipedia.org/wiki/2024%E2%80%9325_Bengaluru_FC_season,Verified
-115,2024/25,p12,Pedro Capó,Arrival,Defensive Midfielder,CD Eldense,Bengaluru FC,Free,Joined,2024-07-15,Wikipedia,https://en.wikipedia.org/wiki/2024%E2%80%9325_Bengaluru_FC_season,Verified
-116,2024/25,p22,Slavko Damjanović,Departure,Centre Back,Bengaluru FC,FK Sutjeska Nikšić,Free,Departed,2024-06-30,Wikipedia,https://en.wikipedia.org/wiki/2024%E2%80%9325_Bengaluru_FC_season,Verified
+26,2020/21,p02,Ajay Chhetri,Loan Out,Midfielder,Bengaluru FC,East Bengal,Unknown,Loaned Out,2021-01-15,Wikipedia,https://en.wikipedia.org/wiki/2020%E2%80%9321_Bengaluru_FC_season,Verified
+27,2021/22,p20,Rohit Kumar,Arrival,Midfielder,Kerala Blasters,Bengaluru FC,Free,Joined,2021-06-29,Wikipedia,https://en.wikipedia.org/wiki/2021%E2%80%9322_Bengaluru_FC_season,Verified
+28,2021/22,p57,Sarthak Golui,Arrival,Defender,East Bengal,Bengaluru FC,Free,Joined,2021-07-12,Wikipedia,https://en.wikipedia.org/wiki/2021%E2%80%9322_Bengaluru_FC_season,Verified
+29,2021/22,p58,Prince Ibara,Arrival,Forward,Châteauroux,Bengaluru FC,Free,Joined,2021-07-16,Wikipedia,https://en.wikipedia.org/wiki/2021%E2%80%9322_Bengaluru_FC_season,Verified
+30,2021/22,p37,Harmanpreet Singh,Arrival,Forward,East Bengal,Bengaluru FC,Free,Joined,2021-07-19,Wikipedia,https://en.wikipedia.org/wiki/2021%E2%80%9322_Bengaluru_FC_season,Verified
+31,2021/22,p59,Jayesh Rane,Arrival,Midfielder,ATK Mohun Bagan,Bengaluru FC,Free,Joined,2021-07-22,Wikipedia,https://en.wikipedia.org/wiki/2021%E2%80%9322_Bengaluru_FC_season,Verified
+32,2021/22,p60,Danish Farooq Bhat,Arrival,Midfielder,Real Kashmir,Bengaluru FC,Free,Joined,2021-07-25,Wikipedia,https://en.wikipedia.org/wiki/2021%E2%80%9322_Bengaluru_FC_season,Verified
+33,2021/22,p37,Bidyashagar Singh,Arrival,Forward,TRAU,Bengaluru FC,Undisclosed,Joined,2021-07-28,Wikipedia,https://en.wikipedia.org/wiki/2021%E2%80%9322_Bengaluru_FC_season,Verified
+34,2021/22,p18,Bruno Ramires,Arrival,Midfielder,Belenenses,Bengaluru FC,Free,Joined,2021-08-28,Wikipedia,https://en.wikipedia.org/wiki/2021%E2%80%9322_Bengaluru_FC_season,Verified
+35,2021/22,p61,Iman Basafa,Arrival,Midfielder,Machine Sazi,Bengaluru FC,Free,Joined,2021-09-14,Wikipedia,https://en.wikipedia.org/wiki/2021%E2%80%9322_Bengaluru_FC_season,Verified
+36,2021/22,p19,Alan Costa,Loan In,Defender,Avaí,Bengaluru FC,Undisclosed,Loaned In,2021-07-06,Wikipedia,https://en.wikipedia.org/wiki/2021%E2%80%9322_Bengaluru_FC_season,Verified
+37,2021/22,p62,Harmanjot Khabra,Departure,Midfielder,Bengaluru FC,Kerala Blasters,Free,Departed,2021-05-30,Wikipedia,https://en.wikipedia.org/wiki/2021%E2%80%9322_Bengaluru_FC_season,Verified
+38,2021/22,p63,Dimas Delgado,Departure,Midfielder,Bengaluru FC,–,Free,Departed,2021-05-30,Wikipedia,https://en.wikipedia.org/wiki/2021%E2%80%9322_Bengaluru_FC_season,Verified
+39,2021/22,p09,Rahul Bheke,Departure,Defender,Bengaluru FC,Mumbai City,Free,Departed,2021-05-31,Wikipedia,https://en.wikipedia.org/wiki/2021%E2%80%9322_Bengaluru_FC_season,Verified
+40,2021/22,p64,Thongkhosiem Haokip,Departure,Forward,Bengaluru FC,East Bengal,Free,Departed,2021-05-31,Wikipedia,https://en.wikipedia.org/wiki/2021%E2%80%9322_Bengaluru_FC_season,Verified
+41,2021/22,p44,Fran González,Departure,Defender,Bengaluru FC,Unknown,Free,Departed,2021-05-31,Wikipedia,https://en.wikipedia.org/wiki/2021%E2%80%9322_Bengaluru_FC_season,Partial
+42,2021/22,p15,Xisco Hernández,Departure,Midfielder,Bengaluru FC,Unknown,Free,Departed,2021-05-31,Wikipedia,https://en.wikipedia.org/wiki/2021%E2%80%9322_Bengaluru_FC_season,Partial
+43,2021/22,p65,Juanan,Departure,Defender,Bengaluru FC,Hyderabad,Released,Departed,2021-06-28,Wikipedia,https://en.wikipedia.org/wiki/2021%E2%80%9322_Bengaluru_FC_season,Verified
+44,2021/22,p41,Joe Zoherliana,Departure,Defender,Bengaluru FC,NorthEast United,Released,Departed,2021-07-26,Wikipedia,https://en.wikipedia.org/wiki/2021%E2%80%9322_Bengaluru_FC_season,Verified
+45,2021/22,p34,Lalthuammawia Ralte,Departure,Goalkeeper,Bengaluru FC,RoundGlass Punjab,Undisclosed,Departed,2021-08-28,Wikipedia,https://en.wikipedia.org/wiki/2021%E2%80%9322_Bengaluru_FC_season,Verified
+46,2021/22,p66,Emanuel Lalchhanchhuaha,Departure,Midfielder,Bengaluru FC,NorthEast United,Undisclosed,Departed,2021-09-08,Wikipedia,https://en.wikipedia.org/wiki/2021%E2%80%9322_Bengaluru_FC_season,Verified
+47,2022/23,p67,Prabir Das,Arrival,Defender,ATK Mohun Bagan,Bengaluru FC,Undisclosed,Joined,2022-06-20,Wikipedia,https://en.wikipedia.org/wiki/2022%E2%80%9323_Bengaluru_FC_season,Verified
+48,2022/23,p15,Javi Hernández,Arrival,Midfielder,Odisha,Bengaluru FC,Free,Joined,2022-06-22,Wikipedia,https://en.wikipedia.org/wiki/2022%E2%80%9323_Bengaluru_FC_season,Verified
+49,2022/23,p68,Faisal Ali,Arrival,Forward,Mohammedan,Bengaluru FC,Free,Joined,2022-07-01,Wikipedia,https://en.wikipedia.org/wiki/2022%E2%80%9323_Bengaluru_FC_season,Verified
+50,2022/23,p38,Amrit Gope,Arrival,Goalkeeper,TRAU,Bengaluru FC,Free,Joined,2022-07-01,Wikipedia,https://en.wikipedia.org/wiki/2022%E2%80%9323_Bengaluru_FC_season,Verified
+51,2022/23,p69,Hira Mondal,Arrival,Defender,East Bengal,Bengaluru FC,Free,Joined,2022-07-05,Wikipedia,https://en.wikipedia.org/wiki/2022%E2%80%9323_Bengaluru_FC_season,Verified
+52,2022/23,p17,Roy Krishna,Arrival,Forward,ATK Mohun Bagan,Bengaluru FC,Free,Joined,2022-07-18,Wikipedia,https://en.wikipedia.org/wiki/2022%E2%80%9323_Bengaluru_FC_season,Verified
+53,2022/23,p10,Aleksandar Jovanović,Arrival,Defender,Macarthur FC,Bengaluru FC,Free,Joined,2022-07-22,Wikipedia,https://en.wikipedia.org/wiki/2022%E2%80%9323_Bengaluru_FC_season,Verified
+54,2022/23,p70,Sudheer Kotikala,Arrival,Forward,Kickstart FC,Bengaluru FC,Free,Joined,2022-07-23,Wikipedia,https://en.wikipedia.org/wiki/2022%E2%80%9323_Bengaluru_FC_season,Verified
+55,2022/23,p71,Ankith Padmanabhan,Arrival,Forward,Kickstart FC,Bengaluru FC,Free,Joined,2022-07-23,Wikipedia,https://en.wikipedia.org/wiki/2022%E2%80%9323_Bengaluru_FC_season,Verified
+56,2022/23,p31,Clarence Fernandes,Arrival,Defender,Dempo U-18,Bengaluru FC,Free,Joined,2022-07-23,Wikipedia,https://en.wikipedia.org/wiki/2022%E2%80%9323_Bengaluru_FC_season,Verified
+57,2022/23,p31,Felixson Fernandes,Arrival,Defender,RF Young Champs,Bengaluru FC,Free,Joined,2022-07-23,Wikipedia,https://en.wikipedia.org/wiki/2022%E2%80%9323_Bengaluru_FC_season,Verified
+58,2022/23,p72,Sandesh Jhingan,Arrival,Defender,ATK Mohun Bagan,Bengaluru FC,Free,Joined,2022-08-14,Wikipedia,https://en.wikipedia.org/wiki/2022%E2%80%9323_Bengaluru_FC_season,Verified
+59,2022/23,p39,Pratik Chaudhari,Departure,Defender,Bengaluru FC,Jamshedpur,Free,Departed,2022-06-05,Wikipedia,https://en.wikipedia.org/wiki/2022%E2%80%9323_Bengaluru_FC_season,Verified
+60,2022/23,p57,Sarthak Golui,Departure,Defender,Bengaluru FC,East Bengal,Free,Departed,2022-06-05,Wikipedia,https://en.wikipedia.org/wiki/2022%E2%80%9323_Bengaluru_FC_season,Verified
+61,2022/23,p61,Iman Basafa,Departure,Midfielder,Bengaluru FC,Kheybar Khorramabad,Free,Departed,2022-06-06,Wikipedia,https://en.wikipedia.org/wiki/2022%E2%80%9323_Bengaluru_FC_season,Verified
+62,2022/23,p16,Cleiton Silva,Departure,Forward,Bengaluru FC,East Bengal,Free,Departed,2022-06-06,Wikipedia,https://en.wikipedia.org/wiki/2022%E2%80%9323_Bengaluru_FC_season,Verified
+63,2022/23,p26,Ashique Kuruniyan,Departure,Forward,Bengaluru FC,ATK Mohun Bagan,Undisclosed,Departed,2022-06-20,Wikipedia,https://en.wikipedia.org/wiki/2022%E2%80%9323_Bengaluru_FC_season,Verified
+64,2022/23,p46,Yrondu Musavu-King,Departure,Defender,Bengaluru FC,Without a club,Free,Departed,2022-07-15,Wikipedia,https://en.wikipedia.org/wiki/2022%E2%80%9323_Bengaluru_FC_season,Verified
+65,2022/23,p40,Ajith Kumar,Departure,Defender,Bengaluru FC,Chennaiyin,Undisclosed,Departed,2022-07-28,Wikipedia,https://en.wikipedia.org/wiki/2022%E2%80%9323_Bengaluru_FC_season,Verified
+66,2022/23,p37,Bidyashagar Singh,Loan Out,Forward,Bengaluru FC,Kerala Blasters,Undisclosed,Loaned Out,2022-08-17,Wikipedia,https://en.wikipedia.org/wiki/2022%E2%80%9323_Bengaluru_FC_season,Verified
+67,2022/23,p02,Ajay Chhetri,Loan Out,Midfielder,Bengaluru FC,Punjab FC,Undisclosed,Loaned Out,2022-09-01,Wikipedia,https://en.wikipedia.org/wiki/2022%E2%80%9323_Bengaluru_FC_season,Verified
+68,2022/23,p73,Rahul Raju,Loan Out,Forward,Bengaluru FC,Gokulam Kerala,Undisclosed,Loaned Out,2022-08-31,Wikipedia,https://en.wikipedia.org/wiki/2022%E2%80%9323_Bengaluru_FC_season,Verified
+69,2023/24,p33,Sahil Poonia,Arrival,Goalkeeper,Zinc FA,Bengaluru FC,Free,Joined,2023-06-01,Wikipedia,https://en.wikipedia.org/wiki/2023%E2%80%9324_Bengaluru_FC_season,Verified
+70,2023/24,p21,Halicharan Narzary,Arrival,Forward,Hyderabad,Bengaluru FC,Free,Joined,2023-06-14,Wikipedia,https://en.wikipedia.org/wiki/2023%E2%80%9324_Bengaluru_FC_season,Verified
+71,2023/24,p37,Vikram Lakhbir Singh,Arrival,Goalkeeper,Aizawl,Bengaluru FC,Free,Joined,2023-06-21,Wikipedia,https://en.wikipedia.org/wiki/2023%E2%80%9324_Bengaluru_FC_season,Verified
+72,2023/24,p22,Slavko Damjanović,Arrival,Defender,Mohun Bagan,Bengaluru FC,Free,Joined,2023-06-28,Wikipedia,https://en.wikipedia.org/wiki/2023%E2%80%9324_Bengaluru_FC_season,Verified
+73,2023/24,p74,Rohit Danu,Arrival,Forward,Hyderabad,Bengaluru FC,Free,Joined,2023-07-07,Wikipedia,https://en.wikipedia.org/wiki/2023%E2%80%9324_Bengaluru_FC_season,Verified
+74,2023/24,p37,Salam Johnson Singh,Arrival,Forward,TRAU,Bengaluru FC,Free,Joined,2023-07-10,Wikipedia,https://en.wikipedia.org/wiki/2023%E2%80%9324_Bengaluru_FC_season,Verified
+75,2023/24,p25,Curtis Main,Arrival,Forward,St Mirren,Bengaluru FC,Free,Joined,2023-07-18,Wikipedia,https://en.wikipedia.org/wiki/2023%E2%80%9324_Bengaluru_FC_season,Verified
+76,2023/24,p75,Jessel Carneiro,Arrival,Defender,Kerala Blasters,Bengaluru FC,Free,Joined,2023-07-25,Wikipedia,https://en.wikipedia.org/wiki/2023%E2%80%9324_Bengaluru_FC_season,Verified
+77,2023/24,p76,Shankar Sampingiraj,Arrival,Midfielder,Punjab,Bengaluru FC,Free,Joined,2023-07-25,Wikipedia,https://en.wikipedia.org/wiki/2023%E2%80%9324_Bengaluru_FC_season,Verified
+78,2023/24,p14,Ryan Williams,Arrival,Midfielder,Perth Glory,Bengaluru FC,Free,Joined,2023-07-28,Wikipedia,https://en.wikipedia.org/wiki/2023%E2%80%9324_Bengaluru_FC_season,Verified
+79,2023/24,p24,Keziah Veendorp,Arrival,Midfielder,Emmen,Bengaluru FC,Free,Joined,2023-08-05,Wikipedia,https://en.wikipedia.org/wiki/2023%E2%80%9324_Bengaluru_FC_season,Verified
+80,2023/24,p37,Chinglensana Singh Konsham,Arrival,Defender,Hyderabad FC,Bengaluru FC,Free,Joined,2024-01-30,Wikipedia,https://en.wikipedia.org/wiki/2023%E2%80%9324_Bengaluru_FC_season,Verified
+81,2023/24,p77,Nikhil Poojary,Arrival,Defender,Hyderabad FC,Bengaluru FC,Free,Joined,2024-02-01,Wikipedia,https://en.wikipedia.org/wiki/2023%E2%80%9324_Bengaluru_FC_season,Verified
+82,2023/24,p29,Robin Yadav,Internal Promotion,Defender,Bengaluru B,Bengaluru FC,Free (Youth Promotion),Promoted,2023-06-01,Wikipedia,https://en.wikipedia.org/wiki/2023%E2%80%9324_Bengaluru_FC_season,Verified
+83,2023/24,p71,Ankith Padmanabhan,Internal Promotion,Forward,Bengaluru B,Bengaluru FC,Free (Youth Promotion),Promoted,2023-08-01,Wikipedia,https://en.wikipedia.org/wiki/2023%E2%80%9324_Bengaluru_FC_season,Verified
+84,2023/24,p78,Harsh Patre,Internal Promotion,Midfielder,Bengaluru B,Bengaluru FC,Free (Youth Promotion),Promoted,2023-08-31,Wikipedia,https://en.wikipedia.org/wiki/2023%E2%80%9324_Bengaluru_FC_season,Verified
+85,2023/24,p37,Chingambam Shivaldo Singh,Internal Promotion,Defender,Bengaluru B,Bengaluru FC,Free (Youth Promotion),Promoted,2023-12-01,Wikipedia,https://en.wikipedia.org/wiki/2023%E2%80%9324_Bengaluru_FC_season,Verified
+86,2023/24,p32,Monirul Molla,Internal Promotion,Forward,Bengaluru B,Bengaluru FC,Free (Youth Promotion),Promoted,2023-06-01,Wikipedia,https://en.wikipedia.org/wiki/2023%E2%80%9324_Bengaluru_FC_season,Verified
+87,2024/25,p13,Mohamed Salah,Arrival,Defender,Punjab FC,Bengaluru FC,Free,Joined,2024-07-07,Wikipedia,https://en.wikipedia.org/wiki/2024%E2%80%9325_Bengaluru_FC_season,Verified
+88,2024/25,p34,Lalthuammawia Ralte,Arrival,Goalkeeper,Odisha FC,Bengaluru FC,Free,Joined,2024-07-07,Wikipedia,https://en.wikipedia.org/wiki/2024%E2%80%9325_Bengaluru_FC_season,Verified
+89,2024/25,p09,Rahul Bheke,Arrival,Defender,Mumbai City FC,Bengaluru FC,Free,Joined,2024-07-07,Wikipedia,https://en.wikipedia.org/wiki/2024%E2%80%9325_Bengaluru_FC_season,Verified
+90,2024/25,p07,Alberto Noguera,Arrival,Midfielder,Mumbai City FC,Bengaluru FC,Free,Joined,2024-07-07,Wikipedia,https://en.wikipedia.org/wiki/2024%E2%80%9325_Bengaluru_FC_season,Verified
+91,2024/25,p08,Édgar Méndez,Arrival,Forward,Club Necaxa,Bengaluru FC,Free,Joined,2024-07-07,Wikipedia,https://en.wikipedia.org/wiki/2024%E2%80%9325_Bengaluru_FC_season,Verified
+92,2024/25,p06,Jorge Pereyra Díaz,Arrival,Forward,Mumbai City FC,Bengaluru FC,Free,Joined,2024-07-07,Wikipedia,https://en.wikipedia.org/wiki/2024%E2%80%9325_Bengaluru_FC_season,Verified
+93,2024/25,p12,Pedro Capó,Arrival,Midfielder,CD Eldense,Bengaluru FC,Free,Joined,2024-07-16,Wikipedia,https://en.wikipedia.org/wiki/2024%E2%80%9325_Bengaluru_FC_season,Verified
+94,2024/25,p43,Lara Sharma,Departure,Goalkeeper,Bengaluru FC,FC Goa,"₹30 lakh (US$31,000)",Departed,2024-06-18,Wikipedia,https://en.wikipedia.org/wiki/2024%E2%80%9325_Bengaluru_FC_season,Verified
+95,2024/25,p15,Javi Hernández,Departure,Midfielder,Bengaluru FC,Jamshedpur FC,Free,Departed,2024-07-25,Wikipedia,https://en.wikipedia.org/wiki/2024%E2%80%9325_Bengaluru_FC_season,Verified
+96,2024/25,p23,Oliver Drost,Departure,Forward,Bengaluru FC,FC Helsingør,Free,Departed,2024-07-10,Wikipedia,https://en.wikipedia.org/wiki/2024%E2%80%9325_Bengaluru_FC_season,Verified
+97,2024/25,p22,Slavko Damjanović,Departure,Defender,Bengaluru FC,Persebaya Surabaya,Free,Departed,2024-07-06,Wikipedia,https://en.wikipedia.org/wiki/2024%E2%80%9325_Bengaluru_FC_season,Verified
+98,2024/25,p20,Rohit Kumar,Departure,Midfielder,Bengaluru FC,Odisha FC,Free,Departed,2024-06-12,Wikipedia,https://en.wikipedia.org/wiki/2024%E2%80%9325_Bengaluru_FC_season,Verified
+99,2024/25,p59,Jayesh Rane,Departure,Midfielder,Bengaluru FC,Mumbai City FC,Free,Departed,2024-06-21,Wikipedia,https://en.wikipedia.org/wiki/2024%E2%80%9325_Bengaluru_FC_season,Verified
+100,2024/25,p38,Amrit Gope,Departure,Goalkeeper,Bengaluru FC,Jamshedpur FC,Free,Departed,2024-06-27,Wikipedia,https://en.wikipedia.org/wiki/2024%E2%80%9325_Bengaluru_FC_season,Verified
+101,2024/25,p29,Robin Yadav,Departure,Defender,Bengaluru FC,NorthEast United FC,Free,Departed,2024-07-13,Wikipedia,https://en.wikipedia.org/wiki/2024%E2%80%9325_Bengaluru_FC_season,Verified
+102,2024/25,p24,Keziah Veendorp,Departure,Midfielder,Bengaluru FC,Without a club,Free,Departed,2024-07-12,Wikipedia,https://en.wikipedia.org/wiki/2024%E2%80%9325_Bengaluru_FC_season,Verified
+103,2024/25,p76,Shankar Sampingiraj,Departure,Defender,Bengaluru FC,SC Bengaluru,Free,Departed,2024-06-01,Wikipedia,https://en.wikipedia.org/wiki/2024%E2%80%9325_Bengaluru_FC_season,Verified
+104,2024/25,p28,Parag Shrivas,Departure,Defender,Bengaluru FC,Hyderabad FC,Free,Departed,2024-06-01,Wikipedia,https://en.wikipedia.org/wiki/2024%E2%80%9325_Bengaluru_FC_season,Verified
+105,2024/25,p02,Ajay Chhetri,Departure,Midfielder,Bengaluru FC,Sreenidi Deccan FC,Free,Departed,2024-06-01,Wikipedia,https://en.wikipedia.org/wiki/2024%E2%80%9325_Bengaluru_FC_season,Verified
+106,2024/25,p37,Salam Johnson Singh,Loan Out,Forward,Bengaluru FC,SC Bengaluru,Undisclosed,Loaned Out,2024-09-11,Wikipedia,https://en.wikipedia.org/wiki/2024%E2%80%9325_Bengaluru_FC_season,Verified

@@ -43,6 +43,15 @@ def parse_date(date_str: Any) -> str:
     if pd.isna(date_str) or not str(date_str).strip() or str(date_str).strip() in ["Unknown", "N/A"]:
         return "Unknown"
     s = str(date_str).strip()
+
+    # Reject financial / market value strings accidentally stored as dates
+    if any(kw in s.lower() for kw in ["₹", "$", "€", "crore", "lakh", "million", "usd"]):
+        m = re.search(r"\b\d{1,2}\s+[A-Za-z]+\s+\d{4}\b", s) or re.search(r"\b\d{4}-\d{2}-\d{2}\b", s)
+        if m:
+            s = m.group(0)
+        else:
+            return "Unknown"
+
     try:
         # Check standard ISO format first
         if re.match(r"^\d{4}-\d{2}-\d{2}$", s):
@@ -52,7 +61,81 @@ def parse_date(date_str: Any) -> str:
             return dt.strftime("%Y-%m-%d")
     except Exception:
         pass
+    return "Unknown"
+
+
+def normalize_player_name(name: Any) -> str:
+    """
+    Normalizes player names for robust deduplication matching:
+    - Converts to lowercase
+    - Strips accents/diacritics
+    - Collapses whitespace and punctuation
+    - Safely maps phonetic variants (e.g. Mohammeed -> Mohamed)
+    """
+    if name is None or pd.isna(name):
+        return ""
+    s = unicodedata.normalize("NFKD", str(name))
+    s = "".join(c for c in s if not unicodedata.combining(c)).strip().lower()
+    s = re.sub(r"[^a-z0-9\s]", "", s)
+    s = re.sub(r"\s+", " ", s).strip()
+    s = s.replace("mohammeed", "mohamed")
     return s
+
+
+CANONICAL_NAMES = {
+    "mohamed salah": "Mohamed Salah",
+    "edgar mendez": "Édgar Méndez",
+    "pedro capo": "Pedro Capó",
+    "slavko damjanovic": "Slavko Damjanović",
+    "jorge pereyra diaz": "Jorge Pereyra Díaz",
+    "aleksander jovanovic": "Aleksandar Jovanović",
+    "yrondu musavu-king": "Yrondu Musavu-King",
+}
+
+
+def get_canonical_display_name(name: str) -> str:
+    """Returns preferred canonical display name preserving verified accents."""
+    norm = normalize_player_name(name)
+    return CANONICAL_NAMES.get(norm, name)
+
+
+def deduplicate_loan_events(df: pd.DataFrame) -> pd.DataFrame:
+    """
+    Identifies cases where a loan event is double-counted as both a general
+    Arrival/Departure and a specific Loan In/Loan Out for the same player,
+    season, and club pairing. Retains the Loan In/Loan Out record and drops the
+    redundant Arrival/Departure.
+    """
+    if "norm_name" not in df.columns:
+        df["norm_name"] = df["player_name"].apply(normalize_player_name)
+
+    loan_mask = df["transfer_type"].isin(["Loan In", "Loan Out"])
+    loan_df = df[loan_mask]
+    to_drop = []
+
+    for l_idx, l_row in loan_df.iterrows():
+        p_norm = l_row["norm_name"]
+        season = l_row["season"]
+        target_type = "Departure" if l_row["transfer_type"] == "Loan Out" else "Arrival"
+
+        matches = df[
+            (~df.index.isin(loan_df.index)) &
+            (df["season"] == season) &
+            (df["transfer_type"] == target_type) &
+            (df["norm_name"] == p_norm)
+        ]
+
+        for m_idx in matches.index:
+            to_drop.append(m_idx)
+            logger.info(
+                f"Deduplicating redundant {target_type} for loan event: "
+                f"{df.loc[m_idx, 'player_name']} ({season}) in favor of {l_row['transfer_type']}"
+            )
+
+    df_cleaned = df.drop(index=to_drop).copy()
+    if "norm_name" in df_cleaned.columns:
+        df_cleaned.drop(columns=["norm_name"], inplace=True)
+    return df_cleaned
 
 
 def parse_market_value_to_numeric(mv_str: Any) -> Optional[float]:
@@ -169,6 +252,26 @@ def clean_and_harmonize():
     # Restrict historical transfers strictly to the official completed period: 2020/21 - 2024/25
     valid_seasons = ["2020/21", "2021/22", "2022/23", "2023/24", "2024/25"]
     df_transfers = df_transfers[df_transfers["season"].isin(valid_seasons)].copy()
+
+    # Standardize player names to canonical display format
+    df_transfers["player_name"] = df_transfers["player_name"].apply(get_canonical_display_name)
+    df_transfers["norm_name"] = df_transfers["player_name"].apply(normalize_player_name)
+
+    # Fix Oliver Drost date if column shift occurred with market value
+    for idx, r in df_transfers.iterrows():
+        if normalize_player_name(r["player_name"]) == "oliver drost" and r["season"] == "2024/25":
+            if any(kw in str(r["transfer_date"]).lower() for kw in ["₹", "$", "€", "crore", "lakh"]):
+                df_transfers.loc[idx, "transfer_date"] = "10 July 2024"
+
+    # Deduplicate by normalized player name, season, transfer_type, and from_club
+    df_transfers.drop_duplicates(
+        subset=["season", "norm_name", "transfer_type", "from_club"],
+        keep="first",
+        inplace=True,
+    )
+
+    # Deduplicate double-counted loan events (keep Loan In/Out, drop redundant Arrival/Departure)
+    df_transfers = deduplicate_loan_events(df_transfers)
 
     df_transfers.reset_index(drop=True, inplace=True)
     df_transfers["id"] = range(1, len(df_transfers) + 1)
@@ -289,6 +392,9 @@ def clean_and_harmonize():
     ]
     df_pw = df_pw[pw_cols]
 
+    # 5b. Extract Internal Promotions into dedicated academy_pathways dataset
+    df_academy = df_transfers[df_transfers["transfer_type"] == "Internal Promotion"].copy().reset_index(drop=True)
+
     # 6. Save to data/processed and data/final
     for d in [DATA_PROCESSED, DATA_FINAL]:
         df_transfers.to_csv(os.path.join(d, "transfers.csv"), index=False, encoding="utf-8")
@@ -296,6 +402,7 @@ def clean_and_harmonize():
         df_squads.to_csv(os.path.join(d, "squads.csv"), index=False, encoding="utf-8")
         df_mv.to_csv(os.path.join(d, "player_market_values.csv"), index=False, encoding="utf-8")
         df_pw.to_csv(os.path.join(d, "player_pathways.csv"), index=False, encoding="utf-8")
+        df_academy.to_csv(os.path.join(d, "academy_pathways.csv"), index=False, encoding="utf-8")
 
     logger.info(f"Successfully exported final master datasets to {DATA_FINAL}/")
 
@@ -303,11 +410,12 @@ def clean_and_harmonize():
     print("\n=======================================================")
     print("           DATA QUALITY & INTEGRITY REPORT             ")
     print("=======================================================")
-    print(f"Total Transfers:     {len(df_transfers)}")
-    print(f"Total Players:       {len(df_players)}")
-    print(f"Total Squad Entries: {len(df_squads)}")
-    print(f"Total Market Values: {len(df_mv)}")
-    print(f"Total Pathways:      {len(df_pw)}")
+    print(f"Total Transfers:        {len(df_transfers)}")
+    print(f"Total Players:          {len(df_players)}")
+    print(f"Total Squad Entries:    {len(df_squads)}")
+    print(f"Total Market Values:    {len(df_mv)}")
+    print(f"Total Pathways:         {len(df_pw)}")
+    print(f"Total Academy Pathways: {len(df_academy)}")
     print("\n--- Transfer Validation Statuses ---")
     print(df_transfers["validation_status"].value_counts().to_string())
     print("\n--- Player Validation Statuses ---")
