@@ -75,7 +75,7 @@ def get_six_key_conclusions() -> List[Dict[str, Any]]:
             "finding": "The club faces an impending, acute succession cliff in its offensive core, where primary goalscorers and creators are in the late twilight of their careers.",
             "supporting_metric": "Starting attackers and playmakers average 35.8 years of age (Sunil Chhetri 40, Jorge Pereyra Díaz 34, Alberto Noguera 35, Édgar Méndez 34), accounting for over 65% of offensive production.",
             "strategic_implication": "The club must execute a proactive, multi-window succession campaign targeting a high-pressing U25 dynamic striker and a prime-age creative midfielder (No. 8/10 hybrid) to prevent severe goalscoring and chance-creation voids upon veteran departures.",
-            "confidence_level": "Critical Priority (Immediate action needed before 2025/26 - 2026/27)",
+            "confidence_level": "Critical Priority (Immediate action needed for upcoming campaigns)",
         },
     ]
 

@@ -119,7 +119,7 @@ class NumberedCanvas(canvas.Canvas):
             # Footer Text
             self.setFont("Helvetica-Bold", 8)
             self.setFillColor(COLOR_TEXT_MUTED)
-            self.drawString(28, 14, "BENGALURU FC RECRUITMENT INTELLIGENCE  |  CONFIDENTIAL SCOUTING REPORT (2020/21 - 2026/27)")
+            self.drawString(28, 14, "BENGALURU FC RECRUITMENT INTELLIGENCE  |  CONFIDENTIAL SCOUTING REPORT (2020/21 - 2024/25)")
 
             self.setFont("Helvetica-Bold", 8)
             self.setFillColor(COLOR_ACCENT_SKY)
@@ -370,12 +370,12 @@ def build_page_02_executive_summary(styles: Dict[str, ParagraphStyle]) -> List[A
     ]
 
     # Row 1: KPI Cards
-    card1 = build_kpi_card("Seasons Analysed", "5", "2020/21 to 2024/25", styles, width=122)
-    card2 = build_kpi_card("Total Transfers", "106", "101 Ext + 5 Academy", styles, width=122)
-    card3 = build_kpi_card("Total Inbound", "59", "54 Ext + 5 Academy", styles, width=122)
-    card4 = build_kpi_card("Avg Signing Age", "27.0y", "Bimodal (24-26 & 30+)", styles, width=122)
-    card5 = build_kpi_card("Free Agent %", "92.6%", "50/54 External Free", styles, width=122)
-    card6 = build_kpi_card("Domestic Ratio", "57.4%", "31 Domestic Signings", styles, width=122)
+    card1 = build_kpi_card("Seasons Analysed", "5", "2020/21 to 2024/25", styles, width=125)
+    card2 = build_kpi_card("Total Transfers", "106", "101 Ext + 5 Academy", styles, width=125)
+    card3 = build_kpi_card("Total Inbound", "59", "54 Ext + 5 Academy", styles, width=125)
+    card4 = build_kpi_card("Avg Signing Age", "27.0y", "Bimodal (24-26 & 30+)", styles, width=125)
+    card5 = build_kpi_card("Free Agent %", "92.6%", "50/54 External Free", styles, width=125)
+    card6 = build_kpi_card("Domestic Ratio", "57.4%", "31 Domestic Signings", styles, width=125)
 
     kpi_table = Table([[card1, card2, card3, card4, card5, card6]], colWidths=[130]*6)
     kpi_table.setStyle(TableStyle([
@@ -422,7 +422,7 @@ def build_page_02_executive_summary(styles: Dict[str, ParagraphStyle]) -> List[A
     col3 = [
         Paragraph("<b>3. Strategic Imperatives</b>", styles["CardTitle"]),
         Spacer(1, 4),
-        Paragraph("To maintain championship contention through 2026/27, the sporting department must execute an immediate transition plan: securing a high-pressing U24 striker, acquiring a prime-age creative playmaker (No. 8/10), and strengthening wide defensive depth without blocking academy minutes.", styles["Body"]),
+        Paragraph("To maintain championship contention in upcoming campaigns, the sporting department must execute an immediate transition plan: securing a high-pressing U24 striker, acquiring a prime-age creative playmaker (No. 8/10), and strengthening wide defensive depth without blocking academy minutes.", styles["Body"]),
     ]
 
     exec_grid = Table([[col1, col2, col3]], colWidths=[256, 256, 256])
@@ -557,8 +557,8 @@ def build_page_04_transfer_history(styles: Dict[str, ParagraphStyle]) -> List[An
 
     # Analytical Observation Footer Box
     obs_text = (
-        "<b>STRATEGIC OBSERVATION:</b> Transfer activity exhibits an average turnover of 18.2 transactions per completed campaign. "
-        "Peak squad turnover occurred in 2020/21 (27 transactions) and 2024/25 (27 transactions), corresponding to head coach transitions. "
+        "<b>STRATEGIC OBSERVATION:</b> Transfer activity exhibits an average turnover of 21.2 transactions per completed campaign. "
+        "Peak squad turnover occurred in 2020/21 (26 transactions) and 2022/23 (22 transactions), corresponding to strategic squad rebuilds. "
         "The club has managed zero net negative transfer fee deficits by strictly utilizing free transfers and player swaps."
     )
     t_obs = Table([[Paragraph(obs_text, styles["Body"])]], colWidths=[785])
@@ -827,7 +827,7 @@ def build_page_08_market_value(styles: Dict[str, ParagraphStyle]) -> List[Any]:
 def build_page_09_current_squad(styles: Dict[str, ParagraphStyle]) -> List[Any]:
     """Page 9: Current Squad Analysis"""
     story = [
-        create_header_banner("08. Current Squad Analysis (2024/25 - 2026/27)", "Complete Player Classification & Roster Hierarchy", styles),
+        create_header_banner("08. Current Squad Analysis (2024/25 Season)", "Complete Player Classification & Roster Hierarchy", styles),
         Spacer(1, 4),
     ]
 
@@ -942,24 +942,29 @@ def build_page_11_six_key_conclusions(styles: Dict[str, ParagraphStyle]) -> List
 
     def make_conclusion_card(c: Dict[str, Any]) -> Table:
         title = f"<b>{c['id']}. {c['title']}</b>"
-        badge_style = styles["BadgeHigh"] if "Critical" in c["confidence_level"] else styles["BadgeLow"]
+        badge_style = styles["BadgeHigh"] if "Critical" in c.get("confidence_level", "") else styles["BadgeLow"]
+        finding = c.get("finding", c.get("insight", ""))
+        metric = c.get("supporting_metric", c.get("supporting_data", ""))
+        impl = c.get("strategic_implication", "")
         card_data = [
-            [Paragraph(title, styles["CardTitle"]), Paragraph(f"Confidence: {c['confidence_level']}", badge_style)],
-            [Paragraph(f"<b>Key Insight:</b> {c['insight']}", styles["Body"]), ""],
-            [Paragraph(f"<b>Supporting Data:</b> {c['supporting_data']}", styles["TableCellMuted"]), ""],
+            [Paragraph(title, styles["CardTitle"]), Paragraph(f"{c.get('confidence_level', 'High')}", badge_style)],
+            [Paragraph(f"<b>Finding:</b> {finding}", styles["TableCell"]), ""],
+            [Paragraph(f"<b>Supporting Metric:</b> {metric}", styles["TableCellMuted"]), ""],
+            [Paragraph(f"<b>Strategic Implication:</b> {impl}", styles["TableCellBold"]), ""],
         ]
         t = Table(card_data, colWidths=[270, 110])
         t.setStyle(TableStyle([
             ("SPAN", (0, 1), (1, 1)),
             ("SPAN", (0, 2), (1, 2)),
+            ("SPAN", (0, 3), (1, 3)),
             ("BACKGROUND", (0, 0), (-1, -1), COLOR_CARD_BG),
             ("BOX", (0, 0), (-1, -1), 1, COLOR_BORDER),
             ("LINEBELOW", (0, 0), (-1, 0), 1, COLOR_BFC_BLUE),
             ("VALIGN", (0, 0), (-1, -1), "TOP"),
-            ("TOPPADDING", (0, 0), (-1, -1), 4),
-            ("BOTTOMPADDING", (0, 0), (-1, -1), 4),
-            ("LEFTPADDING", (0, 0), (-1, -1), 6),
-            ("RIGHTPADDING", (0, 0), (-1, -1), 6),
+            ("TOPPADDING", (0, 0), (-1, -1), 3),
+            ("BOTTOMPADDING", (0, 0), (-1, -1), 3),
+            ("LEFTPADDING", (0, 0), (-1, -1), 5),
+            ("RIGHTPADDING", (0, 0), (-1, -1), 5),
         ]))
         return t
 
@@ -1164,7 +1169,8 @@ def build_page_14_player_shortlist(styles: Dict[str, ParagraphStyle]) -> List[An
         Paragraph("<b>100-PT WEIGHTED FIT CRITERIA:</b><br/>"
                   "&bull; Age Fit (20%) &bull; Position Fit (20%)<br/>"
                   "&bull; Market Value Fit (15%) &bull; Performance Fit (20%)<br/>"
-                  "&bull; Playing Style (15%) &bull; Development Upside (10%)", styles["TableCellMuted"]),
+                  "&bull; Playing Style (15%) &bull; Development Upside (10%)<br/>"
+                  "<b>Disclaimer:</b> Fit scores (92.4, 92.0, 90.2) are heuristic multi-criteria scouting valuations, not match event tracking metrics.", styles["TableCellMuted"]),
     ]
 
     radar_table = Table([[radar_summary[0]], [radar_summary[2]]], colWidths=[365])
