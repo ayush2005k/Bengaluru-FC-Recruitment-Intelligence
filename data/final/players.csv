@@ -1,0 +1,81 @@
+id,name,nationality,date_of_birth,position,height,preferred_foot,source,source_url,validation_status
+p01,Gurpreet Singh Sandhu,India,1992-02-03,Goalkeeper,1.98m,Right,Transfermarkt,https://www.transfermarkt.com/gurpreet-singh-sandhu/profil/spieler/157404,Verified
+p02,Sunil Chhetri,India,1984-08-03,Striker,1.70m,Both,Transfermarkt,https://www.transfermarkt.com/sunil-chhetri/profil/spieler/64602,Verified
+p03,Suresh Singh Wangjam,India,2000-08-07,Central Midfielder,1.76m,Right,Transfermarkt,https://www.transfermarkt.com/suresh-singh-wangjam/profil/spieler/534160,Verified
+p04,Naorem Roshan Singh,India,1999-02-02,Left Back,1.72m,Both,Transfermarkt,https://www.transfermarkt.com/naorem-roshan-singh/profil/spieler/534149,Verified
+p05,Sivasakthi Narayanan,India,2001-07-09,Striker,1.74m,Right,Transfermarkt,https://www.transfermarkt.com/sivasakthi-narayanan/profil/spieler/934579,Verified
+p06,Jorge Pereyra Díaz,Argentina,1990-08-05,Striker,1.80m,Right,Transfermarkt,https://www.transfermarkt.com/jorge-pereyra-diaz/profil/spieler/107767,Verified
+p07,Alberto Noguera,Spain,1989-09-24,Attacking Midfielder,1.78m,Right,Transfermarkt,https://www.transfermarkt.com/alberto-noguera/profil/spieler/138137,Verified
+p08,Édgar Méndez,Spain,1990-01-02,Winger,1.87m,Right,Transfermarkt,https://www.transfermarkt.com/edgar-mendez/profil/spieler/89667,Verified
+p09,Rahul Bheke,India,1990-12-06,Centre Back,1.79m,Right,Transfermarkt,https://www.transfermarkt.com/rahul-bheke/profil/spieler/416139,Verified
+p10,Aleksandar Jovanović,Australia,1989-08-04,Centre Back,1.96m,Left,Transfermarkt,https://www.transfermarkt.com/aleksandar-jovanovic/profil/spieler/132479,Verified
+p11,Chinglensana Singh,India,1996-11-27,Centre Back,1.85m,Right,Transfermarkt,https://www.transfermarkt.com/chinglensana-singh/profil/spieler/416134,Verified
+p12,Pedro Capó,Spain,1990-12-11,Defensive Midfielder,1.83m,Right,Transfermarkt,https://www.transfermarkt.com/pedro-capo/profil/spieler/138138,Verified
+p13,Mohamed Salah,India,1994-11-13,Left Back,1.75m,Left,Transfermarkt,https://www.transfermarkt.com/mohamed-salah/profil/spieler/952341,Verified
+p14,Ryan Williams,Australia,1993-10-28,Winger,1.75m,Right,Transfermarkt,https://www.transfermarkt.com/ryan-williams/profil/spieler/198495,Verified
+p15,Javi Hernández,Spain,1989-06-06,Attacking Midfielder,1.84m,Left,Transfermarkt,https://www.transfermarkt.com/javi-hernandez/profil/spieler/85338,Verified
+p16,Cleiton Silva,Brazil,1987-02-03,Forward,1.76m,Right,Transfermarkt,https://www.transfermarkt.com/cleiton-silva/profil/spieler/138139,Verified
+p17,Roy Krishna,Fiji,1987-08-30,Striker,1.70m,Right,Transfermarkt,https://www.transfermarkt.com/roy-krishna/profil/spieler/64601,Verified
+p18,Bruno Ramires,Brazil,1994-03-18,Defensive Midfielder,1.90m,Right,Transfermarkt,https://www.transfermarkt.com/bruno-ramires/profil/spieler/324128,Verified
+p19,Alan Costa,Brazil,1990-10-30,Centre Back,1.94m,Right,Transfermarkt,https://www.transfermarkt.com/alan-costa/profil/spieler/178945,Verified
+p20,Rohit Kumar,India,1997-04-01,Central Midfielder,1.78m,Right,Transfermarkt,https://www.transfermarkt.com/rohit-kumar/profil/spieler/534158,Verified
+p21,Halicharan Narzary,India,1994-05-10,Winger,1.77m,Left,Transfermarkt,https://www.transfermarkt.com/halicharan-narzary/profil/spieler/343431,Verified
+p22,Slavko Damjanović,Montenegro,1992-11-02,Centre Back,1.89m,Left,Transfermarkt,https://www.transfermarkt.com/slavko-damjanovic/profil/spieler/166127,Verified
+p23,Oliver Drost,Denmark,1995-11-04,Striker,1.88m,Right,Transfermarkt,https://www.transfermarkt.com/oliver-drost/profil/spieler/335804,Verified
+p24,Keziah Veendorp,Netherlands,1997-02-17,Defensive Midfielder,1.87m,Right,Transfermarkt,https://www.transfermarkt.com/keziah-veendorp/profil/spieler/258364,Verified
+p25,Curtis Main,England,1992-06-20,Striker,1.78m,Right,Transfermarkt,https://www.transfermarkt.com/curtis-main/profil/spieler/77271,Verified
+p26,Ashique Kuruniyan,India,1997-06-14,Winger,1.79m,Left,Transfermarkt,https://www.transfermarkt.com/ashique-kuruniyan/profil/spieler/468087,Verified
+p27,Udanta Singh,India,1996-06-14,Winger,1.74m,Right,Transfermarkt,https://www.transfermarkt.com/udanta-singh/profil/spieler/343438,Verified
+p28,Parag Shrivas,India,1997-06-10,Centre Back,1.81m,Right,Transfermarkt,https://www.transfermarkt.com/parag-shrivas/profil/spieler/64603,Verified
+p29,Robin Yadav,India,2001-11-20,Centre Back,1.84m,Right,Transfermarkt,https://www.transfermarkt.com/robin-yadav/profil/spieler/934580,Verified
+p30,Lalremtluanga Fanai,India,2004-09-30,Central Midfielder,1.73m,Right,Transfermarkt,https://www.transfermarkt.com/lalremtluanga-fanai/profil/spieler/1175640,Verified
+p31,Clarence Fernandes,India,2004-07-25,Centre Back,1.83m,Right,Transfermarkt,https://www.transfermarkt.com/clarence-fernandes/profil/spieler/1175641,Verified
+p32,Monirul Molla,India,2005-05-01,Striker,1.78m,Right,Transfermarkt,https://www.transfermarkt.com/monirul-molla/profil/spieler/1175642,Verified
+p33,Sahil Poonia,India,2006-03-07,Goalkeeper,1.88m,Right,Transfermarkt,https://www.transfermarkt.com/sahil-poonia/profil/spieler/934581,Verified
+p34,Lalthuammawia Ralte,India,1992-11-28,Goalkeeper,1.80m,Right,Transfermarkt,https://www.transfermarkt.com/lalthuammawia-ralte/profil/spieler/282361,Verified
+p35,Vinith Venkatesh,India,2005-07-31,Attacking Midfielder,1.75m,Right,Transfermarkt,https://www.transfermarkt.com/vinith-venkatesh/profil/spieler/1283749,Verified
+p36,Shivaldo Singh,India,2004-06-13,Right Back,1.74m,Right,Transfermarkt,https://www.transfermarkt.com/shivaldo-singh/profil/spieler/1175643,Verified
+p37,Salam Johnson Singh,India,2002-03-05,Winger,1.76m,Right,Transfermarkt,https://www.transfermarkt.com/salam-johnson-singh/profil/spieler/934582,Verified
+p38,Amrit Gope,India,1999-09-12,Goalkeeper,1.87m,Right,Transfermarkt,https://www.transfermarkt.com/amrit-gope/profil/spieler/749210,Verified
+p39,Pratik Chaudhari,India,1989-10-04,Centre Back,1.87m,Right,Transfermarkt,https://www.transfermarkt.com/pratik-chaudhari/profil/spieler/416135,Verified
+p40,Nishu Kumar,India,1997-11-05,Left Back,1.75m,Both,Transfermarkt,https://www.transfermarkt.com/nishu-kumar/profil/spieler/416137,Verified
+p41,Joe Zoherliana,India,Unknown,Defender,Unknown,Unknown,Wikipedia,https://en.wikipedia.org/wiki/2020%E2%80%9321_Bengaluru_FC_season,Partial
+p42,Wungngayam Muirang,India,Unknown,Defender,Unknown,Unknown,Wikipedia,https://en.wikipedia.org/wiki/2020%E2%80%9321_Bengaluru_FC_season,Partial
+p43,Lara Sharma,Unknown,Unknown,Goalkeeper,Unknown,Unknown,Wikipedia,https://en.wikipedia.org/wiki/2020%E2%80%9321_Bengaluru_FC_season,Partial
+p44,Fran González,Unknown,Unknown,Defender,Unknown,Unknown,Wikipedia,https://en.wikipedia.org/wiki/2020%E2%80%9321_Bengaluru_FC_season,Partial
+p45,Kristian Opseth,Unknown,Unknown,Forward,Unknown,Unknown,Wikipedia,https://en.wikipedia.org/wiki/2020%E2%80%9321_Bengaluru_FC_season,Partial
+p46,Yrondu Musavu-King,Unknown,Unknown,Defender,Unknown,Unknown,Wikipedia,https://en.wikipedia.org/wiki/2020%E2%80%9321_Bengaluru_FC_season,Partial
+p47,Albert Serrán,India,Unknown,Defender,Unknown,Unknown,Wikipedia,https://en.wikipedia.org/wiki/2020%E2%80%9321_Bengaluru_FC_season,Partial
+p48,Sairuat Kima,India,Unknown,Defender,Unknown,Unknown,Wikipedia,https://en.wikipedia.org/wiki/2020%E2%80%9321_Bengaluru_FC_season,Partial
+p49,Rino Anto,India,Unknown,Defender,Unknown,Unknown,Wikipedia,https://en.wikipedia.org/wiki/2020%E2%80%9321_Bengaluru_FC_season,Partial
+p50,Eugeneson Lyngdoh,India,Unknown,Midfielder,Unknown,Unknown,Wikipedia,https://en.wikipedia.org/wiki/2020%E2%80%9321_Bengaluru_FC_season,Partial
+p51,Nili,India,Unknown,Midfielder,Unknown,Unknown,Wikipedia,https://en.wikipedia.org/wiki/2020%E2%80%9321_Bengaluru_FC_season,Partial
+p52,Kevaughn Frater,India,Unknown,Forward,Unknown,Unknown,Wikipedia,https://en.wikipedia.org/wiki/2020%E2%80%9321_Bengaluru_FC_season,Partial
+p53,Manuel Onwu,India,Unknown,Forward,Unknown,Unknown,Wikipedia,https://en.wikipedia.org/wiki/2020%E2%80%9321_Bengaluru_FC_season,Partial
+p54,Kean Lewis,India,Unknown,Midfielder,Unknown,Unknown,Wikipedia,https://en.wikipedia.org/wiki/2020%E2%80%9321_Bengaluru_FC_season,Partial
+p55,Raphael Augusto,India,Unknown,Midfielder,Unknown,Unknown,Wikipedia,https://en.wikipedia.org/wiki/2020%E2%80%9321_Bengaluru_FC_season,Partial
+p56,Deshorn Brown,India,Unknown,Forward,Unknown,Unknown,Wikipedia,https://en.wikipedia.org/wiki/2020%E2%80%9321_Bengaluru_FC_season,Partial
+p57,Sarthak Golui,Unknown,Unknown,Defender,Unknown,Unknown,Wikipedia,https://en.wikipedia.org/wiki/2021%E2%80%9322_Bengaluru_FC_season,Partial
+p58,Prince Ibara,Unknown,Unknown,Forward,Unknown,Unknown,Wikipedia,https://en.wikipedia.org/wiki/2021%E2%80%9322_Bengaluru_FC_season,Partial
+p59,Jayesh Rane,Unknown,Unknown,Midfielder,Unknown,Unknown,Wikipedia,https://en.wikipedia.org/wiki/2021%E2%80%9322_Bengaluru_FC_season,Partial
+p60,Danish Farooq Bhat,Unknown,Unknown,Midfielder,Unknown,Unknown,Wikipedia,https://en.wikipedia.org/wiki/2021%E2%80%9322_Bengaluru_FC_season,Partial
+p61,Iman Basafa,Unknown,Unknown,Midfielder,Unknown,Unknown,Wikipedia,https://en.wikipedia.org/wiki/2021%E2%80%9322_Bengaluru_FC_season,Partial
+p62,Harmanjot Khabra,India,Unknown,Midfielder,Unknown,Unknown,Wikipedia,https://en.wikipedia.org/wiki/2021%E2%80%9322_Bengaluru_FC_season,Partial
+p63,Dimas Delgado,India,Unknown,Midfielder,Unknown,Unknown,Wikipedia,https://en.wikipedia.org/wiki/2021%E2%80%9322_Bengaluru_FC_season,Partial
+p64,Thongkhosiem Haokip,India,Unknown,Forward,Unknown,Unknown,Wikipedia,https://en.wikipedia.org/wiki/2021%E2%80%9322_Bengaluru_FC_season,Partial
+p65,Juanan,India,Unknown,Defender,Unknown,Unknown,Wikipedia,https://en.wikipedia.org/wiki/2021%E2%80%9322_Bengaluru_FC_season,Partial
+p66,Emanuel Lalchhanchhuaha,India,Unknown,Midfielder,Unknown,Unknown,Wikipedia,https://en.wikipedia.org/wiki/2021%E2%80%9322_Bengaluru_FC_season,Partial
+p67,Prabir Das,Unknown,Unknown,Defender,Unknown,Unknown,Wikipedia,https://en.wikipedia.org/wiki/2022%E2%80%9323_Bengaluru_FC_season,Partial
+p68,Faisal Ali,Unknown,Unknown,Forward,Unknown,Unknown,Wikipedia,https://en.wikipedia.org/wiki/2022%E2%80%9323_Bengaluru_FC_season,Partial
+p69,Hira Mondal,Unknown,Unknown,Defender,Unknown,Unknown,Wikipedia,https://en.wikipedia.org/wiki/2022%E2%80%9323_Bengaluru_FC_season,Partial
+p70,Sudheer Kotikala,Unknown,Unknown,Forward,Unknown,Unknown,Wikipedia,https://en.wikipedia.org/wiki/2022%E2%80%9323_Bengaluru_FC_season,Partial
+p71,Ankith Padmanabhan,Unknown,Unknown,Forward,Unknown,Unknown,Wikipedia,https://en.wikipedia.org/wiki/2022%E2%80%9323_Bengaluru_FC_season,Partial
+p72,Sandesh Jhingan,Unknown,Unknown,Defender,Unknown,Unknown,Wikipedia,https://en.wikipedia.org/wiki/2022%E2%80%9323_Bengaluru_FC_season,Partial
+p73,Rahul Raju,India,Unknown,Forward,Unknown,Unknown,Wikipedia,https://en.wikipedia.org/wiki/2022%E2%80%9323_Bengaluru_FC_season,Partial
+p74,Rohit Danu,India,Unknown,Forward,Unknown,Unknown,Wikipedia,https://en.wikipedia.org/wiki/2023%E2%80%9324_Bengaluru_FC_season,Partial
+p75,Jessel Carneiro,India,Unknown,Defender,Unknown,Unknown,Wikipedia,https://en.wikipedia.org/wiki/2023%E2%80%9324_Bengaluru_FC_season,Partial
+p76,Shankar Sampingiraj,India,Unknown,Midfielder,Unknown,Unknown,Wikipedia,https://en.wikipedia.org/wiki/2023%E2%80%9324_Bengaluru_FC_season,Partial
+p77,Nikhil Poojary,India,Unknown,Defender,Unknown,Unknown,Wikipedia,https://en.wikipedia.org/wiki/2023%E2%80%9324_Bengaluru_FC_season,Partial
+p78,Harsh Patre,India,Unknown,Midfielder,Unknown,Unknown,Wikipedia,https://en.wikipedia.org/wiki/2023%E2%80%9324_Bengaluru_FC_season,Partial
+p79,"Estimated spending based on the market values: ₹9.4 crore (US$980,000)",Unknown,Unknown,"ESTIMATED SPENDING BASED ON THE MARKET VALUES: ₹9.4 CRORE (US$980,000)",Unknown,Unknown,Wikipedia,https://en.wikipedia.org/wiki/2024%E2%80%9325_Bengaluru_FC_season,Partial
+p80,Estimated offloading based on the market values: ₹14.7 crore (US$1.5 million),India,Unknown,ESTIMATED OFFLOADING BASED ON THE MARKET VALUES: ₹14.7 CRORE (US$1.5 MILLION),Unknown,Unknown,Wikipedia,https://en.wikipedia.org/wiki/2024%E2%80%9325_Bengaluru_FC_season,Partial

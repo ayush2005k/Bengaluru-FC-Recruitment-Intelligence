@@ -1,0 +1,41 @@
+id,season,player_id,club,age,market_value,numeric_market_value,joined_date,signed_from,source,source_url,validation_status
+sq01,2024/25,p01,Bengaluru FC,32,€200k,200000.0,2017-08-14,Stabæk,Transfermarkt,https://www.transfermarkt.com/bengaluru-fc/kader/verein/41018,Verified
+sq02,2024/25,p02,Bengaluru FC,40,€50k,50000.0,2017-07-01,Mumbai City FC,Transfermarkt,https://www.transfermarkt.com/bengaluru-fc/kader/verein/41018,Verified
+sq03,2024/25,p03,Bengaluru FC,24,€300k,300000.0,2019-07-01,Indian Arrows,Transfermarkt,https://www.transfermarkt.com/bengaluru-fc/kader/verein/41018,Verified
+sq04,2024/25,p04,Bengaluru FC,25,€250k,250000.0,2020-09-01,Bengaluru FC II,Transfermarkt,https://www.transfermarkt.com/bengaluru-fc/kader/verein/41018,Verified
+sq05,2024/25,p05,Bengaluru FC,23,€200k,200000.0,2021-07-01,Bengaluru FC II,Transfermarkt,https://www.transfermarkt.com/bengaluru-fc/kader/verein/41018,Verified
+sq06,2024/25,p06,Bengaluru FC,34,€350k,350000.0,2024-06-25,Mumbai City FC,Transfermarkt,https://www.transfermarkt.com/bengaluru-fc/kader/verein/41018,Verified
+sq07,2024/25,p07,Bengaluru FC,35,€250k,250000.0,2024-06-20,Mumbai City FC,Transfermarkt,https://www.transfermarkt.com/bengaluru-fc/kader/verein/41018,Verified
+sq08,2024/25,p08,Bengaluru FC,34,€400k,400000.0,2024-07-09,Club Necaxa,Transfermarkt,https://www.transfermarkt.com/bengaluru-fc/kader/verein/41018,Verified
+sq09,2024/25,p09,Bengaluru FC,33,€175k,175000.0,2024-07-01,Mumbai City FC,Transfermarkt,https://www.transfermarkt.com/bengaluru-fc/kader/verein/41018,Verified
+sq10,2024/25,p10,Bengaluru FC,35,€200k,200000.0,2022-07-01,Macarthur FC,Transfermarkt,https://www.transfermarkt.com/bengaluru-fc/kader/verein/41018,Verified
+sq11,2024/25,p11,Bengaluru FC,27,€225k,225000.0,2024-01-31,Hyderabad FC,Transfermarkt,https://www.transfermarkt.com/bengaluru-fc/kader/verein/41018,Verified
+sq12,2024/25,p12,Bengaluru FC,33,€200k,200000.0,2024-07-15,CD Eldense,Transfermarkt,https://www.transfermarkt.com/bengaluru-fc/kader/verein/41018,Verified
+sq13,2024/25,p13,Bengaluru FC,29,€125k,125000.0,2024-07-05,Punjab FC,Transfermarkt,https://www.transfermarkt.com/bengaluru-fc/kader/verein/41018,Verified
+sq14,2024/25,p14,Bengaluru FC,30,€300k,300000.0,2023-08-01,Perth Glory,Transfermarkt,https://www.transfermarkt.com/bengaluru-fc/kader/verein/41018,Verified
+sq15,2024/25,p21,Bengaluru FC,30,€150k,150000.0,2023-06-14,Hyderabad FC,Transfermarkt,https://www.transfermarkt.com/bengaluru-fc/kader/verein/41018,Verified
+sq16,2024/25,p29,Bengaluru FC,22,€75k,75000.0,2023-06-01,Bengaluru FC II,Transfermarkt,https://www.transfermarkt.com/bengaluru-fc/kader/verein/41018,Verified
+sq17,2024/25,p30,Bengaluru FC,20,€50k,50000.0,2024-07-01,Bengaluru FC II,Transfermarkt,https://www.transfermarkt.com/bengaluru-fc/kader/verein/41018,Verified
+sq18,2024/25,p31,Bengaluru FC,20,€50k,50000.0,2024-07-01,Bengaluru FC II,Transfermarkt,https://www.transfermarkt.com/bengaluru-fc/kader/verein/41018,Verified
+sq19,2024/25,p32,Bengaluru FC,19,€50k,50000.0,2024-07-01,Bengaluru FC II,Transfermarkt,https://www.transfermarkt.com/bengaluru-fc/kader/verein/41018,Verified
+sq20,2024/25,p33,Bengaluru FC,18,€50k,50000.0,2023-06-01,Zinc FA,Transfermarkt,https://www.transfermarkt.com/bengaluru-fc/kader/verein/41018,Verified
+sq21,2024/25,p34,Bengaluru FC,31,€50k,50000.0,2024-06-28,Odisha FC,Transfermarkt,https://www.transfermarkt.com/bengaluru-fc/kader/verein/41018,Verified
+sq22,2024/25,p35,Bengaluru FC,19,€100k,100000.0,2024-07-01,Bengaluru FC II,Transfermarkt,https://www.transfermarkt.com/bengaluru-fc/kader/verein/41018,Verified
+sq23,2024/25,p36,Bengaluru FC,20,€50k,50000.0,2023-06-01,Bengaluru FC II,Transfermarkt,https://www.transfermarkt.com/bengaluru-fc/kader/verein/41018,Verified
+sq24,2024/25,p37,Bengaluru FC,22,€75k,75000.0,2023-06-01,TRAU FC,Transfermarkt,https://www.transfermarkt.com/bengaluru-fc/kader/verein/41018,Verified
+sq25,2023/24,p15,Bengaluru FC,34,€300k,300000.0,2022-07-01,Odisha FC,Transfermarkt,https://www.transfermarkt.com/bengaluru-fc/kader/verein/41018,Verified
+sq26,2023/24,p22,Bengaluru FC,31,€225k,225000.0,2023-07-01,ATK Mohun Bagan,Transfermarkt,https://www.transfermarkt.com/bengaluru-fc/kader/verein/41018,Verified
+sq27,2023/24,p24,Bengaluru FC,26,€300k,300000.0,2023-08-01,FC Emmen,Transfermarkt,https://www.transfermarkt.com/bengaluru-fc/kader/verein/41018,Verified
+sq28,2023/24,p20,Bengaluru FC,26,€175k,175000.0,2021-07-01,Kerala Blasters,Transfermarkt,https://www.transfermarkt.com/bengaluru-fc/kader/verein/41018,Verified
+sq29,2022/23,p17,Bengaluru FC,35,€450k,450000.0,2022-07-01,ATK Mohun Bagan,Transfermarkt,https://www.transfermarkt.com/bengaluru-fc/kader/verein/41018,Verified
+sq30,2022/23,p18,Bengaluru FC,28,€400k,400000.0,2021-08-01,Varzim SC,Transfermarkt,https://www.transfermarkt.com/bengaluru-fc/kader/verein/41018,Verified
+sq31,2022/23,p19,Bengaluru FC,32,€350k,350000.0,2021-07-01,Avaí FC,Transfermarkt,https://www.transfermarkt.com/bengaluru-fc/kader/verein/41018,Verified
+sq32,2021/22,p16,Bengaluru FC,34,€400k,400000.0,2020-06-20,Suphanburi FC,Transfermarkt,https://www.transfermarkt.com/bengaluru-fc/kader/verein/41018,Verified
+sq33,2021/22,p26,Bengaluru FC,24,€250k,250000.0,2019-07-01,FC Pune City,Transfermarkt,https://www.transfermarkt.com/bengaluru-fc/kader/verein/41018,Verified
+sq34,2021/22,p27,Bengaluru FC,25,€250k,250000.0,2014-07-01,Tata Football Academy,Transfermarkt,https://www.transfermarkt.com/bengaluru-fc/kader/verein/41018,Verified
+sq35,2020/21,p39,Bengaluru FC,31,€175k,175000.0,2020-09-01,Mumbai City FC,Transfermarkt,https://www.transfermarkt.com/bengaluru-fc/kader/verein/41018,Verified
+sq36,2020/21,p40,Bengaluru FC,23,€250k,250000.0,2015-11-01,AIFF Elite Academy,Transfermarkt,https://www.transfermarkt.com/bengaluru-fc/kader/verein/41018,Verified
+sq37,2025/26,p03,Bengaluru FC,25,€325k,325000.0,2019-07-01,Indian Arrows,Transfermarkt,https://www.transfermarkt.com/bengaluru-fc/kader/verein/41018,Verified
+sq38,2025/26,p04,Bengaluru FC,26,€275k,275000.0,2020-09-01,Bengaluru FC II,Transfermarkt,https://www.transfermarkt.com/bengaluru-fc/kader/verein/41018,Verified
+sq39,2025/26,p05,Bengaluru FC,24,€225k,225000.0,2021-07-01,Bengaluru FC II,Transfermarkt,https://www.transfermarkt.com/bengaluru-fc/kader/verein/41018,Verified
+sq40,2026/27,p35,Bengaluru FC,21,€200k,200000.0,2024-07-01,Bengaluru FC II,Transfermarkt,https://www.transfermarkt.com/bengaluru-fc/kader/verein/41018,Verified

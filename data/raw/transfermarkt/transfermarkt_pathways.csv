@@ -1,0 +1,15 @@
+id,player_id,player_name,previous_club,previous_league,bengaluru_join_date,bengaluru_leave_date,years_at_bengaluru,next_club,next_league,current_club,source,source_url,validation_status
+pw01,p16,Cleiton Silva,Suphanburi FC,Thai League 1,2020-06-20,2022-06-30,2.0,East Bengal FC,Indian Super League,East Bengal FC,Transfermarkt,https://www.transfermarkt.com/cleiton-silva/profil/spieler/138139,Verified
+pw02,p15,Javi Hernández,Odisha FC,Indian Super League,2022-07-01,2024-06-30,2.0,Jamshedpur FC,Indian Super League,Jamshedpur FC,Transfermarkt,https://www.transfermarkt.com/javi-hernandez/profil/spieler/85338,Verified
+pw03,p17,Roy Krishna,ATK Mohun Bagan,Indian Super League,2022-07-01,2023-06-30,1.0,Odisha FC,Indian Super League,Odisha FC,Transfermarkt,https://www.transfermarkt.com/roy-krishna/profil/spieler/64601,Verified
+pw04,p26,Ashique Kuruniyan,FC Pune City,Indian Super League,2019-07-01,2022-06-30,3.0,ATK Mohun Bagan,Indian Super League,Mohun Bagan SG,Transfermarkt,https://www.transfermarkt.com/ashique-kuruniyan/profil/spieler/468087,Verified
+pw05,p27,Udanta Singh,Tata Football Academy,Youth Academy,2014-07-01,2023-06-30,9.0,FC Goa,Indian Super League,FC Goa,Transfermarkt,https://www.transfermarkt.com/udanta-singh/profil/spieler/343438,Verified
+pw06,p20,Rohit Kumar,Kerala Blasters,Indian Super League,2021-07-01,2024-06-18,3.0,Odisha FC,Indian Super League,Odisha FC,Transfermarkt,https://www.transfermarkt.com/rohit-kumar/profil/spieler/534158,Verified
+pw07,p22,Slavko Damjanović,ATK Mohun Bagan,Indian Super League,2023-07-01,2024-06-30,1.0,FK Sutjeska Nikšić,Montenegrin First League,FK Sutjeska Nikšić,Transfermarkt,https://www.transfermarkt.com/slavko-damjanovic/profil/spieler/166127,Verified
+pw08,p23,Oliver Drost,FC Helsingør,Danish 1st Division,2024-01-20,2024-06-30,0.5,FC Helsingør,Danish 1st Division,FC Helsingør,Transfermarkt,https://www.transfermarkt.com/oliver-drost/profil/spieler/335804,Verified
+pw09,p24,Keziah Veendorp,FC Emmen,Eredivisie,2023-08-01,2024-06-30,1.0,Free Agent,N/A,Free Agent,Transfermarkt,https://www.transfermarkt.com/keziah-veendorp/profil/spieler/258364,Verified
+pw10,p03,Suresh Singh Wangjam,Indian Arrows,I-League,2019-07-01,N/A,6.0,N/A,N/A,Bengaluru FC,Transfermarkt,https://www.transfermarkt.com/suresh-singh-wangjam/profil/spieler/534160,Verified
+pw11,p04,Naorem Roshan Singh,Bengaluru FC II,2nd Division League,2020-09-01,N/A,5.0,N/A,N/A,Bengaluru FC,Transfermarkt,https://www.transfermarkt.com/naorem-roshan-singh/profil/spieler/534149,Verified
+pw12,p05,Sivasakthi Narayanan,Bengaluru FC II,2nd Division League,2021-07-01,N/A,4.0,N/A,N/A,Bengaluru FC,Transfermarkt,https://www.transfermarkt.com/sivasakthi-narayanan/profil/spieler/934579,Verified
+pw13,p01,Gurpreet Singh Sandhu,Stabæk,Eliteserien,2017-08-14,N/A,8.0,N/A,N/A,Bengaluru FC,Transfermarkt,https://www.transfermarkt.com/gurpreet-singh-sandhu/profil/spieler/157404,Verified
+pw14,p02,Sunil Chhetri,Mumbai City FC,Indian Super League,2017-07-01,N/A,8.0,N/A,N/A,Bengaluru FC,Transfermarkt,https://www.transfermarkt.com/sunil-chhetri/profil/spieler/64602,Verified

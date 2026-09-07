@@ -1,0 +1,37 @@
+id,player_id,player_name,date,market_value,club,source,source_url,validation_status
+mv01,p03,Suresh Singh Wangjam,2019-07-01,€50k,Indian Arrows,Transfermarkt,https://www.transfermarkt.com/suresh-singh-wangjam/marktwertverlauf/spieler/534160,Verified
+mv02,p03,Suresh Singh Wangjam,2021-06-01,€175k,Bengaluru FC,Transfermarkt,https://www.transfermarkt.com/suresh-singh-wangjam/marktwertverlauf/spieler/534160,Verified
+mv03,p03,Suresh Singh Wangjam,2023-06-01,€300k,Bengaluru FC,Transfermarkt,https://www.transfermarkt.com/suresh-singh-wangjam/marktwertverlauf/spieler/534160,Verified
+mv04,p03,Suresh Singh Wangjam,2024-06-01,€300k,Bengaluru FC,Transfermarkt,https://www.transfermarkt.com/suresh-singh-wangjam/marktwertverlauf/spieler/534160,Verified
+mv05,p04,Naorem Roshan Singh,2020-09-01,€25k,Bengaluru FC II,Transfermarkt,https://www.transfermarkt.com/naorem-roshan-singh/marktwertverlauf/spieler/534149,Verified
+mv06,p04,Naorem Roshan Singh,2022-06-01,€200k,Bengaluru FC,Transfermarkt,https://www.transfermarkt.com/naorem-roshan-singh/marktwertverlauf/spieler/534149,Verified
+mv07,p04,Naorem Roshan Singh,2023-06-01,€275k,Bengaluru FC,Transfermarkt,https://www.transfermarkt.com/naorem-roshan-singh/marktwertverlauf/spieler/534149,Verified
+mv08,p04,Naorem Roshan Singh,2024-06-01,€250k,Bengaluru FC,Transfermarkt,https://www.transfermarkt.com/naorem-roshan-singh/marktwertverlauf/spieler/534149,Verified
+mv09,p05,Sivasakthi Narayanan,2021-07-01,€25k,Bengaluru FC II,Transfermarkt,https://www.transfermarkt.com/sivasakthi-narayanan/marktwertverlauf/spieler/934579,Verified
+mv10,p05,Sivasakthi Narayanan,2023-06-01,€175k,Bengaluru FC,Transfermarkt,https://www.transfermarkt.com/sivasakthi-narayanan/marktwertverlauf/spieler/934579,Verified
+mv11,p05,Sivasakthi Narayanan,2024-06-01,€200k,Bengaluru FC,Transfermarkt,https://www.transfermarkt.com/sivasakthi-narayanan/marktwertverlauf/spieler/934579,Verified
+mv12,p01,Gurpreet Singh Sandhu,2017-08-14,€150k,Stabæk,Transfermarkt,https://www.transfermarkt.com/gurpreet-singh-sandhu/marktwertverlauf/spieler/157404,Verified
+mv13,p01,Gurpreet Singh Sandhu,2021-06-01,€350k,Bengaluru FC,Transfermarkt,https://www.transfermarkt.com/gurpreet-singh-sandhu/marktwertverlauf/spieler/157404,Verified
+mv14,p01,Gurpreet Singh Sandhu,2024-06-01,€200k,Bengaluru FC,Transfermarkt,https://www.transfermarkt.com/gurpreet-singh-sandhu/marktwertverlauf/spieler/157404,Verified
+mv15,p02,Sunil Chhetri,2017-07-01,€175k,Bengaluru FC,Transfermarkt,https://www.transfermarkt.com/sunil-chhetri/marktwertverlauf/spieler/64602,Verified
+mv16,p02,Sunil Chhetri,2020-06-01,€150k,Bengaluru FC,Transfermarkt,https://www.transfermarkt.com/sunil-chhetri/marktwertverlauf/spieler/64602,Verified
+mv17,p02,Sunil Chhetri,2024-06-01,€50k,Bengaluru FC,Transfermarkt,https://www.transfermarkt.com/sunil-chhetri/marktwertverlauf/spieler/64602,Verified
+mv18,p16,Cleiton Silva,2020-06-20,€350k,Suphanburi FC,Transfermarkt,https://www.transfermarkt.com/cleiton-silva/marktwertverlauf/spieler/138139,Verified
+mv19,p16,Cleiton Silva,2022-06-30,€300k,Bengaluru FC,Transfermarkt,https://www.transfermarkt.com/cleiton-silva/marktwertverlauf/spieler/138139,Verified
+mv20,p16,Cleiton Silva,2024-06-01,€100k,East Bengal FC,Transfermarkt,https://www.transfermarkt.com/cleiton-silva/marktwertverlauf/spieler/138139,Verified
+mv21,p15,Javi Hernández,2022-07-01,€350k,Odisha FC,Transfermarkt,https://www.transfermarkt.com/javi-hernandez/marktwertverlauf/spieler/85338,Verified
+mv22,p15,Javi Hernández,2023-06-01,€350k,Bengaluru FC,Transfermarkt,https://www.transfermarkt.com/javi-hernandez/marktwertverlauf/spieler/85338,Verified
+mv23,p15,Javi Hernández,2024-06-30,€250k,Bengaluru FC,Transfermarkt,https://www.transfermarkt.com/javi-hernandez/marktwertverlauf/spieler/85338,Verified
+mv24,p17,Roy Krishna,2022-07-01,€500k,ATK Mohun Bagan,Transfermarkt,https://www.transfermarkt.com/roy-krishna/marktwertverlauf/spieler/64601,Verified
+mv25,p17,Roy Krishna,2023-06-30,€400k,Bengaluru FC,Transfermarkt,https://www.transfermarkt.com/roy-krishna/marktwertverlauf/spieler/64601,Verified
+mv26,p06,Jorge Pereyra Díaz,2024-06-25,€350k,Mumbai City FC,Transfermarkt,https://www.transfermarkt.com/jorge-pereyra-diaz/marktwertverlauf/spieler/107767,Verified
+mv27,p06,Jorge Pereyra Díaz,2024-12-01,€350k,Bengaluru FC,Transfermarkt,https://www.transfermarkt.com/jorge-pereyra-diaz/marktwertverlauf/spieler/107767,Verified
+mv28,p08,Édgar Méndez,2024-07-09,€500k,Club Necaxa,Transfermarkt,https://www.transfermarkt.com/edgar-mendez/marktwertverlauf/spieler/89667,Verified
+mv29,p08,Édgar Méndez,2024-12-01,€400k,Bengaluru FC,Transfermarkt,https://www.transfermarkt.com/edgar-mendez/marktwertverlauf/spieler/89667,Verified
+mv30,p07,Alberto Noguera,2024-06-20,€300k,Mumbai City FC,Transfermarkt,https://www.transfermarkt.com/alberto-noguera/marktwertverlauf/spieler/138137,Verified
+mv31,p07,Alberto Noguera,2024-12-01,€250k,Bengaluru FC,Transfermarkt,https://www.transfermarkt.com/alberto-noguera/marktwertverlauf/spieler/138137,Verified
+mv32,p26,Ashique Kuruniyan,2019-07-01,€100k,FC Pune City,Transfermarkt,https://www.transfermarkt.com/ashique-kuruniyan/marktwertverlauf/spieler/468087,Verified
+mv33,p26,Ashique Kuruniyan,2022-06-30,€300k,Bengaluru FC,Transfermarkt,https://www.transfermarkt.com/ashique-kuruniyan/marktwertverlauf/spieler/468087,Verified
+mv34,p27,Udanta Singh,2014-07-01,€25k,Tata Football Academy,Transfermarkt,https://www.transfermarkt.com/udanta-singh/marktwertverlauf/spieler/343438,Verified
+mv35,p27,Udanta Singh,2020-06-01,€325k,Bengaluru FC,Transfermarkt,https://www.transfermarkt.com/udanta-singh/marktwertverlauf/spieler/343438,Verified
+mv36,p27,Udanta Singh,2023-06-30,€225k,Bengaluru FC,Transfermarkt,https://www.transfermarkt.com/udanta-singh/marktwertverlauf/spieler/343438,Verified
