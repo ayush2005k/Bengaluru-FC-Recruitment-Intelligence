@@ -1,7 +1,7 @@
 """
 src/collect_wikipedia.py
 Collects structured historical transfer data for Bengaluru FC from Wikipedia
-across seasons 2020/21 to 2026/27.
+across seasons 2020/21 to 2024/25.
 
 Data Rules:
 - Never invent data.

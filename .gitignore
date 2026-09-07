@@ -26,3 +26,4 @@ desktop.ini
 
 # Large binary / temp files if needed
 *.log
+.env
