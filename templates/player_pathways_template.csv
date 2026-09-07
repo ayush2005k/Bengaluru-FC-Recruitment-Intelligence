@@ -1,0 +1,6 @@
+id,player_id,player_name,previous_club,previous_league,bengaluru_join_date,bengaluru_leave_date,years_at_bengaluru,next_club,next_league,current_club,source,source_url,validation_status
+pw01,p07,Cleiton Silva,Suphanburi FC,Thai League 1,2020-06-20,2022-06-30,2.0,East Bengal FC,Indian Super League,East Bengal FC,Transfermarkt,https://www.transfermarkt.com/cleiton-silva/profil/spieler/138139,Verified
+pw02,p32,Naorem Roshan Singh,Bengaluru FC II,2nd Division League,2020-09-01,N/A,N/A,N/A,N/A,Bengaluru FC,Transfermarkt,https://www.transfermarkt.com/naorem-roshan-singh/profil/spieler/534149,Verified
+pw03,p25,Suresh Singh Wangjam,Indian Arrows,I-League,2019-07-01,N/A,N/A,N/A,N/A,Bengaluru FC,Transfermarkt,https://www.transfermarkt.com/suresh-singh-wangjam/profil/spieler/534160,Verified
+pw04,p10,Javi Hernandez,Odisha FC,Indian Super League,2022-07-01,2024-06-30,2.0,Jamshedpur FC,Indian Super League,Jamshedpur FC,Transfermarkt,https://www.transfermarkt.com/javi-hernandez/profil/spieler/85338,Verified
+pw05,p06,John Johnson,Northampton Town,EFL League Two,2013-07-15,2018-06-30,5.0,ATK,Indian Super League,Retired,Transfermarkt,https://www.transfermarkt.com/john-johnson/profil/spieler/49400,Verified

@@ -1,0 +1,6 @@
+id,name,nationality,date_of_birth,position,height,preferred_foot,source,source_url,validation_status
+p01,Gurpreet Singh Sandhu,India,1992-02-03,Goalkeeper,1.98m,Right,Transfermarkt,https://www.transfermarkt.com/gurpreet-singh-sandhu/profil/spieler/157404,Verified
+p11,Sunil Chhetri,India,1984-08-03,Striker,1.70m,Both,Transfermarkt,https://www.transfermarkt.com/sunil-chhetri/profil/spieler/64602,Verified
+p25,Suresh Singh Wangjam,India,2000-08-07,Central Midfielder,1.76m,Right,Transfermarkt,https://www.transfermarkt.com/suresh-singh-wangjam/profil/spieler/534160,Verified
+p32,Naorem Roshan Singh,India,1999-02-02,Left Back,1.72m,Left,Transfermarkt,https://www.transfermarkt.com/naorem-roshan-singh/profil/spieler/534149,Verified
+p09,Jorge Pereyra Diaz,Argentina,1990-08-05,Centre-Forward,1.80m,Right,Transfermarkt,https://www.transfermarkt.com/jorge-pereyra-diaz/profil/spieler/107767,Verified

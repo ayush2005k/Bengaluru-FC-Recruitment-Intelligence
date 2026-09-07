@@ -1,0 +1,6 @@
+id,season,player_id,club,age,market_value,joined_date,signed_from,source,source_url,validation_status
+s01,2024/25,p01,Bengaluru FC,32,€200k,2017-08-14,Stabæk,Transfermarkt,https://www.transfermarkt.com/bengaluru-fc/kader/verein/41018,Verified
+s02,2024/25,p11,Bengaluru FC,40,€50k,2017-07-01,Mumbai City FC,Transfermarkt,https://www.transfermarkt.com/bengaluru-fc/kader/verein/41018,Verified
+s03,2024/25,p25,Bengaluru FC,24,€300k,2019-07-01,Indian Arrows,Transfermarkt,https://www.transfermarkt.com/bengaluru-fc/kader/verein/41018,Verified
+s04,2024/25,p32,Bengaluru FC,25,€250k,2020-09-01,Bengaluru FC II,Transfermarkt,https://www.transfermarkt.com/bengaluru-fc/kader/verein/41018,Verified
+s05,2024/25,p09,Bengaluru FC,34,€350k,2024-07-01,Mumbai City FC,Transfermarkt,https://www.transfermarkt.com/bengaluru-fc/kader/verein/41018,Verified

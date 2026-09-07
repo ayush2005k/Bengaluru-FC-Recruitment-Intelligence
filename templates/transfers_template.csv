@@ -1,0 +1,6 @@
+id,season,player_id,player_name,transfer_type,position,from_club,to_club,transfer_fee,transfer_status,transfer_date,source,source_url,validation_status
+1,2023/24,p30,Sahil Poonia,Permanent Transfer,Goalkeeper,Zinc FA,Bengaluru FC,Free,Joined,2023-06-01,Wikipedia,https://en.wikipedia.org/wiki/2023%E2%80%9324_Bengaluru_FC_season,Verified
+2,2023/24,p19,Halicharan Narzary,Permanent Transfer,Winger,Hyderabad FC,Bengaluru FC,Free,Joined,2023-06-14,Wikipedia,https://en.wikipedia.org/wiki/2023%E2%80%9324_Bengaluru_FC_season,Verified
+3,2023/24,p44,Robin Yadav,Internal Promotion,Centre Back,Bengaluru FC B,Bengaluru FC,Free,Promoted,2023-06-01,Wikipedia,https://en.wikipedia.org/wiki/2023%E2%80%9324_Bengaluru_FC_season,Verified
+4,2022/23,p11,Sunil Chhetri,Permanent Transfer,Striker,Bengaluru FC,Bengaluru FC,Undisclosed,Retained,2022-07-01,Transfermarkt,https://www.transfermarkt.com/sunil-chhetri/profil/spieler/64602,Verified
+5,2021/22,p07,Cleiton Silva,Departure,Forward,Bengaluru FC,East Bengal FC,Free,Departed,2022-06-30,Wikipedia,https://en.wikipedia.org/wiki/2021%E2%80%9322_Bengaluru_FC_season,Verified

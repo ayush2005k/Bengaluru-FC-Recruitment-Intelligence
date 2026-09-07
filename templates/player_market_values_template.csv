@@ -1,0 +1,7 @@
+id,player_id,player_name,date,market_value,club,source,source_url,validation_status
+mv01,p01,Gurpreet Singh Sandhu,2017-08-14,€150k,Stabæk,Transfermarkt,https://www.transfermarkt.com/gurpreet-singh-sandhu/marktwertverlauf/spieler/157404,Verified
+mv02,p01,Gurpreet Singh Sandhu,2021-06-01,€350k,Bengaluru FC,Transfermarkt,https://www.transfermarkt.com/gurpreet-singh-sandhu/marktwertverlauf/spieler/157404,Verified
+mv03,p25,Suresh Singh Wangjam,2019-07-01,€50k,Indian Arrows,Transfermarkt,https://www.transfermarkt.com/suresh-singh-wangjam/marktwertverlauf/spieler/534160,Verified
+mv04,p25,Suresh Singh Wangjam,2024-06-01,€350k,Bengaluru FC,Transfermarkt,https://www.transfermarkt.com/suresh-singh-wangjam/marktwertverlauf/spieler/534160,Verified
+mv05,p32,Naorem Roshan Singh,2020-09-01,€25k,Bengaluru FC II,Transfermarkt,https://www.transfermarkt.com/naorem-roshan-singh/marktwertverlauf/spieler/534149,Verified
+mv06,p32,Naorem Roshan Singh,2023-06-01,€300k,Bengaluru FC,Transfermarkt,https://www.transfermarkt.com/naorem-roshan-singh/marktwertverlauf/spieler/534149,Verified
