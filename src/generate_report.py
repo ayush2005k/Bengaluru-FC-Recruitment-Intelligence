@@ -102,10 +102,6 @@ class NumberedCanvas(canvas.Canvas):
     def draw_page_decorations(self, total_pages: int):
         self.saveState()
 
-        # 1. Base Dark Pitch Background
-        self.setFillColor(COLOR_BG)
-        self.rect(0, 0, PAGE_WIDTH, PAGE_HEIGHT, fill=True, stroke=False)
-
         # Skip header/footer chrome on Cover Page (Page 1)
         if self._pageNumber > 1:
             # Top Accent Strip (BFC Blue 72% | BFC Crimson 28%)
@@ -1974,7 +1970,13 @@ def generate_pdf_report():
     story.extend(build_page_14_player_shortlist(styles))
     story.extend(build_page_15_final_strategy(styles))
 
-    doc.build(story, canvasmaker=NumberedCanvas)
+    def draw_background(c, d):
+        c.saveState()
+        c.setFillColor(COLOR_BG)
+        c.rect(0, 0, PAGE_WIDTH, PAGE_HEIGHT, fill=True, stroke=False)
+        c.restoreState()
+
+    doc.build(story, onFirstPage=draw_background, onLaterPages=draw_background, canvasmaker=NumberedCanvas)
     logger.info(f"Report successfully generated at: {PDF_PATH}")
 
 
